@@ -1,0 +1,28 @@
+==========================
+Basic production structure
+==========================
+
+sp {
+    hello-my/darling@stuff*to&do
+    "this soar production is \"just a test\"
+    (for now at least)}"
+    :o-support
+    ()
+    ()
+-->
+    TODO
+    TODO
+}
+
+---
+
+(source_file
+  (production
+    (beginning
+      (prod_name)
+      (documentation)
+      (flag))
+    (condition)
+    (condition)
+    (action)
+    (action)))
