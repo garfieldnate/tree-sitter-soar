@@ -1,0 +1,79 @@
+==========================
+Complex name and doc string, multiple flags, conditions and actions. TODO: move to other files
+==========================
+
+sp {
+    hello-my/darling@stuff*to&do
+    "this soar production is \"just a test\"
+    (for now at least)}"
+    :o-support:i-support
+    ()
+    ()
+-->
+    TODO
+    TODO
+}
+
+---
+
+(source_file
+  (production
+    (beginning
+      (prod_name)
+      (documentation)
+      (flag)
+      (flag))
+    (condition)
+    (condition)
+    (action)
+    (action)))
+
+====================
+Multiple Productions
+====================
+
+sp {one
+    ()
+    ()
+-->
+    TODO
+    TODO
+}
+
+sp {two
+    ()
+    ()
+-->
+    TODO
+    TODO
+}
+
+sp {three
+    ()
+    ()
+-->
+    TODO
+    TODO
+}
+
+---
+
+(source_file
+  (production
+    (beginning (prod_name))
+    (condition)
+    (condition)
+    (action)
+    (action))
+  (production
+    (beginning (prod_name))
+    (condition)
+    (condition)
+    (action)
+    (action))
+  (production
+    (beginning (prod_name))
+    (condition)
+    (condition)
+    (action)
+    (action)))
