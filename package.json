@@ -4,7 +4,9 @@
   "description": "tree-sitter parser for Soar language",
   "main": "bindings/node",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tree-sitter test",
+    "generate": "tree-sitter generate",
+    "parse": "tree-sitter parse"
   },
   "keywords": [
     "Soar",
