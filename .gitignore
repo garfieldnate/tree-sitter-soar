@@ -1,3 +1,4 @@
+# JS
 node_modules/
 package-lock.json
 
@@ -6,3 +7,7 @@ bindings/
 src/
 binding.gyp
 Cargo.toml
+log.html
+
+# scratch file
+test.soar
