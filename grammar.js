@@ -1,8 +1,17 @@
 module.exports = grammar({
   name: 'SOAR',
 
+  // ignore whitespace and end-of-line comments
+  extras: $ => [
+    $._comment,
+    /\s/,
+  ],
+
   rules: {
+    // This rule must be defined first!
     source_file: $ => repeat($._command),
+
+    _comment: $ => /(?:;\s*)?#[^\r\n]*/,
 
     _command: $ => choice(
       $.production

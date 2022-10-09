@@ -1,0 +1,45 @@
+
+======================
+ignore # comments
+======================
+
+sp {one
+# sp {two
+    () #stuff
+      ()
+    #}
+-->
+  TODO
+}
+
+---
+
+(source_file
+  (production
+    (beginning (prod_name))
+  (condition)
+  (condition)
+  (action)))
+==================
+ignore ;# comments
+==================
+
+sp {one
+# sp {two
+    () ;#stuff
+    () ; #stuff
+        ()
+    ; #}
+-->
+  TODO
+}
+
+---
+
+(source_file
+  (production
+    (beginning (prod_name))
+    (condition)
+    (condition)
+    (condition)
+    (action)))
