@@ -36,24 +36,18 @@ sp {one
     ()
     ()
 -->
-    TODO
-    TODO
 }
 
 sp {two
     ()
     ()
 -->
-    TODO
-    TODO
 }
 
 sp {three
     ()
     ()
 -->
-    TODO
-    TODO
 }
 
 ---
@@ -62,18 +56,12 @@ sp {three
   (production
     (beginning (prod_name))
     (condition)
-    (condition)
-    (action)
-    (action))
+    (condition))
   (production
     (beginning (prod_name))
     (condition)
-    (condition)
-    (action)
-    (action))
+    (condition))
   (production
     (beginning (prod_name))
     (condition)
-    (condition)
-    (action)
-    (action)))
+    (condition)))
