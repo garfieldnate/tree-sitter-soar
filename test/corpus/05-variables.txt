@@ -1,0 +1,221 @@
+================================================================================
+basic
+================================================================================
+
+sp {one-letter
+    (state <s>)
+-->    (<s> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action)))
+
+================================================================================
+junk name
+================================================================================
+
+sp {lots-o-garbage
+    (state <AZaz09$%&*+/:=?_->)
+-->    (<AZaz09$%&*+/:=?_-> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action)))
+
+================================================================================
+no alphanumeric
+================================================================================
+
+sp {lots-o-garbage
+    (state <$%&*+/:=?_->)
+-->    (<$%&*+/:=?_-> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action)))
+
+================================================================================
+empty name disallowed
+================================================================================
+
+sp {empty
+    (state <>)
+-->    (<> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (ERROR
+              (relation))))))
+    (action)))
+
+================================================================================
+space disallowed
+================================================================================
+
+sp {empty
+    (state <a b>)
+-->    (<a b> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (constant
+                      (symConstant
+                        (string)))))))
+            (ERROR
+              (UNEXPECTED 'b'))))))
+    (action)))
+
+================================================================================
+empty name disallowed
+================================================================================
+
+sp {empty
+    (state <>)
+-->    (<> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (ERROR
+              (relation))))))
+    (action)))
+
+================================================================================
+period disallowed
+================================================================================
+
+sp {lots-o-garbage
+    (state <a.a>)
+-->    (<a.a> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (constant
+                      (symConstant
+                        (string)))))))
+            (ERROR
+              (UNEXPECTED 'a'))))))
+    (action)))
+
+================================================================================
+forward slash disallowed
+================================================================================
+
+sp {lots-o-garbage
+    (state <a\a>)
+-->    (<a\a> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (constant
+                      (symConstant
+                        (string)))))))
+            (ERROR
+              (UNEXPECTED '\'))))))
+    (action)))
