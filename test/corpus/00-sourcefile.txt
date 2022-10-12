@@ -1,5 +1,5 @@
 ================================================================================
-Complex name and doc string, multiple flags, conditions and actions. (TODO): move to other files
+Complex name and doc string, multiple flags, conditions and actions. TODO: move to other files
 ================================================================================
 
 sp {
@@ -10,8 +10,8 @@ sp {
     ()
     ()
 -->
-    (TODO)
-    (TODO)
+    (funcFoo)
+    (funcFoo)
 }
 
 --------------------------------------------------------------------------------
@@ -30,8 +30,16 @@ sp {
       (cond
         (positiveCond
           (condsForOneId))))
-    (action)
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))
 
 ================================================================================
 Multiple Productions
@@ -90,7 +98,7 @@ sp {one
     () #stuff
     #}
 -->
-  (TODO)
+  (funcFoo)
 }
 
 --------------------------------------------------------------------------------
@@ -103,7 +111,11 @@ sp {one
       (cond
         (positiveCond
           (condsForOneId))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))
 
 ================================================================================
 ignore ;# comments
@@ -116,7 +128,7 @@ sp {one
         ()
     ; #}
 -->
-  (TODO)
+  (funcFoo)
 }
 
 --------------------------------------------------------------------------------
@@ -135,4 +147,8 @@ sp {one
       (cond
         (positiveCond
           (condsForOneId))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))

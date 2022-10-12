@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: 'SOAR',
+  name: 'Soar',
 
   // ignore whitespace and end-of-line comments
   extras: $ => [
@@ -38,12 +38,14 @@ module.exports = grammar({
     documentation: $ => seq('"', /(?:\\["]|[^"])*/, '"'),
     flag: $ => seq(':', choice('o-support', 'i-support', 'chunk', 'default', 'interrupt', 'template')),
 
-    // TODO: make sure what we have parses
-    // THEN MAYBE: change grammar to match manual instead of Perl version; probably better to not parse stuff that crashes Soar, etc.
+    ////////////
+    // LHS
+    ////////////
+
+
+    // TODO: change grammar to match manual and CSoar (don't parse productions that crash or issue warnings)
     // TODO: what to do about the note about id_test?
     LHS: $ => repeat1($.cond),
-
-    action: $ => /\([^)]+\)/,
 
     cond: $ => choice($.positiveCond, $.negativeCond),
     negativeCond: $ => seq('-', $.positiveCond),
@@ -59,7 +61,7 @@ module.exports = grammar({
 
     attrTest: $ => seq('^', $.test, repeat(seq('.', $.test))),
 
-    valueTest: $ => prec.left(choice(seq(optional('+'),$.test), seq($.condsForOneId, optional('+')))),
+    valueTest: $ => prec.left(choice(seq(optional('+'), $.test), seq($.condsForOneId, optional('+')))),
 
     conjunctiveTest: $ => seq('{', repeat1($.simpleTest), '}'),
 
@@ -77,6 +79,37 @@ module.exports = grammar({
     // TODO: use /<(?=\s)/ to ensure we don't match the beginning of a variable (lookaround illegal in tree-sitter)
     relation: $ => choice("<=>", "<>", "<=", ">=", ">", "<", "="),
 
+    //////////////
+    // RHS
+    //////////////
+
+    action: $ => choice($.funcCall, seq("(", $.variable, repeat1($.attrValueMake), ")")),
+
+    funcCall: $ => seq("(", $.funcName, repeat($.rhsValue), ")"),
+
+    funcName: $ => choice("+", "-", "*", "/", $.symConstant),
+
+    rhsValue: $ => choice($.variable, $.constant, "(crlf)", $.funcCall),
+
+    attrValueMake: $ => seq(seq($.attr, repeat(seq('.', $.variableOrSymConstant))), repeat1($.valueMake)),
+
+    attr: $ => seq("^", $.variableOrSymConstant),
+
+    variableOrSymConstant: $ => choice($.variable, $.symConstant),
+
+    valueMake: $ => seq($.rhsValue, repeat($.preferenceSpecifier)),
+
+    preferenceSpecifier: $ => choice(seq($.unaryOrBinaryPreference, $.rhsValue, optional(',')), seq($.unaryPreference, optional(','))),
+
+    unaryPreference: $ => choice("+", "-", "!", "~", "@", $.unaryOrBinaryPreference),
+
+    // TODO: originally used negative lookahead to prevent matching<xx> as two specifiers and a constant
+    unaryOrBinaryPreference: $ => choice(">", "<", "=", "&"),
+
+    ///////////////////////////////////////
+    // Values used in both LHS and RHS
+    ///////////////////////////////////////
+
     // TODO: original ends with (?<!>)> but lookaround is illegal in tree-sitter
     variable: $ => /<[A-Za-z0-9$%&*+/:=?_<>-]+>/,
 
@@ -92,7 +125,9 @@ module.exports = grammar({
     scientificFloat: $ => /[+-]?[0-9]\.[0-9]+[eE][-+]?[0-9]+[dDfF]?/,
 
     // TODO: do we need to port any of the rejection rules to fix ambiguous matches?
+    // NOTE: in CSoar, || is ignored and treated as <any>
     string: $ => /[A-Za-z0-9$%&*+\/:=?_><-]+/,
   },
-  // conflicts: $ => [[$.state_impasse_cond, $.valueTest]]
+
+   conflicts: $=> [[$.preferenceSpecifier, $.unaryPreference]]
 });

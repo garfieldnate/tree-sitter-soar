@@ -23,7 +23,16 @@ sp {one-letter
                 (simpleTest
                   (singleTest
                     (variable)))))))))
-    (action)))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
 
 ================================================================================
 junk name
@@ -50,7 +59,16 @@ sp {lots-o-garbage
                 (simpleTest
                   (singleTest
                     (variable)))))))))
-    (action)))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
 
 ================================================================================
 no alphanumeric
@@ -77,7 +95,16 @@ sp {lots-o-garbage
                 (simpleTest
                   (singleTest
                     (variable)))))))))
-    (action)))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
 
 ================================================================================
 empty name disallowed
@@ -101,7 +128,15 @@ sp {empty
             (condType)
             (ERROR
               (relation))))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (ERROR
+          (UNEXPECTED 'f'))
+        (rhsValue
+          (variable))))))
 
 ================================================================================
 space disallowed
@@ -132,7 +167,19 @@ sp {empty
                         (string)))))))
             (ERROR
               (UNEXPECTED 'b'))))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (ERROR
+          (UNEXPECTED 'f'))
+        (rhsValue
+          (variable))))))
 
 ================================================================================
 empty name disallowed
@@ -156,7 +203,15 @@ sp {empty
             (condType)
             (ERROR
               (relation))))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (ERROR
+          (UNEXPECTED 'f'))
+        (rhsValue
+          (variable))))))
 
 ================================================================================
 period disallowed
@@ -187,7 +242,23 @@ sp {lots-o-garbage
                         (string)))))))
             (ERROR
               (UNEXPECTED 'a'))))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (rhsValue
+          (constant
+            (floatConstant
+              (normalFloat))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (ERROR
+          (UNEXPECTED 'f'))
+        (rhsValue
+          (variable))))))
 
 ================================================================================
 forward slash disallowed
@@ -218,4 +289,13 @@ sp {lots-o-garbage
                         (string)))))))
             (ERROR
               (UNEXPECTED '\'))))))
-    (action)))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (ERROR
+          (UNEXPECTED '\')
+          (UNEXPECTED 'f'))
+        (rhsValue
+          (variable))))))

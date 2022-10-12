@@ -215,7 +215,7 @@ impasse with variable and assignment
 
 sp {impasse
   (impasse <i> ^foo <bar>)
--->  (TODO)
+-->
 }
 --------------------------------------------------------------------------------
 
@@ -245,8 +245,7 @@ sp {impasse
                 (test
                   (simpleTest
                     (singleTest
-                      (variable))))))))))
-    (action)))
+                      (variable))))))))))))
 
 ================================================================================
 negative

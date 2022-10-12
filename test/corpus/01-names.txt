@@ -109,7 +109,7 @@ sp {a,a
     (beginning
       (prod_name))
     (ERROR
-      (UNEXPECTED ','))
+      (UNEXPECTED 'a'))
     (LHS
       (cond
         (positiveCond
@@ -131,7 +131,7 @@ sp {a!a
     (beginning
       (prod_name))
     (ERROR
-      (UNEXPECTED '!'))
+      (UNEXPECTED 'a'))
     (LHS
       (cond
         (positiveCond

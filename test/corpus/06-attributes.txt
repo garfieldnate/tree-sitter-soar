@@ -1,0 +1,557 @@
+================================================================================
+simple match
+================================================================================
+
+sp {simple
+    (state <s> ^foo)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))
+
+================================================================================
+simple negative match
+================================================================================
+
+sp {simple-negative
+    (state <s> -^foo)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))
+
+================================================================================
+variable match
+================================================================================
+
+sp {variable
+    (state <s> ^<foo>)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+simple concatenated match
+================================================================================
+
+sp {simple-cat
+    (state <s> ^foo.bar)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))
+
+================================================================================
+concatenated match with bad parent should fail; only string/quoted/variable can have a child; TODO: SHOULD FAIL
+================================================================================
+
+sp {cat
+    (state <s> ^foo.1.bar)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (floatConstant
+                          (normalFloat)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (floatConstant
+                          (normalFloat)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))
+
+================================================================================
+simple conjunction match
+================================================================================
+
+sp {conjunction
+    (state <s> ^{foo bar})
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))))))))))))
+
+================================================================================
+complicated conjunction match
+================================================================================
+
+sp {conjunction-mess
+    (state <s> ^{foo << bar baz >> <=> 21})
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (disjunctionTest
+                        (constant
+                          (symConstant
+                            (string)))
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (constant
+                            (intConstant)))))))))))))))
+
+================================================================================
+complicated conjunction concatenation match
+================================================================================
+
+sp {conjunction-mess-cat
+    (state <s> ^{foo << bar baz >> <=> 21}.{fu bear}.| haleluja! |)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (disjunctionTest
+                        (constant
+                          (symConstant
+                            (string)))
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (constant
+                            (intConstant)))))))
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (quoted))))))))))))))
+
+================================================================================
+simple make
+================================================================================
+
+sp {simple
+    (state <s>)
+--> (<s> ^foo <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
+
+================================================================================
+concatenated make
+================================================================================
+
+sp {cat
+    (state <s>)
+--> (<s> ^foo.bar <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (variableOrSymConstant
+          (symConstant
+            (string)))
+        (valueMake
+          (rhsValue
+            (variable)))))))
+
+================================================================================
+concatenated make with bad parent; sourceforge issue 135; Only string/quoted/variable can have a child; currently failing to match the behavior caused by that bug.SKIP
+================================================================================
+
+sp {cat
+    (state <s>)
+--> (<s> ^foo.1.bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (floatConstant
+                (normalFloat)))))
+        (valueMake
+          (rhsValue
+            (constant
+              (floatConstant
+                (normalFloat)))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+concatenated variable make
+================================================================================
+
+sp {variable
+    (state <s>)
+--> (<s> ^foo.<bar> <baz>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (variableOrSymConstant
+          (variable))
+        (valueMake
+          (rhsValue
+            (variable)))))))
+
+================================================================================
+concatenated varied make
+================================================================================
+
+sp {varied
+    (state <s>)
+--> (<s> ^<foo>.| spa ce |.more.4 <bar>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (variable)))
+        (variableOrSymConstant
+          (symConstant
+            (quoted)))
+        (variableOrSymConstant
+          (symConstant
+            (string)))
+        (valueMake
+          (rhsValue
+            (constant
+              (floatConstant
+                (normalFloat)))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
