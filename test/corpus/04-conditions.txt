@@ -1,0 +1,396 @@
+================================================================================
+empty condition; crashes Soar
+================================================================================
+
+sp {empty-condition
+  ()
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
+
+================================================================================
+state only; technically allowed by Soar but meaningless
+================================================================================
+
+sp {state-only
+  (state)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)))))))
+
+================================================================================
+state with variable
+================================================================================
+
+sp {state-variable
+  (state <s>)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
+
+================================================================================
+state with assignment; prints a warning in Soar
+================================================================================
+
+sp {state-assignment
+  (state ^foo <bar>)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+state with variable and assignment
+================================================================================
+
+sp {state-var-assignment
+  (state <s> ^foo <bar>)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+assignment without state or variable; prints a warning in Soar
+================================================================================
+
+sp {unbound-assignment
+  (^foo <baz>)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+variable missing state or assignment; crashes Soar
+================================================================================
+
+sp {variable-alone
+  (<bar>)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
+
+================================================================================
+impasse only
+================================================================================
+
+sp {impasse
+  (impasse)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)))))))
+
+================================================================================
+impasse with variable and assignment
+================================================================================
+
+sp {impasse
+  (impasse <i> ^foo <bar>)
+-->  (TODO)
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action)))
+
+================================================================================
+negative
+================================================================================
+
+sp {negative
+  (state <s>)
+  -(<s> ^foo bar)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))))
+      (cond
+        (negativeCond
+          (positiveCond
+            (condsForOneId
+              (idTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable)))))
+              (attrValueTests
+                (attrTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))))
+                (valueTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))))))))))))
+
+================================================================================
+condition starts with test
+================================================================================
+
+sp {state-conjunction
+  (state { <> stuff <s2> })
+  -->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string))))))
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+condition starts with test (two id's); Soar parses it but ignores the test: 'ignoring test(s) whose referent is unbound: Symbol: <s1>  Test: <> <s2>'
+================================================================================
+
+sp {state-conjunction-unbound
+  (state { <> <s2> <s1> })
+  -->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
+condition starts with test (constant id field); Soar parses it but won't add it to the productions: 'Constant stuff in id field test. This will never match.'
+================================================================================
+
+sp {state-conjunction-no-match
+  (state { <> <s2> stuff })
+  -->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))

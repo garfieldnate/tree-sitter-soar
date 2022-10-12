@@ -1,6 +1,6 @@
-==========================
-Complex name and doc string, multiple flags, conditions and actions. TODO: move to other files
-==========================
+================================================================================
+Complex name and doc string, multiple flags, conditions and actions. (TODO): move to other files
+================================================================================
 
 sp {
     hello-my/darling@stuff*to&do
@@ -10,11 +10,11 @@ sp {
     ()
     ()
 -->
-    TODO
-    TODO
+    (TODO)
+    (TODO)
 }
 
----
+--------------------------------------------------------------------------------
 
 (source_file
   (production
@@ -23,14 +23,19 @@ sp {
       (documentation)
       (flag)
       (flag))
-    (condition)
-    (condition)
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId)))
+      (cond
+        (positiveCond
+          (condsForOneId))))
     (action)
     (action)))
 
-====================
+================================================================================
 Multiple Productions
-====================
+================================================================================
 
 sp {one
     ()
@@ -40,28 +45,94 @@ sp {one
 
 sp {two
     ()
-    ()
 -->
 }
 
 sp {three
     ()
-    ()
 -->
 }
 
----
+--------------------------------------------------------------------------------
 
 (source_file
   (production
-    (beginning (prod_name))
-    (condition)
-    (condition))
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId)))
+      (cond
+        (positiveCond
+          (condsForOneId)))))
   (production
-    (beginning (prod_name))
-    (condition)
-    (condition))
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId)))))
   (production
-    (beginning (prod_name))
-    (condition)
-    (condition)))
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
+
+================================================================================
+ignore # comments
+================================================================================
+
+sp {one
+# sp {two
+    () #stuff
+    #}
+-->
+  (TODO)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))
+    (action)))
+
+================================================================================
+ignore ;# comments
+================================================================================
+
+sp {one
+# sp {two
+    () ;#stuff
+    () ; #stuff
+        ()
+    ; #}
+-->
+  (TODO)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId)))
+      (cond
+        (positiveCond
+          (condsForOneId)))
+      (cond
+        (positiveCond
+          (condsForOneId))))
+    (action)))

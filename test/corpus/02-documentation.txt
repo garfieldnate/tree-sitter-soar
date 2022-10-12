@@ -14,7 +14,10 @@ sp {one-line-quote
     (beginning
       (prod_name)
       (documentation))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 two line quote
@@ -33,7 +36,10 @@ sp {two-line-quote
     (beginning
       (prod_name)
       (documentation))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 utf8
@@ -43,7 +49,7 @@ sp {utf8
     "ぐ"
     ()
 -->
-    TODO
+    (TODO)
 }
 --------------------------------------------------------------------------------
 
@@ -52,7 +58,10 @@ sp {utf8
     (beginning
       (prod_name)
       (documentation))
-    (condition)
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))
     (action)))
 
 ================================================================================
@@ -71,7 +80,10 @@ sp {escaped
     (beginning
       (prod_name)
       (documentation))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 two lines, two quotes
@@ -82,7 +94,7 @@ sp {twice-doc
     "shouldn't load"
     ()
 -->
-    TODO
+    (TODO)
 }
 --------------------------------------------------------------------------------
 
@@ -93,7 +105,10 @@ sp {twice-doc
       (ERROR
         (documentation))
       (documentation))
-    (condition)
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))
     (action)))
 
 ================================================================================
@@ -104,7 +119,7 @@ sp {twice-doc
     "bad
     ()
 -->
-    TODO
+    (TODO)
 }
 --------------------------------------------------------------------------------
 

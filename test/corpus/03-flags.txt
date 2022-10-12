@@ -15,7 +15,10 @@ sp {isupport
     (beginning
       (prod_name)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 o-support
@@ -34,7 +37,10 @@ sp {osupport
     (beginning
       (prod_name)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 chunk
@@ -53,7 +59,10 @@ sp {chunk
     (beginning
       (prod_name)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 default
@@ -72,7 +81,10 @@ sp {default
     (beginning
       (prod_name)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 interrupt
@@ -91,7 +103,10 @@ sp {interrupt
     (beginning
       (prod_name)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 multiple
@@ -114,7 +129,10 @@ sp {multiple
       (flag)
       (flag)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 with doc
@@ -135,7 +153,10 @@ sp {with-doc
       (prod_name)
       (documentation)
       (flag))
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 unknown flag
@@ -154,8 +175,12 @@ sp {bad-flag
     (beginning
       (prod_name))
     (ERROR
-      (UNEXPECTED 'x'))
-    (condition)))
+      (UNEXPECTED 'x')
+      (UNEXPECTED 'u'))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
 
 ================================================================================
 missing colon
@@ -174,4 +199,7 @@ sp {bad-flag
     (beginning
       (prod_name))
     (ERROR)
-    (condition)))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId))))))
