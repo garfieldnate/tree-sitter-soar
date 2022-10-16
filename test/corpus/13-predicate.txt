@@ -1,0 +1,492 @@
+================================================================================
+greater than number
+================================================================================
+
+sp {greater-than
+    (state <s> ^foo > 1)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (intConstant))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+same-type as variable
+================================================================================
+
+sp {same-type
+    (state <s> ^foo <=> <x>)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable)))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+not equal to quoted string
+================================================================================
+
+sp {inequality
+    (state <s> ^foo <> |foo bar| )
+-->    (<s> ^bar ||)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (quoted)))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (quoted)))))))))
+
+================================================================================
+multiple vals
+================================================================================
+
+sp {multiple-vals
+    (state <s> ^foo 1 b |stuff|)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (intConstant))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (quoted))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+multiple tests
+================================================================================
+
+sp {multiple-tests
+    (state <s> ^foo 1 > 0 <=> 45 <> NaN)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (intConstant))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (intConstant)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (intConstant)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (constant
+                          (symConstant
+                            (string)))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+conjunction with unary relations
+================================================================================
+
+sp {conjunct-rel
+    (state <s> ^foo { <= <a> >= <b> })
+-->    (<s> ^bar ||)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (variable))))
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (variable))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (quoted)))))))))
+
+================================================================================
+conjunction with binary relation
+================================================================================
+
+sp {conjunct-binary-rel
+    (state <s> ^foo { <a> > <b> })
+-->    (<s> ^bar ||)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (singleTest
+                        (variable)))
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (variable))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (quoted)))))))))
+
+================================================================================
+conjunction with mixed relations
+================================================================================
+
+sp {conjunct-mixed-rel
+    (state <s> ^foo { <=> <x> > <y> << 1 2 3 4 >> <z> } )
+-->    (<s> ^bar ||)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (conjunctiveTest
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (variable))))
+                    (simpleTest
+                      (relationalTest
+                        (relation)
+                        (singleTest
+                          (variable))))
+                    (simpleTest
+                      (disjunctionTest
+                        (constant
+                          (intConstant))
+                        (constant
+                          (intConstant))
+                        (constant
+                          (intConstant))
+                        (constant
+                          (intConstant))))
+                    (simpleTest
+                      (singleTest
+                        (variable)))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (quoted)))))))))
