@@ -1,0 +1,254 @@
+================================================================================
+arithmetic
+================================================================================
+
+sp {arithmatic
+    (state <s>)
+-->    (<s> ^foo (+ 1 5) (* 3 6) (/ 4 2) (- 3 1))
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName)
+              (rhsValue
+                (constant
+                  (intConstant)))
+              (rhsValue
+                (constant
+                  (intConstant))))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName)
+              (rhsValue
+                (constant
+                  (intConstant)))
+              (rhsValue
+                (constant
+                  (intConstant))))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName)
+              (rhsValue
+                (constant
+                  (intConstant)))
+              (rhsValue
+                (constant
+                  (intConstant))))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName)
+              (rhsValue
+                (constant
+                  (intConstant)))
+              (rhsValue
+                (constant
+                  (intConstant))))))))))
+
+================================================================================
+clrf
+================================================================================
+
+sp {crlf
+    (state <s>)
+-->    (<s> ^foo (crlf))
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue))))))
+
+================================================================================
+string function with args
+================================================================================
+
+sp {various-args
+    (state <s>)
+-->    (<s> ^foo (buy <book> bag |shelf from Ikea's|))
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName
+                (symConstant
+                  (string)))
+              (rhsValue
+                (variable))
+              (rhsValue
+                (constant
+                  (symConstant
+                    (string))))
+              (rhsValue
+                (constant
+                  (symConstant
+                    (quoted)))))))))))
+
+================================================================================
+function name looks like a variable but is interpreted as a string
+================================================================================
+
+sp {var-is-name
+    (state <s>)
+-->    (<s> ^foo (<name> <arg>))
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName
+                (symConstant
+                  (string)))
+              (rhsValue
+                (variable)))))))))
+
+================================================================================
+arguments are functions
+================================================================================
+
+sp {crlf
+    (state <s>)
+-->    (<s> ^foo (buy (groceryList <needs> <wants>) (askWife groceryList)))
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName
+                (symConstant
+                  (string)))
+              (rhsValue
+                (funcCall
+                  (funcName
+                    (symConstant
+                      (string)))
+                  (rhsValue
+                    (variable))
+                  (rhsValue
+                    (variable))))
+              (rhsValue
+                (funcCall
+                  (funcName
+                    (symConstant
+                      (string)))
+                  (rhsValue
+                    (constant
+                      (symConstant
+                        (string)))))))))))))
