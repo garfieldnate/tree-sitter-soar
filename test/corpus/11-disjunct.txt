@@ -1,0 +1,235 @@
+================================================================================
+strings
+================================================================================
+
+sp {strings
+    (state <s> ^foo << a b >>)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (disjunctionTest
+                      (constant
+                        (symConstant
+                          (string)))
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+quotes
+================================================================================
+
+sp {quoted
+    (state <s> ^foo << |a| |\|b| |c| >>)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (disjunctionTest
+                      (constant
+                        (symConstant
+                          (quoted)))
+                      (constant
+                        (symConstant
+                          (quoted)))
+                      (constant
+                        (symConstant
+                          (quoted))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+should fail without left space; Soar takes '<<a' to be a string, then is baffled by '>>'; TODO: should fail
+================================================================================
+
+sp {no-space
+    (state <s> ^foo <<a b >>)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))
+
+================================================================================
+should fail without right space; Soar takes 'b>>' to be a string, and so cannot finish the disjunction.
+================================================================================
+
+sp {no-space
+    (state <s> ^foo << b>>)
+-->    (<s> ^foo bar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (disjunctionTest
+                      (constant
+                        (symConstant
+                          (string)))
+                      (MISSING ">>"))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))

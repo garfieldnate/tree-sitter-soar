@@ -2,6 +2,7 @@
 // TODO: change grammar to match manual and CSoar (don't parse productions that crash or issue warnings)
 // TODO: what to do about the note about id_test?
 // TODO: try to make the output structure more intuitive (as per tree-sitter docs)
+// TODO: make << and >> keywords to resolve some TODOs (and reject some productions that issue warnings in CSoar)
 
 module.exports = grammar({
   name: 'Soar',
