@@ -1,0 +1,405 @@
+================================================================================
+negative
+================================================================================
+
+sp {negative
+    (state <s>)
+    -{
+        (<s> ^foo <bar>)
+        (<bar> ^baz boo)
+    }
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))))
+      (cond
+        (negativeCond
+          (positiveCond
+            (conjunctiveCond
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (variable)))))))))
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string))))))))))))))))))
+
+================================================================================
+negative structure
+================================================================================
+
+sp {negative
+    -{
+        (<s> ^foo <bar>)
+        (<bar> ^baz boo)
+    }
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (negativeCond
+          (positiveCond
+            (conjunctiveCond
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (variable)))))))))
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string))))))))))))))))))
+
+================================================================================
+positive
+================================================================================
+
+sp {positive
+    (state <s>)
+    {
+        (<s> ^foo <bar>)
+        (<bar> ^baz boo)
+    }
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))))
+      (cond
+        (positiveCond
+          (conjunctiveCond
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (constant
+                              (symConstant
+                                (string)))))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))))))
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (constant
+                              (symConstant
+                                (string)))))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (constant
+                              (symConstant
+                                (string)))))))))))))))))
+
+================================================================================
+positive structure
+================================================================================
+
+sp {positive
+    {
+        (state <s>)
+        (<s> ^foo bar)
+    }
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (conjunctiveCond
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (condType)
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable))))))))
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (constant
+                              (symConstant
+                                (string)))))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (constant
+                              (symConstant
+                                (string)))))))))))))))))
+
+================================================================================
+nested
+================================================================================
+
+sp {negative-nested
+    (state <s>)
+    -{
+        (<s> ^foo <bar>)
+        (<bar> ^baz boo)
+        -{
+            (<bar> ^boo <baz>)
+            (<baz> ^foo <bar>)
+        }
+    }
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))))
+      (cond
+        (negativeCond
+          (positiveCond
+            (conjunctiveCond
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (variable)))))))))
+              (cond
+                (positiveCond
+                  (condsForOneId
+                    (idTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (variable)))))
+                    (attrValueTests
+                      (attrTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))
+                      (valueTest
+                        (test
+                          (simpleTest
+                            (singleTest
+                              (constant
+                                (symConstant
+                                  (string)))))))))))
+              (cond
+                (negativeCond
+                  (positiveCond
+                    (conjunctiveCond
+                      (cond
+                        (positiveCond
+                          (condsForOneId
+                            (idTest
+                              (test
+                                (simpleTest
+                                  (singleTest
+                                    (variable)))))
+                            (attrValueTests
+                              (attrTest
+                                (test
+                                  (simpleTest
+                                    (singleTest
+                                      (constant
+                                        (symConstant
+                                          (string)))))))
+                              (valueTest
+                                (test
+                                  (simpleTest
+                                    (singleTest
+                                      (variable)))))))))
+                      (cond
+                        (positiveCond
+                          (condsForOneId
+                            (idTest
+                              (test
+                                (simpleTest
+                                  (singleTest
+                                    (variable)))))
+                            (attrValueTests
+                              (attrTest
+                                (test
+                                  (simpleTest
+                                    (singleTest
+                                      (constant
+                                        (symConstant
+                                          (string)))))))
+                              (valueTest
+                                (test
+                                  (simpleTest
+                                    (singleTest
+                                      (variable))))))))))))))))))))
