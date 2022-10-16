@@ -1,0 +1,214 @@
+================================================================================
+unary
+================================================================================
+
+sp {unary
+    (state <s>)
+-->    (<s> ^operator bar @)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string))))
+          (preferenceSpecifier
+            (unaryPreference)))))))
+
+================================================================================
+unary
+================================================================================
+
+sp {unary
+    (state <s>)
+-->    (<s> ^operator <o> ~)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryPreference)))))))
+
+================================================================================
+double value
+================================================================================
+
+sp {double
+    (state <s>)
+-->    (<s> ^operator <o1> <o2>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))
+        (valueMake
+          (rhsValue
+            (variable)))))))
+
+================================================================================
+binary
+================================================================================
+
+sp {binary
+    (state <s>)
+-->    (<s> ^operator 1 < <o> )
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (intConstant)))
+          (preferenceSpecifier
+            (unaryOrBinaryPreference)
+            (rhsValue
+              (variable))))))))
+
+================================================================================
+multiple
+================================================================================
+
+sp {multiple
+    (state <s>)
+-->    (<s> ^operator <o1> <o2> + <o2> < <o1> <o3> =, <o4>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (attr
+          (variableOrSymConstant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryPreference)))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryOrBinaryPreference)
+            (rhsValue
+              (variable))))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryPreference
+              (unaryOrBinaryPreference))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
