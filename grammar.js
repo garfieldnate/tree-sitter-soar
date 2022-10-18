@@ -65,7 +65,7 @@ module.exports = grammar({
 
     attrTest: $ => seq('^', $.test, repeat(seq('.', $.test))),
 
-    valueTest: $ => prec.left(choice(seq(optional('+'), $.test), seq($.condsForOneId, optional('+')))),
+    valueTest: $ => prec.left(choice(seq($.test, optional('+')), seq($.condsForOneId, optional('+')))),
 
     conjunctiveTest: $ => seq('{', repeat1($.simpleTest), '}'),
 

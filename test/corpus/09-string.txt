@@ -410,3 +410,43 @@ sp {blank
             (constant
               (symConstant
                 (string)))))))))
+
+================================================================================
+no space before '+'; Soar warns with 'suspicious string constant: "<o>+"'
+================================================================================
+
+sp {four-acceptable-worst*compare*b
+   (<s> ^operator <o>+)
+-->
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))))

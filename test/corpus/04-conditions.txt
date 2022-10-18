@@ -134,6 +134,43 @@ sp {state-var-assignment
                       (variable))))))))))))
 
 ================================================================================
+state with variable, assignment and +
+================================================================================
+
+sp {state-var-assignment
+  (state <s> ^foo <bar> +)
+-->
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))))
+
+================================================================================
 assignment without state or variable; prints a warning in Soar
 ================================================================================
 
