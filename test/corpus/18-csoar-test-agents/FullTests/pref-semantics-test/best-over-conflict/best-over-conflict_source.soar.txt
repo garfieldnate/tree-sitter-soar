@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/pref-semantics-test/best-over-conflict/best-over-conflict_source.soar
+================================================================================
+
+source elaborations.soar
+source a.soar
+source b.soar
+source c.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

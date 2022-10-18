@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/arithmetic/arithmetic/process-column/carry/carry-borrow_source.soar
+================================================================================
+
+source elaborations.soar
+source new-column.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

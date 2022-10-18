@@ -1,0 +1,105 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/mac-planning/mac-planning/elaborations/problem-space.soar
+================================================================================
+
+sp {mac*elaborate*problem-space
+   (state <s> ^name mac)
+-->
+   (<s> ^problem-space <p>)
+   (<p> ^name missionaries-and-cannibals
+        ^default-state-copy yes
+        ^one-level-attributes  boat o-bank
+        ^two-level-attributes right-bank left-bank)}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string))))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string))))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string))))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))))))

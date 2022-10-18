@@ -1,0 +1,299 @@
+================================================================================
+UnitTests/SoarTestAgents/wma/WmaFunctionalTests_testSimpleActivation.soar
+================================================================================
+
+# this test runs until one of the wmes decays enough to get removed from wm
+
+waitsnc --on
+wma --set activation off
+wma --set petrov-approx on
+wma --set forgetting on
+wma --set activation on
+w --wma
+
+
+sp "propose*o-from-a
+(state <s> ^superstate nil
+-^o-from-a true)
+-->
+(<s> ^operator <o> +)
+(<o> ^name o-from-a)
+"
+
+sp "appy*o-from-a
+(state <s> ^operator.name o-from-a)
+-->
+(<s> ^o-from-a true)
+"
+
+sp "propose*o-from-o
+(state <s> ^o-from-a true
+-^o-from-o true)
+-->
+(<s> ^operator <o> +)
+(<o> ^name o-from-o)
+"
+
+sp "apply*o-from-o
+(state <s> ^operator.name o-from-o)
+-->
+(<s> ^o-from-o true)
+"
+
+sp "elab*i-from-o
+(state <s> ^o-from-a true)
+-->
+(<s> ^i-from-o true)
+"
+
+sp "propose*o-from-i
+(state <s> ^i-from-o true
+-^i-from-o true)
+-->
+(<s> ^operator <o> + <)
+(<o> ^name o-from-i)
+"
+
+sp "apply*o-from-i
+(state <s> ^operator.name o-from-i)
+-->
+(<s> ^o-from-i true)
+"
+
+sp "elab*i-from-i
+(state <s> ^i-from-o true)
+-->
+(<s> ^i-from-i true)
+"
+
+sp "propose*o-from-i2
+(state <s> ^i-from-i true
+-^o-from-i2)
+-->
+(<s> ^operator <o> + <)
+(<o> ^name o-from-i2)
+"
+
+sp "apply*o-from-i2
+(state <s> ^operator.name o-from-i2)
+-->
+(<s> ^o-from-i2 true)
+"
+
+sp "success
+(state <s> ^o-from-a true
+           ^o-from-o true
+          -^o-from-i2 true)
+-{(<s> ^operator <o> +)
+  (<o> ^name o-from-i2)}
+-->
+(halt)
+(write (crlf) |success|)
+"
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'w')
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'w')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'p')
+    (variable)
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (variable)
+    (UNEXPECTED 'p')
+    (variable)
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED ')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'n')
+    (UNEXPECTED ')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (variable)
+    (UNEXPECTED 'p')
+    (variable)
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED ')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'n')
+    (UNEXPECTED ')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '\r')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '2')
+    (intConstant)
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED ')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '2')
+    (intConstant)
+    (variable)
+    (UNEXPECTED 'p')
+    (variable)
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED '2')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'f')
+    (UNEXPECTED '2')
+    (intConstant)
+    (variable)
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'n')
+    (UNEXPECTED '2')
+    (intConstant)
+    (variable)
+    (UNEXPECTED 'f')
+    (UNEXPECTED '2')
+    (intConstant)
+    (UNEXPECTED 'r')
+    (ERROR
+      (UNEXPECTED 'u')
+      (variable)
+      (UNEXPECTED 'f')
+      (UNEXPECTED 'a')
+      (UNEXPECTED 'f')
+      (UNEXPECTED ')
+      (UNEXPECTED 'f')
+      (UNEXPECTED '2')
+      (intConstant)
+      (UNEXPECTED 'r'))
+    (beginning
+      (MISSING prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable)))))))))
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (ERROR)
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (rhsValue)
+        (rhsValue
+          (constant
+            (symConstant
+              (quoted))))))))

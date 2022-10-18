@@ -1,0 +1,35 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/towers-of-hanoi-recursive/towers-of-hanoi-recursive/towers-of-hanoi-recursive_source.soar
+================================================================================
+
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source _readme.soar
+source initialize-toh-recursive.soar
+source move-disk.soar
+pushd move-disk
+source move-disk_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')))

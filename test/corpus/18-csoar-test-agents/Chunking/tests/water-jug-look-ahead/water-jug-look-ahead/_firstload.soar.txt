@@ -1,0 +1,42 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/water-jug-look-ahead/water-jug-look-ahead/_firstload.soar
+================================================================================
+
+# John E. Laird
+# University of Michigan
+# latest version 1/27/2017
+# Soar version 9.6.0
+
+multi-attributes jug 3
+multi-attributes superstate-set 20
+
+chunk singleton any volume any
+chunk singleton any contents any
+chunk singleton any jug any
+
+pushd "../../default" 
+source selection.soar
+popd
+
+srand 1 # For consistency for testing
+
+chunk always
+chunk add-osk on
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'e')
+    (intConstant)
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 's')))

@@ -1,0 +1,20 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/pref-semantics-test/four-acceptable-worst/four-acceptable-worst_source.soar
+================================================================================
+
+source elaborations.soar
+source a.soar
+source b.soar
+source c.soar
+source d.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

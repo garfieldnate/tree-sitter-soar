@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_MaC_Planning.soar
+================================================================================
+
+pushd mac-planning
+source mac-planning.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

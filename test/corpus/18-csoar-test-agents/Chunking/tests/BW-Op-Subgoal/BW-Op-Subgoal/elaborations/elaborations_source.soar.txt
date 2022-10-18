@@ -1,0 +1,20 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Op-Subgoal/BW-Op-Subgoal/elaborations/elaborations_source.soar
+================================================================================
+
+source clear.soar
+source detect-success.soar
+source in-place.soar
+source monitor.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

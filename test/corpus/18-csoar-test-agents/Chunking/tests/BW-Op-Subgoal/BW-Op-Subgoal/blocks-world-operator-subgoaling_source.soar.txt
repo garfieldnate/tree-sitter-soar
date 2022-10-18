@@ -1,0 +1,35 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Op-Subgoal/BW-Op-Subgoal/blocks-world-operator-subgoaling_source.soar
+================================================================================
+
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source _readme.soar
+source initialize-blocks-world.soar
+source move-block.soar
+pushd move-block
+source move-block_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'w')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')))

@@ -1,0 +1,194 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection/elaborations/top-state.soar
+================================================================================
+
+###
+###        7.3.4   Halting Soar with success or failure
+###
+
+###         A. top-goal*halt*state*success
+### Handle state augmentations dealing with goal termination for the top-level goal.
+
+sp {top-goal*halt*success
+   :default
+   (state <s> ^name <name>
+              ^desired <eb>
+              ^superstate nil
+              ^<< required-success success >> <eb>)
+-->
+#   (write (crlf)   <name>  | achieved |)
+   (halt)}
+
+###         B. top-goal*halt*state*failure
+
+sp {top-goal*halt*failure
+   :default
+   (state <s> ^superstate nil
+              ^desired <eb>
+              ^name <name>
+              ^ << prohibit-failure failure exhaustion-failure >> <eb>)
+-->
+#   (write (crlf)  <name>  | failed|)
+   (halt)}
+
+
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name)
+      (flag))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (disjunctionTest
+                      (constant
+                        (symConstant
+                          (string)))
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string))))))
+  (production
+    (beginning
+      (prod_name)
+      (flag))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (disjunctionTest
+                      (constant
+                        (symConstant
+                          (string)))
+                      (constant
+                        (symConstant
+                          (string)))
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))

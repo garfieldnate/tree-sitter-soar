@@ -1,0 +1,22 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/graph-search/graph-search/monitor-waypoint.soar
+================================================================================
+
+#sp {monitor*mission
+#   (state <s> ^superstate nil
+#              ^mission.current.id <nid>)
+#-->
+# #  (write (crlf) |Going to | <nid>)
+#}
+#
+#sp {monitor*waypoint
+#   (state <s> ^superstate nil
+#             -^mission.current.id <wid>
+#              ^current-location.id <wid>)
+#-->
+#   (write (crlf) |      via | <wid>)
+#}
+
+--------------------------------------------------------------------------------
+
+(source_file)

@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Op-Subgoal/BW-Op-Subgoal/move-block/move-block_source.soar
+================================================================================
+
+source elaborations.soar
+source move-block.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')))

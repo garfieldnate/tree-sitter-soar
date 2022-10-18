@@ -1,0 +1,46 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/testinterrupt.soar
+================================================================================
+
+sp {interrupt
+	(state <s> ^superstate nil)
+-->
+	(interrupt)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))

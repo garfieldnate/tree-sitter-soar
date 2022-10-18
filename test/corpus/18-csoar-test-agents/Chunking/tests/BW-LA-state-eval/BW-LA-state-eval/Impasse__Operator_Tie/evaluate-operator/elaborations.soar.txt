@@ -1,0 +1,8 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA-state-eval/BW-LA-state-eval/Impasse__Operator_Tie/evaluate-operator/elaborations.soar
+================================================================================
+
+
+--------------------------------------------------------------------------------
+
+(source_file)

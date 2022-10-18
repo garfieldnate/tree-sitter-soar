@@ -1,0 +1,63 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/teststatuscomplete.soar
+================================================================================
+
+sp {test
+(state <s> ^io.output-link <ol>)
+-->
+(<ol> ^command.foo <f>)}
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (floatConstant
+                (normalFloat)))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string)))))
+        (valueMake
+          (rhsValue
+            (variable)))))))

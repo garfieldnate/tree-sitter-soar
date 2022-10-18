@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection-optimal/Impasse__Operator_Tie/evaluate-operator/Impasse__Operator_Tie/Impasse__Operator_Tie_source.soar
+================================================================================
+
+source elaborations.soar
+source evaluate-operator.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

@@ -1,0 +1,16 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/eight-puzzle/eight-puzzle.soar
+================================================================================
+
+pushd eight-puzzle
+source eight-puzzle_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

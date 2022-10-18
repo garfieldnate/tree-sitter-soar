@@ -1,0 +1,32 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA-state-eval/BW-LA-state-eval/blocks-world-lookahead_source.soar
+================================================================================
+
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source _readme.soar
+source search-control.soar
+source initialize-blocks-world.soar
+source move-block.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'w')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')))

@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/mac-planning/mac-planning/elaborations/elaborations_source.soar
+================================================================================
+
+source goal-test.soar
+source monitor.soar
+source problem-space.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 's')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'o')))

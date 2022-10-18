@@ -1,0 +1,67 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/expected/ChunkingTests_Ungrounded_STIs_expected.soar
+================================================================================
+
+sp {answer*chunk*apply13b*onc*t3-1
+    (state <s1> ^superstate nil)
+    -->
+    (<s1> ^result13a <u1> + ^test-done 1 +)
+}
+
+
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryPreference))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (intConstant)))
+          (preferenceSpecifier
+            (unaryPreference)))))))

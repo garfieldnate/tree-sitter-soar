@@ -1,0 +1,30 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Hierarchical-LA/BW-Hierarchical-LA/move-block/pick-up/pick-up_source.soar
+================================================================================
+
+source elaborations.soar
+source close-gripper.soar
+source move-gripper-above.soar
+source move-gripper-down.soar
+source move-gripper-up.soar
+source open-gripper.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'o')))

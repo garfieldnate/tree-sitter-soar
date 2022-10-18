@@ -1,0 +1,16 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA/BW-LA.soar
+================================================================================
+
+pushd BW-LA
+source BW-LA_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'o')))

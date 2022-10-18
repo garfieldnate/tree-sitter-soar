@@ -1,0 +1,14 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA-state-eval/BW-LA-state-eval/Impasse__Operator_Tie/evaluate-operator/evaluate-operator_source.soar
+================================================================================
+
+source elaborations.soar
+source evaluate-state.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

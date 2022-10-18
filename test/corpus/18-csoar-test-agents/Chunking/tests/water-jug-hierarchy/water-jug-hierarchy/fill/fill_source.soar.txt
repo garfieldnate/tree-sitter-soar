@@ -1,0 +1,21 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/water-jug-hierarchy/water-jug-hierarchy/fill/fill_source.soar
+================================================================================
+
+source elaborations.soar
+source fill-jug.soar
+source pick-up.soar
+source put-down.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

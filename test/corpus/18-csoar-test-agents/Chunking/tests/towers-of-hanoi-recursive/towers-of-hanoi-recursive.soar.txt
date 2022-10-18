@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/towers-of-hanoi-recursive/towers-of-hanoi-recursive.soar
+================================================================================
+
+pushd towers-of-hanoi-recursive
+source towers-of-hanoi-recursive_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'h')
+    (UNEXPECTED 'f')
+    (UNEXPECTED 'h')
+    (UNEXPECTED 'o')))

@@ -1,0 +1,17 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/graph-search/graph-search/go-to-location/go-to-location_source.soar
+================================================================================
+
+source elaborations.soar
+source problem-space.soar
+source go-to-waypoint.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

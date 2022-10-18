@@ -1,0 +1,183 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/water-jug-tie/water-jug-tie/record.soar
+================================================================================
+
+sp {water-jug*record*operator
+   (state <s> ^name water-jug
+              ^operator.name <name>)
+-->
+   (<s> ^last-operator <name>)}
+
+sp {water-jug*remove*last-operator
+   (state <s> ^name water-jug
+              ^last-operator <name>
+              ^operator.name <> <name>)
+-->
+   (<s> ^last-operator <name> -)}
+
+#sp {water-jug*select*fill*empty*worst
+#   (state <s> ^name water-jug
+#              ^last-operator fill
+#              ^operator <o> +)
+#   (<o> ^name empty)
+#-->
+#   (<s> ^operator <o> <)}
+#
+#sp {water-jug*select*empty*fill*worst
+#   (state <s> ^name water-jug
+#              ^last-operator empty
+#              ^operator <o> +)
+#   (<o> ^name fill)
+#-->
+#   (<s> ^operator <o> <)}
+#
+#sp {water-jug*select*pour*pour*worst
+#   (state <s> ^name water-jug
+#              ^last-operator pour
+#              ^operator <o> +)
+#   (<o> ^name pour)
+#-->
+#   (<s> ^operator <o> <)}
+#
+#sp {water-jug*select*fill*pour*after*fill-empty
+#   (state <s> ^name water-jug
+#              ^last-operator << fill empty >>
+#              ^operator <o> +)
+#   (<o> ^name pour)
+#-->
+#   (<s> ^operator <o> >)}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable))))))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable)))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable))
+          (preferenceSpecifier
+            (unaryPreference)))))))

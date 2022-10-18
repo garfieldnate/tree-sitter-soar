@@ -1,0 +1,55 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/arithmetic/arithmetic/process-column/process-column_source.soar
+================================================================================
+
+source elaborations.soar
+source carry.soar
+pushd carry
+source carry_source.soar
+popd
+source compute-addition-result.soar
+source compute-subtraction-result.soar
+pushd compute-subtraction-result
+source compute-subtraction-result_source.soar
+popd
+source get-digit1.soar
+pushd get-digit1
+source get-digit1_source.soar
+popd
+source get-digit2.soar
+source write-result.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (normalFloat)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED '_')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (normalFloat)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')))

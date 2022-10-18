@@ -1,0 +1,22 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/water-jug-rl/_firstload.soar
+================================================================================
+
+# learning is irrelevant for this formulation
+chunk never
+
+# this helps Soar reorder conditions so matching is more efficient 
+multi-attributes jug 3
+
+# turn on Soar-RL
+rl --set learning on
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'e')))

@@ -35,3 +35,24 @@ More commands are available from tree-sitter. See the help for more details:
 
     npm run tree-sitter -- --help
 
+### Tests from CSoar
+
+The tests in `tests/corpus/18-csoar-test-agents` were copied from the [CSoar](https://github.com/SoarGroup/Soar) test suite. If CSoar unit tests are updated and you would like to re-generate this test file, run the following from the root of the CSoar repository::
+
+```bash
+for filename in UnitTests/SoarTestAgents/**/*.soar; do
+DIRNAME=`dirname $filename`
+mkdir -p "testcorpus/$DIRNAME"
+OUTFILE="testcorpus/$filename.txt"
+echo "==========================
+$filename
+==========================
+" > "$OUTFILE"
+cat "$filename" >> "$OUTFILE"
+echo "
+-----------------
+"  >> "$OUTFILE"
+done
+```
+
+You can then replace the contents of `tests/corpus/18-csoar-test-agents/` in this repo with the new output in `testcorpus`. Then re-generate the syntax trees with `npm test -- -u`. You should observe changes in the output trees, paying special attention to any `ERROR` or `MISSING` strings indicating issues with parsing the input.

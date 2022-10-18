@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/towers-of-hanoi-recursive/towers-of-hanoi-recursive/move-disk/move-disk_source.soar
+================================================================================
+
+source elaborations.soar
+source move-disk.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')))

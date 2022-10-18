@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Graph_Search.soar
+================================================================================
+
+pushd graph-search
+source graph-search.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'o')))

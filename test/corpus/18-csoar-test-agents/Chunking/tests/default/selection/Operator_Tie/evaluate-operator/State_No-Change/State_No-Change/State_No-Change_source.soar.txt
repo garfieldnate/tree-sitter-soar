@@ -1,0 +1,12 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection/Operator_Tie/evaluate-operator/State_No-Change/State_No-Change/State_No-Change_source.soar
+================================================================================
+
+source elaborations.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

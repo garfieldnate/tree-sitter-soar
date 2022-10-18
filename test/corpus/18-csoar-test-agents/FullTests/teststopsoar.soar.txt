@@ -1,0 +1,56 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/teststopsoar.soar
+================================================================================
+
+max-goal-depth 100
+sp {stop-soar
+	(state <s> ^superstate nil)
+-->
+	(cmd stop-soar)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'g')
+    (UNEXPECTED 'p')
+    (intConstant))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))))))

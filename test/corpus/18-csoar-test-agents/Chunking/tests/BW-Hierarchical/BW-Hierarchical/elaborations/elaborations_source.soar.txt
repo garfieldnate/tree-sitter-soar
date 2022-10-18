@@ -1,0 +1,22 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Hierarchical/BW-Hierarchical/elaborations/elaborations_source.soar
+================================================================================
+
+source clear.soar
+source detect-success.soar
+source in-place.soar
+source monitor.soar
+source moveable.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'u')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

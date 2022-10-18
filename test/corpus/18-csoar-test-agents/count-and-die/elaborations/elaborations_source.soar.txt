@@ -1,0 +1,14 @@
+================================================================================
+UnitTests/SoarTestAgents/count-and-die/elaborations/elaborations_source.soar
+================================================================================
+
+source _all.soar
+source top-state.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

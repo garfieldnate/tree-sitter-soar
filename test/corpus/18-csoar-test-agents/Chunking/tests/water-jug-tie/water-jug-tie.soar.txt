@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/water-jug-tie/water-jug-tie.soar
+================================================================================
+
+pushd water-jug-tie
+source water-jug-tie_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')))

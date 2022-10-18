@@ -1,0 +1,24 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection-iterative-deepening/Impasse__Operator_Tie/evaluate-operator/evaluate-operator_source.soar
+================================================================================
+
+source elaborations.soar
+source Impasse__Operator_Tie.soar
+pushd Impasse__Operator_Tie
+source Impasse__Operator_Tie_source.soar
+popd
+source exceed-depth.soar
+source task-operator.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

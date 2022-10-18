@@ -1,0 +1,13 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Arithmetic.soar
+================================================================================
+
+pushd arithmetic
+source arithmetic.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

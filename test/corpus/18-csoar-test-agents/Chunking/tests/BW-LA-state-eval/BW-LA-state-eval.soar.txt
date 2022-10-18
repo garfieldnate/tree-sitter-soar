@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA-state-eval/BW-LA-state-eval.soar
+================================================================================
+
+pushd BW-LA-state-eval
+source BW-LA-state-eval_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'o')))

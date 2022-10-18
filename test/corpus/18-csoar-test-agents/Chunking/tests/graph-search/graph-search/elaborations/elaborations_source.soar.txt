@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/graph-search/graph-search/elaborations/elaborations_source.soar
+================================================================================
+
+source _all.soar
+source halt.soar
+source top-state.soar
+source waypoints.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

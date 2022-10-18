@@ -1,0 +1,33 @@
+================================================================================
+UnitTests/SoarTestAgents/count-and-die/count-and-die_source.soar
+================================================================================
+
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source initialize-count-and-die.soar
+source one.soar
+pushd one
+source one_source.soar
+popd
+source two.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

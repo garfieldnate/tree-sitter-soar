@@ -1,0 +1,17 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Blocks_World_Hierarchical_Look_Ahead.soar
+================================================================================
+
+pushd BW-Hierarchical-LA
+source BW-Hierarchical-LA.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'H')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'H')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'o')))

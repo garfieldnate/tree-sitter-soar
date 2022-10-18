@@ -1,0 +1,20 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/arithmetic/arithmetic/process-column/compute-subtraction-result/compute-subtract-result_source.soar
+================================================================================
+
+source elaborations.soar
+source add-ten.soar
+source borrow.soar
+source compute-result.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')))

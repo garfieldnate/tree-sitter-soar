@@ -1,0 +1,98 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-LA/BW-LA/_firstload.soar
+================================================================================
+
+# Classic 3 block blocks world
+# Formulated for look ahead search
+# John E. Laird
+# University of Michigan
+# latest version 1/27/2017
+# Soar version 9.6.0
+
+# Give information to the rule reordering algorithm to make the match more efficient.
+multi-attributes ontop 3
+multi-attributes clear 4
+multi-attributes in-place 3
+multi-attributes objects 4
+multi-attributes operator 9
+
+chunk singleton any gripper any
+chunk singleton any type any
+chunk singleton any holding any
+
+pushd ../../default
+source simple.soar
+source selection.soar
+popd
+
+sp {Impasse__Operator_Tie*elaborate*learn*on
+   (state <s> ^impasse tie)
+-->
+   (force-learn <s>)
+}
+
+srand 1 # For consistency for testing
+chunk always
+chunk add-osk on
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'p')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o'))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))
+        (rhsValue
+          (variable)))))
+  (ERROR
+    (UNEXPECTED 'r')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 's')))

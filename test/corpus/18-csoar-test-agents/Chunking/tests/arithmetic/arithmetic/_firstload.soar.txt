@@ -1,0 +1,59 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/arithmetic/arithmetic/_firstload.soar
+================================================================================
+
+# John E. Laird
+# University of Michigan
+# latest version 1/27/2017
+# Soar version 9.6.0
+
+multi-attributes subtraction-facts 100
+multi-attributes facts 50
+multi-attributes add10-facts 10
+multi-attributes arithmetic 3
+
+chunk singleton any current-column any
+
+chunk singleton any next-column any 
+chunk singleton any digit1 any 
+chunk singleton any digit2 any 
+chunk singleton any carry any
+
+srand 1 # For consistency for testing
+chunk always
+chunk add-osk on
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'f')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'f')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 's')))

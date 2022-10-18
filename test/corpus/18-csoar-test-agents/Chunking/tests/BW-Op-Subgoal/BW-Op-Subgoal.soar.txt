@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Op-Subgoal/BW-Op-Subgoal.soar
+================================================================================
+
+pushd BW-Op-Subgoal
+source BW-Op-Subgoal_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'O')
+    (UNEXPECTED 'S')
+    (UNEXPECTED 'O')
+    (UNEXPECTED 'S')
+    (UNEXPECTED 'o')))

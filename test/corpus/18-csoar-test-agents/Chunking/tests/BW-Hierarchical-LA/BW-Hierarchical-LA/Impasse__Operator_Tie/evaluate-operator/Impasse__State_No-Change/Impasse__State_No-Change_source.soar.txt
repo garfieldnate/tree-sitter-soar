@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/BW-Hierarchical-LA/BW-Hierarchical-LA/Impasse__Operator_Tie/evaluate-operator/Impasse__State_No-Change/Impasse__State_No-Change_source.soar
+================================================================================
+
+source elaborations.soar
+source Impasse__State_No-Change.soar
+pushd Impasse__State_No-Change
+source Impasse__State_No-Change_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

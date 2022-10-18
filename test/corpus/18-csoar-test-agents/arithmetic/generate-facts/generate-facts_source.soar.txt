@@ -1,0 +1,20 @@
+================================================================================
+UnitTests/SoarTestAgents/arithmetic/generate-facts/generate-facts_source.soar
+================================================================================
+
+source elaborations.soar
+source check.soar
+source clean.soar
+source init.soar
+source store.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

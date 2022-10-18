@@ -1,0 +1,30 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/water-jug-tie/water-jug-tie/_firstload.soar
+================================================================================
+
+# John E. Laird
+# University of Michigan
+# latest version 1/27/2017
+# Soar version 9.6.0
+
+# this helps Soar reorder conditions so matching is more efficient 
+multi-attributes jug 3
+
+chunk singleton any volume any
+chunk singleton any contents any
+
+srand 1 # For consistency for testing
+chunk always
+chunk add-osk on
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (intConstant)
+    (UNEXPECTED 'i')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 's')))

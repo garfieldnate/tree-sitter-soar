@@ -1,0 +1,19 @@
+================================================================================
+UnitTests/SoarTestAgents/arithmetic/process-column/get-digit1/get-digit1_source.soar
+================================================================================
+
+source elaborations.soar
+source compute-result.soar
+source write-digit1.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (normalFloat)
+    (UNEXPECTED 'o')))

@@ -1,0 +1,15 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Blocks_World_Look_Ahead.soar
+================================================================================
+
+pushd BW-LA
+source BW-LA.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'L')
+    (UNEXPECTED 'o')))

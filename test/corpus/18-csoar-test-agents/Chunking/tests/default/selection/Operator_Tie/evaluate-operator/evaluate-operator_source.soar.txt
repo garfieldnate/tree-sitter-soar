@@ -1,0 +1,36 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection/Operator_Tie/evaluate-operator/evaluate-operator_source.soar
+================================================================================
+
+source elaborations.soar
+source Operator_Constraint-Failure.soar
+pushd Operator_Constraint-Failure
+source Operator_Constraint-Failure_source.soar
+popd
+source Operator_Tie.soar
+pushd Operator_Tie
+source Operator_Tie_source.soar
+popd
+source State_No-Change.soar
+pushd State_No-Change
+source State_No-Change_source.soar
+popd
+source task-operator.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'F')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'F')
+    (UNEXPECTED 'F')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'o')))

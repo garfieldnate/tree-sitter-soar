@@ -1,0 +1,18 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/pref-semantics-test.soar
+================================================================================
+
+pushd pref-semantics-test
+source pref-semantics-test_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 's')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 's')
+    (UNEXPECTED 'o')))

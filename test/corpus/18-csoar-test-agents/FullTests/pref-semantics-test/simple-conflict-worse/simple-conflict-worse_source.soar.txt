@@ -1,0 +1,16 @@
+================================================================================
+UnitTests/SoarTestAgents/FullTests/pref-semantics-test/simple-conflict-worse/simple-conflict-worse_source.soar
+================================================================================
+
+source elaborations.soar
+source a.soar
+source b.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')))

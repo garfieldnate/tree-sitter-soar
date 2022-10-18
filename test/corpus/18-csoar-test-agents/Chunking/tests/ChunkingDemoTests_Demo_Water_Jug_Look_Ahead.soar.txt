@@ -1,0 +1,19 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Water_Jug_Look_Ahead.soar
+================================================================================
+
+pushd water-jug-look-ahead
+source water-jug-look-ahead.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'l')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'l')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'o')))

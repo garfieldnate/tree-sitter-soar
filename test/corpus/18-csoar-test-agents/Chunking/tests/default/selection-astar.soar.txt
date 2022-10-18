@@ -1,0 +1,16 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/default/selection-astar.soar
+================================================================================
+
+pushd selection-astar
+source selection-astar_source.soar
+popd
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'a')
+    (UNEXPECTED 'o')))

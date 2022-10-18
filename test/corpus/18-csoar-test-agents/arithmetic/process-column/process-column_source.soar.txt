@@ -1,0 +1,51 @@
+================================================================================
+UnitTests/SoarTestAgents/arithmetic/process-column/process-column_source.soar
+================================================================================
+
+source elaborations.soar
+source carry-borrow.soar
+pushd carry-borrow
+source carry-borrow_source.soar
+popd
+source compute-result.soar
+pushd compute-result
+source compute-result_source.soar
+popd
+source get-digit1.soar
+pushd get-digit1
+source get-digit1_source.soar
+popd
+source get-digit2.soar
+source write-result.soar
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'b')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (normalFloat)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (intConstant)
+    (UNEXPECTED '_')
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'i')
+    (normalFloat)
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')
+    (UNEXPECTED 'o')))

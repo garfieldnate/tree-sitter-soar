@@ -1,0 +1,17 @@
+================================================================================
+UnitTests/SoarTestAgents/Chunking/tests/ChunkingDemoTests_Demo_Water_Jug_Hierarchy.soar
+================================================================================
+
+pushd water-jug-hierarchy
+source water-jug-hierarchy.soar
+popd
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'p')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'h')
+    (UNEXPECTED 'j')
+    (UNEXPECTED 'h')
+    (UNEXPECTED 'o')))

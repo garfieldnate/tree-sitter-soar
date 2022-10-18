@@ -1,0 +1,335 @@
+================================================================================
+UnitTests/SoarTestAgents/smem/SMemFunctionalTests_testGreaterOrEqual.soar
+================================================================================
+
+smem --set learning on
+
+#Dump some records into smem
+smem --add {
+  (<x> ^name val
+  	   ^value 1)
+}
+smem --add {
+  (<x> ^name val
+  	   ^value 5)
+}
+smem --add {
+  (<x> ^name val
+  	   ^value 2)
+}
+smem --add {
+  (<x> ^name val
+  	   ^value 4)
+}
+smem --add {
+  (<x> ^name val
+  	   ^value 3)
+}
+
+#Test the max query
+sp {propose*query
+  (state <s> ^superstate nil 
+             ^smem <smem>)
+  (<smem> -^result.retrieved)
+--> 
+  (<s> ^operator.name query)
+}
+
+sp {apply*query
+  (state <s> ^operator.name query
+             ^smem.command <sc>)
+-->
+  (<sc> ^query.name |val|)
+  (<sc> ^math-query.value.greater-or-equal 5)
+}
+
+sp {success
+  (state <s> ^smem.result.retrieved <lti>)
+  (<lti> ^name val
+         ^value 5)
+-->
+  (succeeded)
+}
+--------------------------------------------------------------------------------
+
+(source_file
+  (ERROR
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'e')
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'v')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'v')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'v')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'v')
+    (intConstant)
+    (UNEXPECTED 'm')
+    (UNEXPECTED 'a')
+    (variable)
+    (UNEXPECTED 'n')
+    (UNEXPECTED 'v')
+    (intConstant))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable)))))))))
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (string))))))))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (symConstant
+                (quoted)))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (constant
+              (intConstant)))))))
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable)))))))))
+      (cond
+        (positiveCond
+          (condsForOneId
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string))))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (intConstant)))))))))))
+    (action
+      (funcCall
+        (funcName
+          (symConstant
+            (string)))))))
