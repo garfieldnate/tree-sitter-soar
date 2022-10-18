@@ -3,7 +3,7 @@
 // TODO: what to do about the note about id_test?
 // TODO: try to make the output structure more intuitive (as per tree-sitter docs)
 // TODO: make << and >> keywords to resolve some TODOs (and reject some productions that issue warnings in CSoar)
-
+// TODO: do the same for +, etc.; make sure + can't be a string.
 module.exports = grammar({
   name: 'Soar',
 
@@ -95,7 +95,10 @@ module.exports = grammar({
 
     rhsValue: $ => choice($.variable, $.constant, "(crlf)", $.funcCall),
 
-    attrValueMake: $ => seq(seq($.attr, repeat(seq('.', $.variableOrSymConstant))), repeat1($.valueMake)),
+    // TODO: manual says this should be `'^' <variable_or_sym_constant> ('.' <variable_or_sym_constant>)* <value_make>+`,
+    // but the parser actually does `'^' <rhs_value>('.' <rhs_value>)* <value_make>+`
+    // grammar comments in CPP code omit the '.' sections
+    attrValueMake: $ => seq("^", $.rhsValue, repeat(seq('.', $.rhsValue)), repeat1($.valueMake)),
 
     attr: $ => seq("^", $.variableOrSymConstant),
 

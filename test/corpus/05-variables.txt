@@ -26,8 +26,8 @@ sp {one-letter
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -62,8 +62,8 @@ sp {lots-o-garbage
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -98,8 +98,8 @@ sp {lots-o-garbage
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake

@@ -40,8 +40,8 @@ sp {empty-string
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -93,8 +93,8 @@ sp {garbage
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -145,8 +145,8 @@ sp {utf8
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -197,8 +197,8 @@ sp {escaped
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -249,8 +249,8 @@ sp {not-escaped
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -330,8 +330,8 @@ sp {literals_test
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake

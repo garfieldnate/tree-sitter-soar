@@ -42,8 +42,8 @@ sp {greater-than
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -95,8 +95,8 @@ sp {same-type
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -150,8 +150,8 @@ sp {inequality
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -216,8 +216,8 @@ sp {multiple-vals
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -293,8 +293,8 @@ sp {multiple-tests
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -352,8 +352,8 @@ sp {conjunct-rel
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -409,8 +409,8 @@ sp {conjunct-binary-rel
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -481,8 +481,8 @@ sp {conjunct-mixed-rel
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake

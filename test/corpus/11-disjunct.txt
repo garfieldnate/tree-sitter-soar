@@ -44,8 +44,8 @@ sp {strings
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -103,8 +103,8 @@ sp {quoted
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -170,8 +170,8 @@ sp {no-space
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -224,8 +224,8 @@ sp {no-space
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake

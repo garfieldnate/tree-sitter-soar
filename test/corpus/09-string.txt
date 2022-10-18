@@ -41,8 +41,8 @@ sp {string
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -94,8 +94,8 @@ sp {garbage
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -147,8 +147,8 @@ sp {blank
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -200,8 +200,8 @@ sp {carp
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -253,8 +253,8 @@ sp {carp
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -300,8 +300,8 @@ sp {blank
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -353,8 +353,8 @@ sp {blank
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -401,8 +401,8 @@ sp {blank
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake

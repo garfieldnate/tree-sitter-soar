@@ -377,8 +377,8 @@ sp {simple
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -413,13 +413,14 @@ sp {cat
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
-        (variableOrSymConstant
-          (symConstant
-            (string)))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
         (valueMake
           (rhsValue
             (variable)))))))
@@ -452,8 +453,8 @@ sp {cat
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
         (valueMake
@@ -500,11 +501,11 @@ sp {variable
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
+        (rhsValue
+          (constant
             (symConstant
               (string))))
-        (variableOrSymConstant
+        (rhsValue
           (variable))
         (valueMake
           (rhsValue
@@ -538,15 +539,16 @@ sp {varied
     (action
       (variable)
       (attrValueMake
-        (attr
-          (variableOrSymConstant
-            (variable)))
-        (variableOrSymConstant
-          (symConstant
-            (quoted)))
-        (variableOrSymConstant
-          (symConstant
-            (string)))
+        (rhsValue
+          (variable))
+        (rhsValue
+          (constant
+            (symConstant
+              (quoted))))
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
         (valueMake
           (rhsValue
             (constant

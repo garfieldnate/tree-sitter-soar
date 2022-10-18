@@ -1,0 +1,231 @@
+================================================================================
+RHS values can be constants, variables, function calls, or crlf
+================================================================================
+
+sp {rhs*attr*value
+    (state <s> ^z <z> )
+-->
+    (<s> ^foo (crlf) + ^bar (concat |queried| <z>) ^baz <baz>)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue)
+          (preferenceSpecifier
+            (unaryPreference))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName
+                (symConstant
+                  (string)))
+              (rhsValue
+                (constant
+                  (symConstant
+                    (quoted))))
+              (rhsValue
+                (variable))))))
+      (attrValueMake
+        (rhsValue
+          (constant
+            (symConstant
+              (string))))
+        (valueMake
+          (rhsValue
+            (variable)))))))
+
+================================================================================
+RHS values can be constants, variables, function calls, or crlf
+================================================================================
+
+sp {rhs*attr*name
+    (state <s> ^foo <foo> ^bar <n> ^x <x> ^y <y> ^z <z>)
+-->
+    (<s> ^(crlf).(concat |queried| <n>).<z>.(concat |queried| <n>) <foo>)
+    (<s> ^(+ <x> <y>) (+ 2 <z>))
+    (<n> ^.1 .2)
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (production
+    (beginning
+      (prod_name))
+    (LHS
+      (cond
+        (positiveCond
+          (condsForOneId
+            (condType)
+            (idTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))
+            (attrValueTests
+              (attrTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (constant
+                        (symConstant
+                          (string)))))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue)
+        (rhsValue
+          (funcCall
+            (funcName
+              (symConstant
+                (string)))
+            (rhsValue
+              (constant
+                (symConstant
+                  (quoted))))
+            (rhsValue
+              (variable))))
+        (rhsValue
+          (variable))
+        (rhsValue
+          (funcCall
+            (funcName
+              (symConstant
+                (string)))
+            (rhsValue
+              (constant
+                (symConstant
+                  (quoted))))
+            (rhsValue
+              (variable))))
+        (valueMake
+          (rhsValue
+            (variable)))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (funcCall
+            (funcName)
+            (rhsValue
+              (variable))
+            (rhsValue
+              (variable))))
+        (valueMake
+          (rhsValue
+            (funcCall
+              (funcName)
+              (rhsValue
+                (constant
+                  (intConstant)))
+              (rhsValue
+                (variable)))))))
+    (action
+      (variable)
+      (attrValueMake
+        (rhsValue
+          (constant
+            (floatConstant
+              (normalFloat))))
+        (valueMake
+          (rhsValue
+            (constant
+              (floatConstant
+                (normalFloat)))))))))
