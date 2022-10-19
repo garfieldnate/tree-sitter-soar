@@ -279,14 +279,9 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -410,8 +405,7 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -520,8 +514,7 @@ sp {elaborate*halt
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -543,8 +536,7 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -670,8 +662,7 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -746,8 +737,7 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -839,11 +829,8 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -962,8 +949,7 @@ sp {elaborate*halt
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

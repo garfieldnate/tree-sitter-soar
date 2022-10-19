@@ -215,8 +215,7 @@ sp {success
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

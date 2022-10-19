@@ -797,9 +797,7 @@ sp {move-block*elaborate*copy*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -856,9 +854,7 @@ sp {move-block*elaborate*copy*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -894,9 +890,7 @@ sp {move-block*elaborate*copy*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1164,11 +1158,8 @@ sp {move-block*elaborate*copy*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1255,8 +1246,7 @@ sp {move-block*elaborate*copy*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId

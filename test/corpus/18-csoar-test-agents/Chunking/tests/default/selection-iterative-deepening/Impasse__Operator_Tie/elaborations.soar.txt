@@ -651,8 +651,7 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -754,5 +753,4 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

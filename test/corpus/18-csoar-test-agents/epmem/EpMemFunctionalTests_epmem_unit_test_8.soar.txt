@@ -315,11 +315,8 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -519,8 +516,7 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -553,8 +549,7 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -676,8 +671,7 @@ sp {apply*init2
         (variable)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
@@ -686,8 +680,7 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
@@ -738,8 +731,7 @@ sp {apply*init2
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
@@ -751,8 +743,7 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
@@ -764,8 +755,7 @@ sp {apply*init2
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId

@@ -234,14 +234,9 @@ sp {success
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -557,8 +552,7 @@ sp {success
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -614,8 +608,7 @@ sp {success
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

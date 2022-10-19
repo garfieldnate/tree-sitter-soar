@@ -505,8 +505,7 @@ sp {apply*initialize-simple-robot*create-mission
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

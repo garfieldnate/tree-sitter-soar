@@ -36,11 +36,8 @@ sp {pref-semantics-test*propose*last-better
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

@@ -77,5 +77,4 @@ sp {answer*make-chunk-level2*StateNoChange*t4-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

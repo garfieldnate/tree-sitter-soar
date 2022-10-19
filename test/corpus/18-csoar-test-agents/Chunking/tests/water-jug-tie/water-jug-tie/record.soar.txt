@@ -110,5 +110,4 @@ sp {water-jug*remove*last-operator
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

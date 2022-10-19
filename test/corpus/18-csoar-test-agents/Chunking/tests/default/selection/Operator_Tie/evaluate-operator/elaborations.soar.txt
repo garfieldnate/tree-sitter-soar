@@ -1670,8 +1670,7 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
@@ -1734,8 +1733,7 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake

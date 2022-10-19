@@ -3443,11 +3443,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -3509,8 +3506,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
@@ -3521,26 +3517,22 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3599,26 +3591,22 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3663,11 +3651,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -3766,11 +3751,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -3828,8 +3810,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3866,8 +3847,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -3918,8 +3898,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3972,8 +3951,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4014,11 +3992,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4099,8 +4074,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4168,8 +4142,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4245,8 +4218,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4325,11 +4297,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4422,8 +4391,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4500,8 +4468,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))
@@ -4594,26 +4561,22 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -4644,8 +4607,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4704,14 +4666,12 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -4781,11 +4741,8 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4870,8 +4827,7 @@ sp {elaborate*next-letter-z
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId

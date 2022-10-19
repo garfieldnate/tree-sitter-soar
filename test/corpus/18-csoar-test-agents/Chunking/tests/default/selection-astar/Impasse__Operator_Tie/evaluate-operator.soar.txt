@@ -469,23 +469,19 @@ sp {chunk*evaluate-apply*task-operator2
               (variable)
               (variable)
               (variable)))
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

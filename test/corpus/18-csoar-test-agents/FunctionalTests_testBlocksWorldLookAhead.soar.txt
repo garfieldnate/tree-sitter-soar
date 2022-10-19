@@ -1226,8 +1226,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1259,8 +1258,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1286,8 +1284,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1324,8 +1321,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1351,8 +1347,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1441,8 +1436,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1528,8 +1522,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
             (funcName)
             (floatConstant)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1615,8 +1608,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1711,8 +1703,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1770,88 +1761,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
-  (production
-    (prod_name)
-    (flag)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (conjunctiveTest
-          (relationalTest
-            (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (variable))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
-        (variable)
-        (valueMake
-          (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1930,8 +1840,86 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (singleTest
+              (string)))
+          (singleTest
+            (variable)))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (variable))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (variable)
+        (valueMake
+          (variable)
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -1969,8 +1957,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2023,8 +2010,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2077,8 +2063,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2151,8 +2136,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2264,8 +2248,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2324,16 +2307,14 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2427,8 +2408,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2499,8 +2479,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2560,8 +2539,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2630,8 +2608,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2731,8 +2708,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2843,14 +2819,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2906,14 +2880,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -2994,14 +2966,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3066,14 +3036,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3184,8 +3152,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3235,8 +3202,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3292,8 +3258,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3328,8 +3293,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3391,8 +3355,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3481,8 +3444,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3535,8 +3497,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3589,8 +3550,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3667,8 +3627,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3745,8 +3704,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3836,8 +3794,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3918,8 +3875,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -3999,14 +3955,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4086,22 +4040,19 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4151,8 +4102,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4222,8 +4172,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4303,8 +4252,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4395,8 +4343,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4437,8 +4384,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4488,8 +4434,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4530,16 +4475,14 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4580,9 +4523,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4635,22 +4576,19 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4749,8 +4687,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -4796,8 +4733,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4852,8 +4788,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4915,9 +4850,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -4979,9 +4912,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -5043,8 +4974,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -5112,75 +5042,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
-  (production
-    (prod_name)
-    (flag)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (disjunctionTest
-              (string)
-              (string))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
-        (string)
-        (valueMake
-          (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -5246,9 +5108,73 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (disjunctionTest
+              (string)
+              (string))
+            (singleTest
+              (variable)))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (variable)
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -5310,8 +5236,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -5410,8 +5335,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -5511,8 +5435,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -5613,8 +5536,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -5714,8 +5636,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -5830,8 +5751,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -5946,8 +5866,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -6051,8 +5970,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -6115,8 +6033,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -6152,8 +6069,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -6187,8 +6103,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -6208,8 +6123,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -6361,8 +6275,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (documentation)
@@ -6437,16 +6350,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (documentation)
@@ -6533,8 +6442,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (documentation)
@@ -6601,23 +6509,19 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (documentation)
@@ -6656,8 +6560,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -6706,8 +6609,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -6727,8 +6629,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (documentation)
@@ -6764,8 +6665,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -6810,8 +6710,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -6857,8 +6756,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -6918,14 +6816,12 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -6996,28 +6892,24 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7045,154 +6937,131 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))
@@ -7214,62 +7083,53 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))
@@ -7309,16 +7169,14 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7382,8 +7240,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7402,58 +7259,49 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7518,8 +7366,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7651,8 +7498,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7680,8 +7526,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7751,8 +7596,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))
@@ -7785,8 +7629,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7825,8 +7668,7 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7898,5 +7740,4 @@ sp {selection*elaborate*evaluate-operator*evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

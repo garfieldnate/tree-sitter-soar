@@ -74,11 +74,8 @@ sp {arithmetic*apply*next-column
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -129,7 +126,6 @@ sp {arithmetic*apply*next-column
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable))))))

@@ -172,8 +172,7 @@ sp {selection*elaborate*evaluate-operator*remaining-operators*current-evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -256,8 +255,7 @@ sp {selection*elaborate*evaluate-operator*remaining-operators*current-evaluation
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)

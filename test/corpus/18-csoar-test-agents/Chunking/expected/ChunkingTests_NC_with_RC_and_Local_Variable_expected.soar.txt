@@ -50,17 +50,14 @@ sp {answer*chunk*apply18*onc*t3-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

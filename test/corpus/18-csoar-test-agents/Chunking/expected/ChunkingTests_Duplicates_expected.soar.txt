@@ -70,8 +70,7 @@ sp {answer*chunk*resolve-conditions*elaborate*addition*StateNoChange*t3-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -81,8 +80,7 @@ sp {answer*chunk*resolve-conditions*elaborate*addition*StateNoChange*t3-1
             (funcName)
             (variable)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -137,8 +135,7 @@ sp {answer*chunk*resolve-conditions*elaborate*addition*StateNoChange*t3-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -148,5 +145,4 @@ sp {answer*chunk*resolve-conditions*elaborate*addition*StateNoChange*t3-1
             (funcName)
             (variable)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

@@ -2552,11 +2552,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2618,14 +2615,12 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -3120,14 +3115,9 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -6947,11 +6937,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -6982,11 +6969,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7073,11 +7057,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7150,8 +7131,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7235,11 +7215,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7320,9 +7297,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -7389,11 +7364,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7435,11 +7407,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7606,11 +7575,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7659,8 +7625,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -7684,8 +7649,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7763,11 +7727,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7818,8 +7779,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -7855,11 +7815,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -7905,11 +7862,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8004,8 +7958,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -8065,8 +8018,7 @@ sp {arithmetic*apply*stop-arithmetic
           (variable))
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8118,11 +8070,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8237,8 +8186,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -8543,11 +8491,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8619,8 +8564,7 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -8655,11 +8599,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8747,11 +8688,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8779,11 +8717,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8956,11 +8891,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -8991,11 +8923,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -9103,11 +9032,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -9181,11 +9107,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -9239,11 +9162,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -9306,11 +9226,8 @@ sp {arithmetic*apply*stop-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

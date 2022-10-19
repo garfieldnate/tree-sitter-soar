@@ -277,12 +277,10 @@ sp {anywhere*query*succeed
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -380,12 +378,10 @@ sp {anywhere*query*succeed
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -483,26 +479,22 @@ sp {anywhere*query*succeed
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))
@@ -630,8 +622,7 @@ sp {anywhere*query*succeed
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (funcCall
           (funcName
@@ -644,29 +635,25 @@ sp {anywhere*query*succeed
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
             (string)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (funcCall
       (funcName
         (string))

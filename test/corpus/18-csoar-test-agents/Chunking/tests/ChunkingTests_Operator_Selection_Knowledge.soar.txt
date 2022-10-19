@@ -2381,11 +2381,8 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2493,8 +2490,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -2547,8 +2543,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
@@ -2792,8 +2787,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2893,8 +2887,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2946,8 +2939,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2999,8 +2991,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3052,9 +3043,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3106,9 +3095,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3160,90 +3147,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
-  (production
-    (prod_name)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
-        (string)
-        (valueMake
-          (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
-            (variable))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3322,8 +3226,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -3403,8 +3306,87 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
+            (variable))))))
+  (production
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (variable)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -3472,8 +3454,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -3526,8 +3507,7 @@ sp {pref*random-numeric
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (funcCall
               (funcName
                 (string)))))))))

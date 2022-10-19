@@ -59,8 +59,7 @@ sp {answer*make-chunk*Tie*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (funcCall
               (funcName
                 (string))
@@ -72,8 +71,7 @@ sp {answer*make-chunk*Tie*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (funcCall
               (funcName
                 (string))

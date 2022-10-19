@@ -140,11 +140,8 @@ sp {blocks-world*apply*operator*move-block*change-ontop*monitor
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -192,9 +189,7 @@ sp {blocks-world*apply*operator*move-block*change-ontop*monitor
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -239,9 +234,7 @@ sp {blocks-world*apply*operator*move-block*change-ontop*monitor
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -313,14 +306,12 @@ sp {blocks-world*apply*operator*move-block*change-ontop*monitor
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId

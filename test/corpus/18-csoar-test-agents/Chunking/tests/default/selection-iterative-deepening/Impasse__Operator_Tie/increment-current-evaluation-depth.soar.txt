@@ -72,14 +72,9 @@ sp {apply*increment-current-evalaution*clean-up-evaluations
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -135,16 +130,14 @@ sp {apply*increment-current-evalaution*clean-up-evaluations
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -198,5 +191,4 @@ sp {apply*increment-current-evalaution*clean-up-evaluations
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

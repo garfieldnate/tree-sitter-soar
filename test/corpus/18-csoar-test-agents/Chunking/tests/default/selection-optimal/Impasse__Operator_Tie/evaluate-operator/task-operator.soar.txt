@@ -36,8 +36,7 @@ sp {evaluation*operator*count-depth
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)

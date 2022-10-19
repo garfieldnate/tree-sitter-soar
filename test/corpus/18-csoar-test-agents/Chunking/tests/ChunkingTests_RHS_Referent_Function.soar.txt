@@ -82,8 +82,7 @@ sp {make-chunk
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -146,8 +145,7 @@ sp {make-chunk
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (funcCall
               (funcName
                 (string))
@@ -159,8 +157,7 @@ sp {make-chunk
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (funcCall
               (funcName
                 (string))

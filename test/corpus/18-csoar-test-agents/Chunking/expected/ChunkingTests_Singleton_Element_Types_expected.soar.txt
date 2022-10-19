@@ -525,8 +525,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -876,8 +875,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1213,8 +1211,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1473,8 +1470,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1796,8 +1792,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2119,8 +2114,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2449,8 +2443,7 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2807,5 +2800,4 @@ sp {answer*apply-create-chunk*OpNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

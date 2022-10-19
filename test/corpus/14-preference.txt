@@ -22,8 +22,7 @@ sp {unary
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))
 
 ================================================================================
 unary
@@ -49,8 +48,7 @@ sp {unary
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))
 
 ================================================================================
 double value
@@ -103,8 +101,7 @@ sp {binary
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))))
 
 ================================================================================
@@ -133,17 +130,13 @@ sp {multiple
           (variable))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))
+          (unaryPreference))
         (valueMake
           (variable))))))

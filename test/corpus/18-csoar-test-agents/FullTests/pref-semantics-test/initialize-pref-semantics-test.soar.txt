@@ -42,8 +42,7 @@ sp {apply*initialize-pref-semantics-test
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

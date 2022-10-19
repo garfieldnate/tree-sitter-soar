@@ -39,8 +39,7 @@ sp {worst-over-conflict*compare*a
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -92,6 +91,5 @@ sp {worst-over-conflict*compare*a
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))))

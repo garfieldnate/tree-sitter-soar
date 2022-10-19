@@ -29,8 +29,7 @@ sp {rhs*attr*value
         (string)
         (valueMake
           (crlf)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake

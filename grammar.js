@@ -108,14 +108,20 @@ module.exports = grammar({
     // grammar comments in CPP code omit the '.' sections
     attrValueMake: $ => seq("^", field("name", $._rhsValue, repeat(seq('.', $._rhsValue))), field("val", repeat1($.valueMake))),
 
-    valueMake: $ => seq(field("value", $._rhsValue), field("pref", repeat($.preferenceSpecifier))),
-
-    preferenceSpecifier: $ => choice(seq($.unaryOrBinaryPreference, $._rhsValue, optional(',')), seq($.unaryPreference, optional(','))),
-
-    unaryPreference: $ => choice("+", "-", "!", "~", "@", $.unaryOrBinaryPreference),
+    valueMake: $ => seq(field("value", $._rhsValue), field("pref", repeat($._preferenceSpecifier))),
 
     // TODO: originally used negative lookahead to prevent matching<xx> as two specifiers and a _constant
-    unaryOrBinaryPreference: $ => choice(">", "<", "=", "&"),
+    _preferenceSpecifier: $ => choice($.binaryPreference, $.unaryPreference),
+
+    binaryPreference: $ => seq(
+      // TODO: originally used negative lookahead to prevent matching<xx> as two specifiers and a _constant
+      field("pref", choice(">", "<", "=", "&")),
+      field("val", $._rhsValue),
+      optional(',')),
+
+    unaryPreference: $ => seq(
+      field("pref", choice("+", "-", "!", "~", "@", ">", "<", "=", "&")),
+      optional(',')),
 
     ///////////////////////////////////////
     // Values used in both LHS and RHS
@@ -142,5 +148,5 @@ module.exports = grammar({
 
   },
 
-  conflicts: $ => [[$.preferenceSpecifier, $.unaryPreference]]
+  conflicts: $ => [[$.unaryPreference, $.binaryPreference]]
 });

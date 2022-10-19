@@ -40,5 +40,4 @@ sp {answer*apply*snc*t2-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

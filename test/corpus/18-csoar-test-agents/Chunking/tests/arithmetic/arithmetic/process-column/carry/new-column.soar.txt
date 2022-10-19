@@ -82,8 +82,7 @@ sp {carry*apply*new-column
           (variable))
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

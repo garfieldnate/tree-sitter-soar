@@ -88,11 +88,8 @@ sp {compute-result*apply*add-ten*smem*result
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))
+          (unaryPreference)
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -176,8 +173,7 @@ sp {compute-result*apply*add-ten*smem*result
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -331,7 +327,6 @@ sp {compute-result*apply*add-ten*smem*result
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable))))))

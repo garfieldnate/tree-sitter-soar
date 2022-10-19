@@ -141,8 +141,7 @@ sp {propose*stop
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -168,8 +167,7 @@ sp {propose*stop
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -198,8 +196,7 @@ sp {propose*stop
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -245,8 +242,7 @@ sp {propose*stop
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (string))))))
   (production
     (prod_name)
@@ -310,8 +306,7 @@ sp {propose*stop
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)

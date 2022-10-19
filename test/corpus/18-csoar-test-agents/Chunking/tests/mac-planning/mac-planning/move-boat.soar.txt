@@ -181,8 +181,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -232,8 +231,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -283,8 +281,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -334,8 +331,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -399,8 +395,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -509,8 +504,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -522,8 +516,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (variable)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -535,16 +528,14 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))
       (attrValueMake
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -640,8 +631,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -651,8 +641,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -664,8 +653,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -675,8 +663,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -688,16 +675,14 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string)))))
   (production
@@ -793,8 +778,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -804,8 +788,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -817,8 +800,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -828,8 +810,7 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (funcCall
             (funcName)
@@ -841,15 +822,13 @@ sp {apply*move-boat*1-missionary-1-cannibal*left
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string)))
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (string))))))

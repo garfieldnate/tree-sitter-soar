@@ -130,8 +130,7 @@ sp {selection*elaborate*evaluate-operator*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -182,9 +181,7 @@ sp {selection*elaborate*evaluate-operator*superstate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)

@@ -70,8 +70,7 @@ sp {arithmetic*apply*initialize-arithmetic
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

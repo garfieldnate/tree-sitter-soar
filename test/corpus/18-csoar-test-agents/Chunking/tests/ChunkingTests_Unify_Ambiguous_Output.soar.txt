@@ -90,11 +90,8 @@ sp {make-chunk
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId

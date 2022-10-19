@@ -119,8 +119,7 @@ sp {answer*make-chunk-for-propose*Tie*t1-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -208,5 +207,4 @@ sp {answer*make-chunk-for-propose*Tie*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

@@ -589,9 +589,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -967,9 +965,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1399,8 +1395,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1781,9 +1776,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2218,8 +2211,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2507,9 +2499,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -2797,9 +2787,7 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference)))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -3141,5 +3129,4 @@ sp {answer*evaluate-operator*elaborate*symbolic-evaluation*from-subgoal*Tie*t16-
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

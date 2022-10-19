@@ -62,5 +62,4 @@ sp {eight*operator*move-tile*inverse*reject
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

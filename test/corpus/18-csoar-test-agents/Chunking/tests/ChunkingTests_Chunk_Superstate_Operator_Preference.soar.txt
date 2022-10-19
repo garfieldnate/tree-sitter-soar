@@ -141,16 +141,14 @@ sp {chunk-parameters*preference*prefer*single-operators*2args
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))
+          (unaryPreference)))
       (attrValueMake
         (string)
         (valueMake
@@ -352,8 +350,7 @@ sp {chunk-parameters*preference*prefer*single-operators*2args
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))
     (funcCall
       (funcName

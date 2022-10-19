@@ -87,8 +87,7 @@ sp {apply*pick-up*remove-bottome-block*evaluate
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))
+          (unaryPreference))
         (valueMake
           (variable)))))
   (production
@@ -175,5 +174,4 @@ sp {apply*pick-up*remove-bottome-block*evaluate
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

@@ -132,8 +132,7 @@ sp {apply*put-down*evaluate-operator*up
           (string))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -144,8 +143,7 @@ sp {apply*put-down*evaluate-operator*up
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -237,8 +235,7 @@ sp {apply*put-down*evaluate-operator*up
           (string))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

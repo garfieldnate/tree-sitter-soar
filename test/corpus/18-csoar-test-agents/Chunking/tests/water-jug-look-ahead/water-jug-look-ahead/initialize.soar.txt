@@ -46,8 +46,7 @@ sp {water-jug*apply*initialize-water-jug-look-ahead
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

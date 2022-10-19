@@ -90,5 +90,4 @@ sp {answer*apply-create-chunk-architectural-singletons*StateNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

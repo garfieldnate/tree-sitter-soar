@@ -65,6 +65,5 @@ sp {answer*chunk-parameters*preference*prefer*single-operators*2args*Tie*t3-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))))

@@ -208,6 +208,4 @@ sp {answer*selection*select*success-evaluation-becomes-best-preference*Tie*t37-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))))
+          (unaryPreference))))))

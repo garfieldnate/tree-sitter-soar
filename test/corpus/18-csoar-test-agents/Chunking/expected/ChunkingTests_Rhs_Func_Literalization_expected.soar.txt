@@ -50,5 +50,4 @@ sp {answer*add-on-compare*elaborate*state*OpNoChange*t4-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

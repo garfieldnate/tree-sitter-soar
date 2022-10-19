@@ -132,8 +132,7 @@ sp {evaluate-operator*elaborate*symbolic-evaluation*from-subgoal
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)

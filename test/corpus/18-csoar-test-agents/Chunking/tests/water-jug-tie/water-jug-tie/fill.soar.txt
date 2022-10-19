@@ -67,8 +67,7 @@ sp {water-jug*apply*fill
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -141,5 +140,4 @@ sp {water-jug*apply*fill
           (variable))
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

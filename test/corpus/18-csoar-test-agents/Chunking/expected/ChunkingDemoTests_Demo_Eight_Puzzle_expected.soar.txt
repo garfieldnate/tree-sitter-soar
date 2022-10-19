@@ -484,8 +484,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -822,8 +821,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -1109,8 +1107,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -1354,8 +1351,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1590,8 +1586,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -1785,8 +1780,7 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -1979,5 +1973,4 @@ sp {answer*evaluate-operator*elaborate*numeric-evaluation*from-subgoal*OpNoChang
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

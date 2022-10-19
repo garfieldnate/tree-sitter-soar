@@ -63,5 +63,4 @@ sp {blocks-world*select-operator*reject*move-block*twice
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

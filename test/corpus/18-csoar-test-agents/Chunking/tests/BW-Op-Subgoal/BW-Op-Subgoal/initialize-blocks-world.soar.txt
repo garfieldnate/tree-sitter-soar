@@ -57,8 +57,7 @@ sp {blocks-world*apply*initialize-blocks-world
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

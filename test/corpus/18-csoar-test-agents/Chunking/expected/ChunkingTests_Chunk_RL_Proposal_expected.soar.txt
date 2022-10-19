@@ -44,8 +44,7 @@ sp {answer*propose*snc*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (floatConstant)))))
     (variableMutation
       (variable)
@@ -53,8 +52,7 @@ sp {answer*propose*snc*t1-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -79,8 +77,7 @@ sp {answer*propose*snc*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))
     (variableMutation
       (variable)
@@ -88,5 +85,4 @@ sp {answer*propose*snc*t1-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

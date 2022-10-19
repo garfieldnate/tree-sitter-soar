@@ -131,8 +131,7 @@ sp {P6*evaluate*move-block*best*move-block-to-table
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -232,6 +231,4 @@ sp {P6*evaluate*move-block*best*move-block-to-table
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference
-              (unaryOrBinaryPreference))))))))
+          (unaryPreference))))))

@@ -53,6 +53,5 @@ sp {answer*make-chunk*onc*t2-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable)))))))

@@ -68,8 +68,7 @@ sp {answer*make-chunk*snc*t2-1
               (funcName)
               (variable)
               (variable)))
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -79,8 +78,7 @@ sp {answer*make-chunk*snc*t2-1
             (funcName
               (string))
             (string))
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -147,8 +145,7 @@ sp {answer*make-chunk*snc*t2-1
             (funcName)
             (string)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -158,5 +155,4 @@ sp {answer*make-chunk*snc*t2-1
             (funcName
               (string))
             (string))
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

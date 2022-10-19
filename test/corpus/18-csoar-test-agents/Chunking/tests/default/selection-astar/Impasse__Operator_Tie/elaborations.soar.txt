@@ -625,8 +625,7 @@ sp {selection*elaborate*superstate*preferences*indifferent*better*final-cost
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (variable))))))
   (production
     (prod_name)
@@ -717,5 +716,4 @@ sp {selection*elaborate*superstate*preferences*indifferent*better*final-cost
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

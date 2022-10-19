@@ -96,8 +96,7 @@ sp {eight*create*state*initial-and-desired-states
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake

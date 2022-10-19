@@ -29,5 +29,4 @@ sp {answer*apply*promote*t1-1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

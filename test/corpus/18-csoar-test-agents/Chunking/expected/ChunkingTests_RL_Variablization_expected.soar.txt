@@ -72,8 +72,7 @@ sp {answer*template1*1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (floatConstant))))))
   (production
     (prod_name)
@@ -99,8 +98,7 @@ sp {answer*template1*1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (floatConstant))))))
   (production
     (prod_name)
@@ -156,8 +154,7 @@ sp {answer*template1*1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (string))))))
   (production
     (prod_name)
@@ -215,8 +212,7 @@ sp {answer*template1*1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (floatConstant))))))
   (production
     (prod_name)
@@ -242,6 +238,5 @@ sp {answer*template1*1
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryOrBinaryPreference)
+          (binaryPreference
             (floatConstant)))))))

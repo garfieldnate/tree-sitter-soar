@@ -66,8 +66,7 @@ sp {evaluate-operator*elaborate*state*remove*untried-tied-operator
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -104,8 +103,7 @@ sp {evaluate-operator*elaborate*state*remove*untried-tied-operator
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (flag)
@@ -162,5 +160,4 @@ sp {evaluate-operator*elaborate*state*remove*untried-tied-operator
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

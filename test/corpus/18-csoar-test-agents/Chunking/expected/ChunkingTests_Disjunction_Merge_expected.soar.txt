@@ -141,5 +141,4 @@ sp {answer*make-chunk*StateNoChange*t2-1
             (variable)
             (variable)
             (variable))
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

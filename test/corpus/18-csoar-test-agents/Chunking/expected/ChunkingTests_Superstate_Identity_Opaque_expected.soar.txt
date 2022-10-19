@@ -66,5 +66,4 @@ sp {answer*make*StateNoChange*t2-1
         (string)
         (valueMake
           (string)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

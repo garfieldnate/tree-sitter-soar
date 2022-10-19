@@ -128,8 +128,7 @@ sp {blocks-world*apply*operator*forget*moved-block
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -207,8 +206,7 @@ sp {blocks-world*apply*operator*forget*moved-block
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference))))))
+          (unaryPreference)))))
   (production
     (prod_name)
     (condsForOneId
@@ -295,5 +293,4 @@ sp {blocks-world*apply*operator*forget*moved-block
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))))
+          (unaryPreference))))))

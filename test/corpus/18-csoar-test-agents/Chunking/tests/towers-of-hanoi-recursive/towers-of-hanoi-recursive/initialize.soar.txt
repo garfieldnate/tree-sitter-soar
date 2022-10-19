@@ -86,8 +86,7 @@ sp {towers-of-hanoi*apply*initialize
         (string)
         (valueMake
           (variable)
-          (preferenceSpecifier
-            (unaryPreference)))))
+          (unaryPreference))))
     (variableMutation
       (variable)
       (attrValueMake
