@@ -15,28 +15,17 @@ sp {Impasse__Operator_Tie*elaborate*learn*on
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (funcCall
       (funcName
         (string))

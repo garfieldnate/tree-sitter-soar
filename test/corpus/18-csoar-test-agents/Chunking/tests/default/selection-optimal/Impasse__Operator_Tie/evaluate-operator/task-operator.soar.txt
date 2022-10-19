@@ -12,40 +12,24 @@ sp {evaluation*operator*count-depth
 
 (source_file
   (production
-    (beginning
-      (prod_name)
-      (flag))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake

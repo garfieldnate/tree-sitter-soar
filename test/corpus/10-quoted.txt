@@ -10,28 +10,17 @@ sp {empty-string
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -52,28 +41,17 @@ sp {garbage
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -93,28 +71,17 @@ sp {utf8
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -134,28 +101,17 @@ sp {escaped
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -175,28 +131,17 @@ sp {not-escaped
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -216,19 +161,13 @@ sp {unfinished
 
 (source_file
   (ERROR
-    (beginning
-      (prod_name))
+    (prod_name)
     (condType)
-    (idTest
-      (test
-        (simpleTest
-          (singleTest
-            (variable)))))
-    (attrTest
-      (test
-        (simpleTest
-          (singleTest
-            (string)))))
+    (singleTest
+      (variable))
+    (attrValueTests
+      (singleTest
+        (string)))
     (UNEXPECTED '\0')))
 
 ================================================================================
@@ -243,28 +182,17 @@ sp {literals_test
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake

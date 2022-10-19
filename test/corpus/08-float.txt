@@ -10,28 +10,17 @@ sp {one
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -51,28 +40,17 @@ sp {neg-x-x
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -92,28 +70,17 @@ sp {x-xex
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -133,28 +100,17 @@ sp {neg-x-xE-x
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -174,28 +130,17 @@ sp {neg-x-xE-x
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -215,28 +160,17 @@ sp {neg-x-xd
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -256,28 +190,17 @@ sp {neg-x-xf
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -297,28 +220,17 @@ sp {neg-x-xD
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -338,28 +250,17 @@ sp {neg-x-xF
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))))
     (variableMutation
       (variable)
       (attrValueMake

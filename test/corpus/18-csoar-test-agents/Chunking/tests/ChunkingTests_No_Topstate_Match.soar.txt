@@ -59,34 +59,20 @@ sp {make-chunk
     (intConstant)
     (UNEXPECTED 'a'))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string))))
+      (attrValueTests
+        (singleTest
+          (string))))
     (funcCall
       (funcName
         (string))
@@ -96,32 +82,19 @@ sp {make-chunk
       (funcName
         (string))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -135,32 +108,19 @@ sp {make-chunk
         (valueMake
           (string)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -176,121 +136,63 @@ sp {make-chunk
         (valueMake
           (string)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (negativeCond
+      (conjunctiveCond
         (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
+          (singleTest
+            (variable))
           (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
+            (singleTest
+              (string))
             (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (cond
-      (negativeCond
-        (positiveCond
-          (conjunctiveCond
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
-                    (test
-                      (simpleTest
-                        (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (variable)))))))))
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
-                    (test
-                      (simpleTest
-                        (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string))))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))))))))))
-    (cond
-      (positiveCond
+              (singleTest
+                (variable)))))
         (condsForOneId
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
+          (singleTest
+            (variable))
           (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
+            (singleTest
+              (string))
             (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+              (singleTest
+                (string))))
+          (attrValueTests
+            (singleTest
+              (string))))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake

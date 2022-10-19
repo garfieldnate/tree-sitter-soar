@@ -27,17 +27,17 @@ module.exports = grammar({
     production: $ => seq(
       'sp',
       "{",
-      $.beginning,
-      field("LHS", repeat1($.cond)),
+      $._beginning,
+      field("LHS", repeat1($._cond)),
       "-->",
       field("RHS", repeat($._action)),
       "}"
     ),
 
-    beginning: $ => seq(
-      $.prod_name,
-      optional($.documentation),
-      repeat($.flag)
+    _beginning: $ => seq(
+      field("name", $.prod_name),
+      field("doc", optional($.documentation)),
+      field("flags", repeat($.flag))
     ),
 
     prod_name: $ => /[\dA-Za-z][\dA-Za-z$%&*=><?_/@:-]*/,
@@ -48,32 +48,40 @@ module.exports = grammar({
     // LHS
     ////////////
 
-    cond: $ => choice($.positiveCond, $.negativeCond),
-    negativeCond: $ => seq('-', $.positiveCond),
-    positiveCond: $ => choice($.condsForOneId, $.conjunctiveCond),
-    conjunctiveCond: $ => seq('{', repeat1($.cond), '}'),
-    condsForOneId: $ => seq('(', optional($.condType), optional($.idTest), repeat($.attrValueTests), ')'),
+    _cond: $ => choice($._positiveCond, $.negativeCond),
+    negativeCond: $ => seq('-', $._positiveCond),
+    _positiveCond: $ => choice($.condsForOneId, $.conjunctiveCond),
+    conjunctiveCond: $ => seq(
+      '{',
+      field("conds", repeat1($._cond)),
+      '}'),
+    condsForOneId: $ => seq(
+      '(',
+      field("type", optional($.condType)),
+      field("id_test", optional($._test)),
+      field("att_value_tests", repeat($.attrValueTests)),
+      ')'),
     condType: $ => choice('state', 'impasse'),
 
-    idTest: $ => $.test,
-    test: $ => choice($.conjunctiveTest, $.simpleTest),
+    _test: $ => choice($.conjunctiveTest, $._simpleTest),
 
-    attrValueTests: $ => seq(optional('-'), $.attrTest, repeat($.valueTest)),
+    attrValueTests: $ => seq(
+      optional('-'),
+      '^',
+      field("name_test", seq($._test, repeat(seq('.', $._test)))),
+      field("val_test", repeat($.valueTest))),
 
-    attrTest: $ => seq('^', $.test, repeat(seq('.', $.test))),
+    valueTest: $ => prec.left(choice(seq($._test, optional('+')), seq($.condsForOneId, optional('+')))),
 
-    valueTest: $ => prec.left(choice(seq($.test, optional('+')), seq($.condsForOneId, optional('+')))),
+    conjunctiveTest: $ => seq('{', field("tests", repeat1($._simpleTest)), '}'),
 
-    conjunctiveTest: $ => seq('{', repeat1($.simpleTest), '}'),
-
-    simpleTest: $ => choice($.disjunctionTest, $.relationalTest, $.singleTest),
+    _simpleTest: $ => choice($.disjunctionTest, $.relationalTest, $.singleTest),
 
     // TODO: first token should be followed by whitespace (/<<(?=\s)/, but lookahead not allowed in tree-sitter);
     // don't have to worry about looking for whitespace after >>; if no space is there, the parser will think it's a string and fail.
-    disjunctionTest: $ => seq('<<', repeat1($._constant), '>>'),
+    disjunctionTest: $ => seq('<<', field("vals", repeat1($._constant)), '>>'),
 
-    // note that we made relation non-optional and added singleTest to simpleTest instead (seems clearer than the definition in the manual)
-    relationalTest: $ => seq($.relation, $.singleTest),
+    relationalTest: $ => seq(field("relation", $.relation), field("test", $.singleTest)),
 
     singleTest: $ => choice($.variable, $._constant),
 

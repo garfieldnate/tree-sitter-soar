@@ -18,17 +18,12 @@ sp {
 
 (source_file
   (production
-    (beginning
-      (prod_name)
-      (documentation)
-      (flag)
-      (flag))
-    (cond
-      (positiveCond
-        (condsForOneId)))
-    (cond
-      (positiveCond
-        (condsForOneId)))
+    (prod_name)
+    (documentation)
+    (flag)
+    (flag)
+    (condsForOneId)
+    (condsForOneId)
     (funcCall
       (funcName
         (string)))
@@ -60,26 +55,15 @@ sp {three
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId)))
-    (cond
-      (positiveCond
-        (condsForOneId))))
+    (prod_name)
+    (condsForOneId)
+    (condsForOneId))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId))))
+    (prod_name)
+    (condsForOneId))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId)))))
+    (prod_name)
+    (condsForOneId)))
 
 ================================================================================
 ignore # comments
@@ -97,11 +81,8 @@ sp {one
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId)))
+    (prod_name)
+    (condsForOneId)
     (funcCall
       (funcName
         (string)))))
@@ -124,17 +105,10 @@ sp {one
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId)))
-    (cond
-      (positiveCond
-        (condsForOneId)))
-    (cond
-      (positiveCond
-        (condsForOneId)))
+    (prod_name)
+    (condsForOneId)
+    (condsForOneId)
+    (condsForOneId)
     (funcCall
       (funcName
         (string)))))

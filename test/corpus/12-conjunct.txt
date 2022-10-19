@@ -11,32 +11,20 @@ sp {strings
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (singleTest
-                      (string))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (singleTest
+              (string))
+            (singleTest
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -57,32 +45,20 @@ sp {strings-spaceless
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (singleTest
-                      (string))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (singleTest
+              (string))
+            (singleTest
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -103,35 +79,22 @@ sp {quoted
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (quoted)))
-                  (simpleTest
-                    (singleTest
-                      (quoted)))
-                  (simpleTest
-                    (singleTest
-                      (quoted))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (singleTest
+              (quoted))
+            (singleTest
+              (quoted))
+            (singleTest
+              (quoted))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -152,35 +115,23 @@ sp {disjunct
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (disjunctionTest
-                      (string)
-                      (string)
-                      (string)))
-                  (simpleTest
-                    (disjunctionTest
-                      (string)
-                      (string))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (disjunctionTest
+              (string)
+              (string)
+              (string))
+            (disjunctionTest
+              (string)
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -201,32 +152,20 @@ sp {variable
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (variable)))
-                  (simpleTest
-                    (singleTest
-                      (string))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (singleTest
+              (variable))
+            (singleTest
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -247,33 +186,21 @@ sp {no-ending
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (MISSING "}"))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (conjunctiveTest
+            (singleTest
+              (string))
+            (singleTest
+              (string))
+            (MISSING "}")))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -294,34 +221,21 @@ sp {no-ending
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
-          (ERROR))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))
+        (valueTest
+          (singleTest
+            (string))))
+      (ERROR))
     (variableMutation
       (variable)
       (attrValueMake

@@ -42,36 +42,21 @@ sp {process-column*elaborate*current-column
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -79,32 +64,19 @@ sp {process-column*elaborate*current-column
         (valueMake
           (variable)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -112,38 +84,22 @@ sp {process-column*elaborate*current-column
         (valueMake
           (variable)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string)))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -151,38 +107,22 @@ sp {process-column*elaborate*current-column
         (valueMake
           (variable)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string)))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -190,67 +130,39 @@ sp {process-column*elaborate*current-column
         (valueMake
           (variable)))))
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (string))))))
-            (valueTest
-              (test
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (string)))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (relationalTest
+            (relation)
+            (singleTest
+              (string))))
+        (valueTest
+          (relationalTest
+            (relation)
+            (singleTest
+              (string)))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake

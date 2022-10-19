@@ -10,11 +10,8 @@ sp {empty-condition
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId)))))
+    (prod_name)
+    (condsForOneId)))
 
 ================================================================================
 state only; technically allowed by Soar but meaningless
@@ -28,12 +25,9 @@ sp {state-only
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType))))))
+    (prod_name)
+    (condsForOneId
+      (condType))))
 
 ================================================================================
 state with variable
@@ -47,17 +41,11 @@ sp {state-variable
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))))
 
 ================================================================================
 state with assignment; prints a warning in Soar
@@ -71,23 +59,15 @@ sp {state-assignment
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))))
 
 ================================================================================
 state with variable and assignment
@@ -101,28 +81,17 @@ sp {state-var-assignment
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))))
 
 ================================================================================
 state with variable, assignment and +
@@ -136,28 +105,17 @@ sp {state-var-assignment
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))))
 
 ================================================================================
 assignment without state or variable; prints a warning in Soar
@@ -171,22 +129,14 @@ sp {unbound-assignment
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))))
 
 ================================================================================
 variable missing state or assignment; crashes Soar
@@ -200,16 +150,10 @@ sp {variable-alone
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))))
+    (prod_name)
+    (condsForOneId
+      (singleTest
+        (variable)))))
 
 ================================================================================
 impasse only
@@ -223,12 +167,9 @@ sp {impasse
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType))))))
+    (prod_name)
+    (condsForOneId
+      (condType))))
 
 ================================================================================
 impasse with variable and assignment
@@ -242,28 +183,17 @@ sp {impasse
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))))
 
 ================================================================================
 negative
@@ -278,37 +208,21 @@ sp {negative
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
-    (cond
-      (negativeCond
-        (positiveCond
-          (condsForOneId
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (string)))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (string))))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
+    (negativeCond
+      (condsForOneId
+        (singleTest
+          (variable))
+        (attrValueTests
+          (singleTest
+            (string))
+          (valueTest
+            (singleTest
+              (string))))))))
 
 ================================================================================
 condition starts with test
@@ -322,23 +236,16 @@ sp {state-conjunction
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (conjunctiveTest
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (string))))
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (conjunctiveTest
+        (relationalTest
+          (relation)
+          (singleTest
+            (string)))
+        (singleTest
+          (variable))))))
 
 ================================================================================
 condition starts with test (two id's); Soar parses it but ignores the test: 'ignoring test(s) whose referent is unbound: Symbol: <s1>  Test: <> <s2>'
@@ -352,23 +259,16 @@ sp {state-conjunction-unbound
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (conjunctiveTest
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (variable))))
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (conjunctiveTest
+        (relationalTest
+          (relation)
+          (singleTest
+            (variable)))
+        (singleTest
+          (variable))))))
 
 ================================================================================
 condition starts with test (constant id field); Soar parses it but won't add it to the productions: 'Constant stuff in id field test. This will never match.'
@@ -382,20 +282,13 @@ sp {state-conjunction-no-match
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (conjunctiveTest
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (variable))))
-                (simpleTest
-                  (singleTest
-                    (string)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (conjunctiveTest
+        (relationalTest
+          (relation)
+          (singleTest
+            (variable)))
+        (singleTest
+          (string))))))

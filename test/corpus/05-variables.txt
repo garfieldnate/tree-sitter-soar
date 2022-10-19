@@ -11,17 +11,11 @@ sp {one-letter
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -42,17 +36,11 @@ sp {lots-o-garbage
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -73,17 +61,11 @@ sp {lots-o-garbage
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -104,14 +86,11 @@ sp {empty
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (ERROR
-            (relation)))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (ERROR
+        (relation)))
     (funcCall
       (funcName
         (string))
@@ -132,19 +111,13 @@ sp {empty
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (string)))))
-          (ERROR
-            (UNEXPECTED 'b')))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (string))
+      (ERROR
+        (UNEXPECTED 'b')))
     (funcCall
       (funcName
         (string))
@@ -166,14 +139,11 @@ sp {empty
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (ERROR
-            (relation)))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (ERROR
+        (relation)))
     (funcCall
       (funcName
         (string))
@@ -194,19 +164,13 @@ sp {lots-o-garbage
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (string)))))
-          (ERROR
-            (UNEXPECTED 'a')))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (string))
+      (ERROR
+        (UNEXPECTED 'a')))
     (funcCall
       (funcName
         (string))
@@ -229,19 +193,13 @@ sp {lots-o-garbage
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (string)))))
-          (ERROR
-            (UNEXPECTED '\')))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (string))
+      (ERROR
+        (UNEXPECTED '\')))
     (funcCall
       (funcName
         (string))

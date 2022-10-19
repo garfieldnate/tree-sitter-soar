@@ -11,23 +11,14 @@ sp {simple
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))))))
 
 ================================================================================
 simple negative match
@@ -42,23 +33,14 @@ sp {simple-negative
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))))))
 
 ================================================================================
 variable match
@@ -73,23 +55,14 @@ sp {variable
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (variable))))))
 
 ================================================================================
 simple concatenated match
@@ -104,27 +77,16 @@ sp {simple-cat
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (singleTest
+          (string))))))
 
 ================================================================================
 concatenated match with bad parent should fail; only string/quoted/variable can have a child; TODO: SHOULD FAIL
@@ -139,38 +101,23 @@ sp {cat
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (floatConstant)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (floatConstant)))
+        (valueTest
+          (singleTest
+            (floatConstant)))
+        (valueTest
+          (singleTest
+            (string)))))))
 
 ================================================================================
 simple conjunction match
@@ -185,27 +132,17 @@ sp {conjunction
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (singleTest
-                      (string))))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (conjunctiveTest
+          (singleTest
+            (string))
+          (singleTest
+            (string)))))))
 
 ================================================================================
 complicated conjunction match
@@ -220,33 +157,22 @@ sp {conjunction-mess
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (disjunctionTest
-                      (string)
-                      (string)))
-                  (simpleTest
-                    (relationalTest
-                      (relation)
-                      (singleTest
-                        (string)))))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (conjunctiveTest
+          (singleTest
+            (string))
+          (disjunctionTest
+            (string)
+            (string))
+          (relationalTest
+            (relation)
+            (singleTest
+              (string))))))))
 
 ================================================================================
 complicated conjunction concatenation match
@@ -261,45 +187,29 @@ sp {conjunction-mess-cat
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (disjunctionTest
-                      (string)
-                      (string)))
-                  (simpleTest
-                    (relationalTest
-                      (relation)
-                      (singleTest
-                        (string))))))
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (singleTest
-                      (string)))
-                  (simpleTest
-                    (singleTest
-                      (string)))))
-              (test
-                (simpleTest
-                  (singleTest
-                    (quoted)))))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (conjunctiveTest
+          (singleTest
+            (string))
+          (disjunctionTest
+            (string)
+            (string))
+          (relationalTest
+            (relation)
+            (singleTest
+              (string))))
+        (conjunctiveTest
+          (singleTest
+            (string))
+          (singleTest
+            (string)))
+        (singleTest
+          (quoted))))))
 
 ================================================================================
 simple make
@@ -314,17 +224,11 @@ sp {simple
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -345,17 +249,11 @@ sp {cat
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -380,17 +278,11 @@ sp {cat
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -415,17 +307,11 @@ sp {variable
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -450,17 +336,11 @@ sp {varied
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake

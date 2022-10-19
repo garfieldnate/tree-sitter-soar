@@ -234,46 +234,25 @@ sp "success
       (UNEXPECTED '2')
       (intConstant)
       (UNEXPECTED 'r'))
-    (beginning
-      (MISSING prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (MISSING prod_name)
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (variable)))))
+    (condsForOneId
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (ERROR)
     (funcCall
       (funcName

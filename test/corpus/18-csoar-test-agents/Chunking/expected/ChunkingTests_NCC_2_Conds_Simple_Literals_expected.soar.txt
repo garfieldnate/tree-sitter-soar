@@ -16,73 +16,40 @@ sp {answer*chunk*apply21c*onc*t3-1
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string))))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
+    (negativeCond
+      (conjunctiveCond
         (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable)))))
+          (singleTest
+            (variable))
           (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
+            (singleTest
+              (string))
             (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string))))))
+              (singleTest
+                (string))))
           (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
+            (singleTest
+              (string))
             (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
-    (cond
-      (negativeCond
-        (positiveCond
-          (conjunctiveCond
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
-                    (test
-                      (simpleTest
-                        (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string))))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (string)))))))))))))
+              (singleTest
+                (string)))))))
     (variableMutation
       (variable)
       (attrValueMake

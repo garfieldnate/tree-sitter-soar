@@ -12,34 +12,22 @@ sp {answer*make-chunk*StateNoChange*t2-1
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (conjunctiveTest
-                (simpleTest
-                  (relationalTest
-                    (relation)
-                    (singleTest
-                      (string))))
-                (simpleTest
-                  (singleTest
-                    (variable))))))
-          (attrValueTests
-            (attrTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))
-            (valueTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (string)))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (conjunctiveTest
+        (relationalTest
+          (relation)
+          (singleTest
+            (string)))
+        (singleTest
+          (variable)))
+      (attrValueTests
+        (singleTest
+          (string))
+        (valueTest
+          (singleTest
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake

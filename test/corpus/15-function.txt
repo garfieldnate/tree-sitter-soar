@@ -11,17 +11,11 @@ sp {arithmatic
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -60,17 +54,11 @@ sp {crlf
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -91,17 +79,11 @@ sp {various-args
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -127,17 +109,11 @@ sp {var-is-name
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -161,17 +137,11 @@ sp {crlf
 
 (source_file
   (production
-    (beginning
-      (prod_name))
-    (cond
-      (positiveCond
-        (condsForOneId
-          (condType)
-          (idTest
-            (test
-              (simpleTest
-                (singleTest
-                  (variable))))))))
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (singleTest
+        (variable)))
     (variableMutation
       (variable)
       (attrValueMake
