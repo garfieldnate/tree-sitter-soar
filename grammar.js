@@ -100,10 +100,6 @@ module.exports = grammar({
     // grammar comments in CPP code omit the '.' sections
     attrValueMake: $ => seq("^", $.rhsValue, repeat(seq('.', $.rhsValue)), repeat1($.valueMake)),
 
-    attr: $ => seq("^", $.variableOrSymConstant),
-
-    variableOrSymConstant: $ => choice($.variable, $.symConstant),
-
     valueMake: $ => seq($.rhsValue, repeat($.preferenceSpecifier)),
 
     preferenceSpecifier: $ => choice(seq($.unaryOrBinaryPreference, $.rhsValue, optional(',')), seq($.unaryPreference, optional(','))),
