@@ -15,60 +15,47 @@ sp {evaluation*operator*count-depth
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (variable)))))))))
+          (funcCall
+            (funcName)
+            (string)
+            (variable)))))))

@@ -35,421 +35,314 @@ sp {answer*chunk*apply2*onc*t3-1
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
+                    (string)))))
+            (valueTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
+                    (string)))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (disjunctionTest
+                      (string)
+                      (string)))
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (disjunctionTest
-                        (constant
-                          (intConstant))
-                        (constant
-                          (intConstant))))
-                    (simpleTest
+                      (variable))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
                       (singleTest
-                        (variable))))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
+                        (string))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
+                    (string)))))
+            (valueTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (string))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (string))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (singleTest
-                        (variable))))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
+                      (variable))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (singleTest
-                        (variable))))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
+                    (string)))))
+            (valueTest
               (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
+                (conjunctiveTest
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (string))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable))))
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
-                      (singleTest
-                        (variable)))))))))))
-    (action
+                      (variable))))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat))))
+          (floatConstant)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat))))
+          (floatConstant)
           (preferenceSpecifier
             (unaryPreference)))))))

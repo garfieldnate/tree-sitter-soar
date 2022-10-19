@@ -45,237 +45,197 @@ sp {evaluate-operator*elaborate*state*remove*untried-tied-operator
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))))
   (production
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (conjunctiveTest
                   (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))
-                    (simpleTest
+                    (relationalTest
+                      (relation)
                       (singleTest
-                        (variable)))))))))))
-    (action
+                        (variable))))
+                  (simpleTest
+                    (singleTest
+                      (variable))))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))))
   (production
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))))))
+          (variable)))))
   (production
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))))

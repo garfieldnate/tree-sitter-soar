@@ -13,26 +13,21 @@ sp {one-letter
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 junk name
@@ -49,26 +44,21 @@ sp {lots-o-garbage
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 no alphanumeric
@@ -85,26 +75,21 @@ sp {lots-o-garbage
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 empty name disallowed
@@ -121,22 +106,18 @@ sp {empty
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (ERROR
-              (relation))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (ERROR
-          (UNEXPECTED 'f'))
-        (rhsValue
-          (variable))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (ERROR
+            (relation)))))
+    (funcCall
+      (funcName
+        (string))
+      (ERROR
+        (UNEXPECTED 'f'))
+      (variable))))
 
 ================================================================================
 space disallowed
@@ -153,33 +134,24 @@ sp {empty
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (constant
-                      (symConstant
-                        (string)))))))
-            (ERROR
-              (UNEXPECTED 'b'))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
-        (ERROR
-          (UNEXPECTED 'f'))
-        (rhsValue
-          (variable))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (string)))))
+          (ERROR
+            (UNEXPECTED 'b')))))
+    (funcCall
+      (funcName
+        (string))
+      (string)
+      (ERROR
+        (UNEXPECTED 'f'))
+      (variable))))
 
 ================================================================================
 empty name disallowed
@@ -196,22 +168,18 @@ sp {empty
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (ERROR
-              (relation))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (ERROR
-          (UNEXPECTED 'f'))
-        (rhsValue
-          (variable))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (ERROR
+            (relation)))))
+    (funcCall
+      (funcName
+        (string))
+      (ERROR
+        (UNEXPECTED 'f'))
+      (variable))))
 
 ================================================================================
 period disallowed
@@ -228,37 +196,25 @@ sp {lots-o-garbage
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (constant
-                      (symConstant
-                        (string)))))))
-            (ERROR
-              (UNEXPECTED 'a'))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (rhsValue
-          (constant
-            (floatConstant
-              (normalFloat))))
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
-        (ERROR
-          (UNEXPECTED 'f'))
-        (rhsValue
-          (variable))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (string)))))
+          (ERROR
+            (UNEXPECTED 'a')))))
+    (funcCall
+      (funcName
+        (string))
+      (floatConstant)
+      (string)
+      (ERROR
+        (UNEXPECTED 'f'))
+      (variable))))
 
 ================================================================================
 forward slash disallowed
@@ -275,27 +231,21 @@ sp {lots-o-garbage
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (constant
-                      (symConstant
-                        (string)))))))
-            (ERROR
-              (UNEXPECTED '\'))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (ERROR
-          (UNEXPECTED '\')
-          (UNEXPECTED 'f'))
-        (rhsValue
-          (variable))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (string)))))
+          (ERROR
+            (UNEXPECTED '\')))))
+    (funcCall
+      (funcName
+        (string))
+      (ERROR
+        (UNEXPECTED '\')
+        (UNEXPECTED 'f'))
+      (variable))))

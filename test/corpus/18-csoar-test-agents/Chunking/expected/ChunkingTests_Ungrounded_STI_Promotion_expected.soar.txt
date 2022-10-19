@@ -21,133 +21,85 @@ sp {answer*apply16b*OpNoChange*t3-1
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string))))
+          (string)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string))))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string))))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))))

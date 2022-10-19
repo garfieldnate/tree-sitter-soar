@@ -12,30 +12,26 @@ sp {one
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (intConstant)))))))))))))
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))))))))
 
 ================================================================================
 negative int
@@ -51,27 +47,23 @@ sp {one
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (intConstant)))))))))))))
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))))))))

@@ -36,11 +36,71 @@ sp {selection*apply*remove-stale-path-cost
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))
+            (valueTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (singleTest
+                      (variable)))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable)))))))))))
+    (cond
+      (negativeCond
         (positiveCond
           (condsForOneId
-            (condType)
             (idTest
               (test
                 (simpleTest
@@ -51,95 +111,20 @@ sp {selection*apply*remove-stale-path-cost
                 (test
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
+                      (string)))))
               (valueTest
                 (test
                   (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable)))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable)))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
+                    (relationalTest
+                      (relation)
                       (singleTest
-                        (variable)))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable)))))))))))
-      (cond
-        (negativeCond
-          (positiveCond
-            (condsForOneId
-              (idTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable)))))
-              (attrValueTests
-                (attrTest
-                  (test
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))
-                (valueTest
-                  (test
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable))))))))))))
-    (action
+                        (variable)))))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference))
           (preferenceSpecifier
@@ -148,138 +133,94 @@ sp {selection*apply*remove-stale-path-cost
           (preferenceSpecifier
             (unaryPreference
               (unaryOrBinaryPreference))))))
-    (action
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string))))))
+          (string)))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))))))
+          (variable)))))
   (production
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
               (test
                 (simpleTest
                   (singleTest
                     (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable)))))))))
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
+            (valueTest
               (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
+                (conjunctiveTest
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
+                      (variable)))
                   (simpleTest
-                    (singleTest
-                      (variable)))))
-              (valueTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
+                    (relationalTest
+                      (relation)
                       (singleTest
-                        (variable)))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable)))))))))))
-      (cond
-        (negativeCond
-          (positiveCond
-            (condsForOneId
-              (idTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable)))))
-              (attrValueTests
-                (attrTest
-                  (test
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))
-                (valueTest
-                  (test
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (variable)))))))))))
-      (cond
+                        (variable)))))))))))
+    (cond
+      (negativeCond
         (positiveCond
           (condsForOneId
             (idTest
@@ -292,62 +233,59 @@ sp {selection*apply*remove-stale-path-cost
                 (test
                   (simpleTest
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
+                      (string)))))
               (valueTest
                 (test
                   (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))
-        (rhsValue)
-        (rhsValue
-          (constant
-            (symConstant
-              (quoted))))
-        (rhsValue
-          (variable))
-        (rhsValue
-          (constant
-            (symConstant
-              (quoted))))
-        (rhsValue
-          (variable))
-        (rhsValue
-          (constant
-            (symConstant
-              (quoted))))
-        (rhsValue
-          (variable))))
-    (action
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (variable)))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (funcCall
+      (funcName
+        (string))
+      (crlf)
+      (quoted)
+      (variable)
+      (quoted)
+      (variable)
+      (quoted)
+      (variable))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))))

@@ -14,10 +14,9 @@ sp {one-line-quote
     (beginning
       (prod_name)
       (documentation))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 two line quote
@@ -36,10 +35,9 @@ sp {two-line-quote
     (beginning
       (prod_name)
       (documentation))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 utf8
@@ -57,10 +55,9 @@ sp {utf8
     (beginning
       (prod_name)
       (documentation))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 escaped quote
@@ -78,10 +75,9 @@ sp {escaped
     (beginning
       (prod_name)
       (documentation))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 two lines, two quotes
@@ -102,10 +98,9 @@ sp {twice-doc
       (ERROR
         (documentation))
       (documentation))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 missing quote

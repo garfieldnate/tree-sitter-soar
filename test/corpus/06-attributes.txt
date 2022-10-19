@@ -13,24 +13,21 @@ sp {simple
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))))
+                    (string)))))))))))
 
 ================================================================================
 simple negative match
@@ -47,24 +44,21 @@ sp {simple-negative
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))))
+                    (string)))))))))))
 
 ================================================================================
 variable match
@@ -81,22 +75,21 @@ sp {variable
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+                    (variable)))))))))))
 
 ================================================================================
 simple concatenated match
@@ -113,30 +106,25 @@ sp {simple-cat
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))))
+                    (string))))
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))))))))
 
 ================================================================================
 concatenated match with bad parent should fail; only string/quoted/variable can have a child; TODO: SHOULD FAIL
@@ -153,45 +141,36 @@ sp {cat
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (floatConstant
-                          (normalFloat)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (floatConstant
-                          (normalFloat)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))))
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (floatConstant)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (floatConstant)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))))))))
 
 ================================================================================
 simple conjunction match
@@ -208,30 +187,25 @@ sp {conjunction
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))))))))))
+                (conjunctiveTest
+                  (simpleTest
+                    (singleTest
+                      (string)))
+                  (simpleTest
+                    (singleTest
+                      (string))))))))))))
 
 ================================================================================
 complicated conjunction match
@@ -248,39 +222,31 @@ sp {conjunction-mess
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
+                (conjunctiveTest
+                  (simpleTest
+                    (singleTest
+                      (string)))
+                  (simpleTest
+                    (disjunctionTest
+                      (string)
+                      (string)))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
                       (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (disjunctionTest
-                        (constant
-                          (symConstant
-                            (string)))
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))))))))))))
+                        (string)))))))))))))
 
 ================================================================================
 complicated conjunction concatenation match
@@ -297,57 +263,43 @@ sp {conjunction-mess-cat
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (singleTest
+                      (string)))
+                  (simpleTest
+                    (disjunctionTest
+                      (string)
+                      (string)))
+                  (simpleTest
+                    (relationalTest
+                      (relation)
+                      (singleTest
+                        (string))))))
+              (test
+                (conjunctiveTest
+                  (simpleTest
+                    (singleTest
+                      (string)))
+                  (simpleTest
+                    (singleTest
+                      (string)))))
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (disjunctionTest
-                        (constant
-                          (symConstant
-                            (string)))
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (relationalTest
-                        (relation)
-                        (singleTest
-                          (constant
-                            (intConstant)))))))
-                (test
-                  (conjunctiveTest
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (quoted))))))))))))))
+                    (quoted)))))))))))
 
 ================================================================================
 simple make
@@ -364,26 +316,21 @@ sp {simple
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 concatenated make
@@ -400,30 +347,25 @@ sp {cat
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (floatConstant))
+        (valueMake
+          (string))
+        (valueMake
+          (variable))))))
 
 ================================================================================
 concatenated make with bad parent; sourceforge issue 135; Only string/quoted/variable can have a child; currently failing to match the behavior caused by that bug.SKIP
@@ -440,38 +382,25 @@ sp {cat
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat)))))
+          (floatConstant))
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat)))))
+          (floatConstant))
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string)))))))))
+          (string))))))
 
 ================================================================================
 concatenated variable make
@@ -488,28 +417,25 @@ sp {variable
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
-        (rhsValue
+        (string)
+        (valueMake
+          (floatConstant))
+        (valueMake
           (variable))
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 concatenated varied make
@@ -526,34 +452,28 @@ sp {varied
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (variable))
-        (rhsValue
-          (constant
-            (symConstant
-              (quoted))))
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (variable)
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat)))))
+          (floatConstant))
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (quoted))
+        (valueMake
+          (floatConstant))
+        (valueMake
+          (string))
+        (valueMake
+          (floatConstant))
+        (valueMake
+          (variable))))))

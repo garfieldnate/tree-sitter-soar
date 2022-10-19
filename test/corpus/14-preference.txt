@@ -13,28 +13,21 @@ sp {unary
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (symConstant
-                (string))))
+          (string)
           (preferenceSpecifier
             (unaryPreference)))))))
 
@@ -53,26 +46,21 @@ sp {unary
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))))))
 
@@ -91,29 +79,23 @@ sp {double
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))
+          (variable))
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 binary
@@ -130,31 +112,24 @@ sp {binary
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (constant
-              (intConstant)))
+          (string)
           (preferenceSpecifier
             (unaryOrBinaryPreference)
-            (rhsValue
-              (variable))))))))
+            (variable)))))))
 
 ================================================================================
 multiple
@@ -171,44 +146,34 @@ sp {multiple
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))
+          (variable))
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference)))
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryOrBinaryPreference)
-            (rhsValue
-              (variable))))
+            (variable)))
         (valueMake
-          (rhsValue
-            (variable))
+          (variable)
           (preferenceSpecifier
             (unaryPreference
               (unaryOrBinaryPreference))))
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))

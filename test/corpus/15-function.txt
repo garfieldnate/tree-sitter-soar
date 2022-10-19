@@ -13,63 +13,39 @@ sp {arithmatic
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (constant
-                  (intConstant))))))
+          (funcCall
+            (funcName)
+            (string)
+            (string)))
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (constant
-                  (intConstant))))))
+          (funcCall
+            (funcName)
+            (string)
+            (string)))
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (constant
-                  (intConstant))))))
+          (funcCall
+            (funcName)
+            (string)
+            (string)))
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (constant
-                  (intConstant))))))))))
+          (funcCall
+            (funcName)
+            (string)
+            (string)))))))
 
 ================================================================================
 clrf
@@ -86,25 +62,21 @@ sp {crlf
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue))))))
+          (crlf))))))
 
 ================================================================================
 string function with args
@@ -121,39 +93,26 @@ sp {various-args
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName
-                (symConstant
-                  (string)))
-              (rhsValue
-                (variable))
-              (rhsValue
-                (constant
-                  (symConstant
-                    (string))))
-              (rhsValue
-                (constant
-                  (symConstant
-                    (quoted)))))))))))
+          (funcCall
+            (funcName
+              (string))
+            (variable)
+            (string)
+            (quoted)))))))
 
 ================================================================================
 function name looks like a variable but is interpreted as a string
@@ -170,31 +129,24 @@ sp {var-is-name
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName
-                (symConstant
-                  (string)))
-              (rhsValue
-                (variable)))))))))
+          (funcCall
+            (funcName
+              (string))
+            (variable)))))))
 
 ================================================================================
 arguments are functions
@@ -211,44 +163,29 @@ sp {crlf
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))
-    (action
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
+          (funcCall
+            (funcName
+              (string))
             (funcCall
               (funcName
-                (symConstant
-                  (string)))
-              (rhsValue
-                (funcCall
-                  (funcName
-                    (symConstant
-                      (string)))
-                  (rhsValue
-                    (variable))
-                  (rhsValue
-                    (variable))))
-              (rhsValue
-                (funcCall
-                  (funcName
-                    (symConstant
-                      (string)))
-                  (rhsValue
-                    (constant
-                      (symConstant
-                        (string)))))))))))))
+                (string))
+              (variable)
+              (variable))
+            (funcCall
+              (funcName
+                (string))
+              (string))))))))

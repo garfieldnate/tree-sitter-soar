@@ -17,64 +17,57 @@ sp {negative
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (cond
+      (negativeCond
         (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable))))))))
-      (cond
-        (negativeCond
-          (positiveCond
-            (conjunctiveCond
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+          (conjunctiveCond
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (variable)))))))))
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+                            (string)))))
+                    (valueTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string))))))))))))))))))
+                            (variable)))))))))
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))))))))))))
 
 ================================================================================
 negative structure
@@ -94,55 +87,48 @@ sp {negative
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (negativeCond
-          (positiveCond
-            (conjunctiveCond
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+    (cond
+      (negativeCond
+        (positiveCond
+          (conjunctiveCond
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (variable)))))))))
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+                            (string)))))
+                    (valueTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string))))))))))))))))))
+                            (variable)))))))))
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))))))))))))
 
 ================================================================================
 positive
@@ -163,63 +149,56 @@ sp {positive
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable))))))))
-      (cond
-        (positiveCond
-          (conjunctiveCond
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (cond
+      (positiveCond
+        (conjunctiveCond
+          (cond
+            (positiveCond
+              (condsForOneId
+                (idTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (variable)))))
+                (attrValueTests
+                  (attrTest
                     (test
                       (simpleTest
                         (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (constant
-                              (symConstant
-                                (string)))))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (variable)))))))))
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
+                          (string)))))
+                  (valueTest
                     (test
                       (simpleTest
                         (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (constant
-                              (symConstant
-                                (string)))))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (constant
-                              (symConstant
-                                (string)))))))))))))))))
+                          (variable)))))))))
+          (cond
+            (positiveCond
+              (condsForOneId
+                (idTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (variable)))))
+                (attrValueTests
+                  (attrTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (string)))))
+                  (valueTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (string))))))))))))))
 
 ================================================================================
 positive structure
@@ -239,42 +218,37 @@ sp {positive
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (conjunctiveCond
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (condType)
-                  (idTest
+    (cond
+      (positiveCond
+        (conjunctiveCond
+          (cond
+            (positiveCond
+              (condsForOneId
+                (condType)
+                (idTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (variable))))))))
+          (cond
+            (positiveCond
+              (condsForOneId
+                (idTest
+                  (test
+                    (simpleTest
+                      (singleTest
+                        (variable)))))
+                (attrValueTests
+                  (attrTest
                     (test
                       (simpleTest
                         (singleTest
-                          (variable))))))))
-            (cond
-              (positiveCond
-                (condsForOneId
-                  (idTest
+                          (string)))))
+                  (valueTest
                     (test
                       (simpleTest
                         (singleTest
-                          (variable)))))
-                  (attrValueTests
-                    (attrTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (constant
-                              (symConstant
-                                (string)))))))
-                    (valueTest
-                      (test
-                        (simpleTest
-                          (singleTest
-                            (constant
-                              (symConstant
-                                (string)))))))))))))))))
+                          (string))))))))))))))
 
 ================================================================================
 nested
@@ -299,107 +273,96 @@ sp {negative-nested
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (cond
+      (negativeCond
         (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable))))))))
-      (cond
-        (negativeCond
-          (positiveCond
-            (conjunctiveCond
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+          (conjunctiveCond
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (variable)))))))))
-              (cond
-                (positiveCond
-                  (condsForOneId
-                    (idTest
+                            (string)))))
+                    (valueTest
                       (test
                         (simpleTest
                           (singleTest
-                            (variable)))))
-                    (attrValueTests
-                      (attrTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))
-                      (valueTest
-                        (test
-                          (simpleTest
-                            (singleTest
-                              (constant
-                                (symConstant
-                                  (string)))))))))))
-              (cond
-                (negativeCond
-                  (positiveCond
-                    (conjunctiveCond
-                      (cond
-                        (positiveCond
-                          (condsForOneId
-                            (idTest
+                            (variable)))))))))
+            (cond
+              (positiveCond
+                (condsForOneId
+                  (idTest
+                    (test
+                      (simpleTest
+                        (singleTest
+                          (variable)))))
+                  (attrValueTests
+                    (attrTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))
+                    (valueTest
+                      (test
+                        (simpleTest
+                          (singleTest
+                            (string)))))))))
+            (cond
+              (negativeCond
+                (positiveCond
+                  (conjunctiveCond
+                    (cond
+                      (positiveCond
+                        (condsForOneId
+                          (idTest
+                            (test
+                              (simpleTest
+                                (singleTest
+                                  (variable)))))
+                          (attrValueTests
+                            (attrTest
                               (test
                                 (simpleTest
                                   (singleTest
-                                    (variable)))))
-                            (attrValueTests
-                              (attrTest
-                                (test
-                                  (simpleTest
-                                    (singleTest
-                                      (constant
-                                        (symConstant
-                                          (string)))))))
-                              (valueTest
-                                (test
-                                  (simpleTest
-                                    (singleTest
-                                      (variable)))))))))
-                      (cond
-                        (positiveCond
-                          (condsForOneId
-                            (idTest
+                                    (string)))))
+                            (valueTest
                               (test
                                 (simpleTest
                                   (singleTest
-                                    (variable)))))
-                            (attrValueTests
-                              (attrTest
-                                (test
-                                  (simpleTest
-                                    (singleTest
-                                      (constant
-                                        (symConstant
-                                          (string)))))))
-                              (valueTest
-                                (test
-                                  (simpleTest
-                                    (singleTest
-                                      (variable))))))))))))))))))))
+                                    (variable)))))))))
+                    (cond
+                      (positiveCond
+                        (condsForOneId
+                          (idTest
+                            (test
+                              (simpleTest
+                                (singleTest
+                                  (variable)))))
+                          (attrValueTests
+                            (attrTest
+                              (test
+                                (simpleTest
+                                  (singleTest
+                                    (string)))))
+                            (valueTest
+                              (test
+                                (simpleTest
+                                  (singleTest
+                                    (variable)))))))))))))))))))

@@ -15,10 +15,9 @@ sp {isupport
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 o-support
@@ -37,10 +36,9 @@ sp {osupport
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 chunk
@@ -59,10 +57,9 @@ sp {chunk
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 default
@@ -81,10 +78,9 @@ sp {default
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 interrupt
@@ -103,10 +99,9 @@ sp {interrupt
     (beginning
       (prod_name)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 multiple
@@ -129,10 +124,9 @@ sp {multiple
       (flag)
       (flag)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 with doc
@@ -153,10 +147,9 @@ sp {with-doc
       (prod_name)
       (documentation)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 unknown flag
@@ -177,10 +170,9 @@ sp {bad-flag
     (ERROR
       (UNEXPECTED 'x')
       (UNEXPECTED 'u'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 missing colon
@@ -199,7 +191,6 @@ sp {bad-flag
     (beginning
       (prod_name))
     (ERROR)
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))

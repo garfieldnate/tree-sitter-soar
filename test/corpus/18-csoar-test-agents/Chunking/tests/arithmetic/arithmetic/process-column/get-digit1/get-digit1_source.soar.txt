@@ -15,5 +15,4 @@ source write-digit1.soar
     (UNEXPECTED 'r')
     (UNEXPECTED 'o')
     (UNEXPECTED 'i')
-    (normalFloat)
     (UNEXPECTED 'o')))

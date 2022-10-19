@@ -23,23 +23,18 @@ sp {
       (documentation)
       (flag)
       (flag))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId)))
-      (cond
-        (positiveCond
-          (condsForOneId))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (funcCall
+      (funcName
+        (string)))
+    (funcCall
+      (funcName
+        (string)))))
 
 ================================================================================
 Multiple Productions
@@ -67,27 +62,24 @@ sp {three
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId)))
-      (cond
-        (positiveCond
-          (condsForOneId)))))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (cond
+      (positiveCond
+        (condsForOneId))))
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId)))))
+    (cond
+      (positiveCond
+        (condsForOneId))))
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 ignore # comments
@@ -107,15 +99,12 @@ sp {one
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (funcCall
+      (funcName
+        (string)))))
 
 ================================================================================
 ignore ;# comments
@@ -137,18 +126,15 @@ sp {one
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId)))
-      (cond
-        (positiveCond
-          (condsForOneId)))
-      (cond
-        (positiveCond
-          (condsForOneId))))
-    (action
-      (funcCall
-        (funcName
-          (symConstant
-            (string)))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (cond
+      (positiveCond
+        (condsForOneId)))
+    (funcCall
+      (funcName
+        (string)))))

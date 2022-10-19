@@ -14,65 +14,46 @@ sp {rhs*attr*value
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue)
+          (crlf)
           (preferenceSpecifier
             (unaryPreference))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (funcCall
-              (funcName
-                (symConstant
-                  (string)))
-              (rhsValue
-                (constant
-                  (symConstant
-                    (quoted))))
-              (rhsValue
-                (variable))))))
+          (funcCall
+            (funcName
+              (string))
+            (quoted)
+            (variable))))
       (attrValueMake
-        (rhsValue
-          (constant
-            (symConstant
-              (string))))
+        (string)
         (valueMake
-          (rhsValue
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 RHS values can be constants, variables, function calls, or crlf
@@ -92,140 +73,111 @@ sp {rhs*attr*name
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))
-    (action
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable))))))
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue)
-        (rhsValue
-          (funcCall
-            (funcName
-              (symConstant
-                (string)))
-            (rhsValue
-              (constant
-                (symConstant
-                  (quoted))))
-            (rhsValue
-              (variable))))
-        (rhsValue
-          (variable))
-        (rhsValue
-          (funcCall
-            (funcName
-              (symConstant
-                (string)))
-            (rhsValue
-              (constant
-                (symConstant
-                  (quoted))))
-            (rhsValue
-              (variable))))
+        (crlf)
         (valueMake
-          (rhsValue
-            (variable)))))
-    (action
+          (floatConstant))
+        (valueMake
+          (funcCall
+            (funcName
+              (string))
+            (quoted)
+            (variable)))
+        (valueMake
+          (floatConstant))
+        (valueMake
+          (variable))
+        (valueMake
+          (floatConstant))
+        (valueMake
+          (funcCall
+            (funcName
+              (string))
+            (quoted)
+            (variable)))
+        (valueMake
+          (variable))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
+        (funcCall
+          (funcName)
+          (variable)
+          (variable))
+        (valueMake
           (funcCall
             (funcName)
-            (rhsValue
-              (variable))
-            (rhsValue
-              (variable))))
-        (valueMake
-          (rhsValue
-            (funcCall
-              (funcName)
-              (rhsValue
-                (constant
-                  (intConstant)))
-              (rhsValue
-                (variable)))))))
-    (action
+            (string)
+            (variable)))))
+    (variableMutation
       (variable)
       (attrValueMake
-        (rhsValue
-          (constant
-            (floatConstant
-              (normalFloat))))
+        (floatConstant)
         (valueMake
-          (rhsValue
-            (constant
-              (floatConstant
-                (normalFloat)))))))))
+          (floatConstant))))))

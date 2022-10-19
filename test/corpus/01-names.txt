@@ -13,10 +13,9 @@ sp {0123456789AbCdZz
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 alpha and then a bunch of junk
@@ -33,10 +32,9 @@ sp {a$%&*=<>?_-/
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 number and then a bunch of junk
@@ -53,10 +51,9 @@ sp {1$%&*=@<>?_-/
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 doesn't start with alphanumeric
@@ -88,10 +85,9 @@ sp {a:a
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 comma
@@ -110,10 +106,9 @@ sp {a,a
       (prod_name))
     (ERROR
       (UNEXPECTED 'a'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 exclamation point
@@ -132,10 +127,9 @@ sp {a!a
       (prod_name))
     (ERROR
       (UNEXPECTED 'a'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 plus
@@ -154,10 +148,9 @@ sp {a+a
       (prod_name))
     (ERROR
       (UNEXPECTED 'a'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 bracket
@@ -176,10 +169,9 @@ sp {a[a
       (prod_name))
     (ERROR
       (UNEXPECTED '['))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 bar
@@ -214,10 +206,9 @@ sp {a\a
       (prod_name))
     (ERROR
       (UNEXPECTED '\'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 period
@@ -236,10 +227,9 @@ sp {a.a
       (prod_name))
     (ERROR
       (UNEXPECTED 'a'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 semicolon
@@ -258,10 +248,9 @@ sp {a;a
       (prod_name))
     (ERROR
       (UNEXPECTED 'a'))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 not ASCII
@@ -280,7 +269,6 @@ sp {aぐ
       (prod_name))
     (ERROR
       (UNEXPECTED 12368))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))

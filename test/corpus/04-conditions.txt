@@ -12,10 +12,9 @@ sp {empty-condition
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId))))))
+    (cond
+      (positiveCond
+        (condsForOneId)))))
 
 ================================================================================
 state only; technically allowed by Soar but meaningless
@@ -31,11 +30,10 @@ sp {state-only
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType))))))
 
 ================================================================================
 state with variable
@@ -51,16 +49,15 @@ sp {state-variable
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))))
 
 ================================================================================
 state with assignment; prints a warning in Soar
@@ -76,24 +73,21 @@ sp {state-assignment
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 state with variable and assignment
@@ -109,29 +103,26 @@ sp {state-var-assignment
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 state with variable, assignment and +
@@ -147,28 +138,26 @@ sp {state-var-assignment
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
-                  (singleTest (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 assignment without state or variable; prints a warning in Soar
@@ -184,23 +173,20 @@ sp {unbound-assignment
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (attrValueTests
+            (attrTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 variable missing state or assignment; crashes Soar
@@ -216,15 +202,14 @@ sp {variable-alone
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (idTest
-              (test
-                (simpleTest
-                  (singleTest
-                    (variable)))))))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))))
 
 ================================================================================
 impasse only
@@ -240,11 +225,10 @@ sp {impasse
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)))))))
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType))))))
 
 ================================================================================
 impasse with variable and assignment
@@ -260,29 +244,26 @@ sp {impasse
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable)))))
+          (attrValueTests
+            (attrTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable)))))
-            (attrValueTests
-              (attrTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (constant
-                        (symConstant
-                          (string)))))))
-              (valueTest
-                (test
-                  (simpleTest
-                    (singleTest
-                      (variable))))))))))))
+                    (string)))))
+            (valueTest
+              (test
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 negative
@@ -299,40 +280,35 @@ sp {negative
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (simpleTest
+                (singleTest
+                  (variable))))))))
+    (cond
+      (negativeCond
         (positiveCond
           (condsForOneId
-            (condType)
             (idTest
               (test
                 (simpleTest
                   (singleTest
-                    (variable))))))))
-      (cond
-        (negativeCond
-          (positiveCond
-            (condsForOneId
-              (idTest
+                    (variable)))))
+            (attrValueTests
+              (attrTest
                 (test
                   (simpleTest
                     (singleTest
-                      (variable)))))
-              (attrValueTests
-                (attrTest
-                  (test
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))
-                (valueTest
-                  (test
-                    (simpleTest
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string)))))))))))))))
+                      (string)))))
+              (valueTest
+                (test
+                  (simpleTest
+                    (singleTest
+                      (string))))))))))))
 
 ================================================================================
 condition starts with test
@@ -348,24 +324,21 @@ sp {state-conjunction
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (relationalTest
-                      (relation)
-                      (singleTest
-                        (constant
-                          (symConstant
-                            (string))))))
-                  (simpleTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (conjunctiveTest
+                (simpleTest
+                  (relationalTest
+                    (relation)
                     (singleTest
-                      (variable))))))))))))
+                      (string))))
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 condition starts with test (two id's); Soar parses it but ignores the test: 'ignoring test(s) whose referent is unbound: Symbol: <s1>  Test: <> <s2>'
@@ -381,22 +354,21 @@ sp {state-conjunction-unbound
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (relationalTest
-                      (relation)
-                      (singleTest
-                        (variable))))
-                  (simpleTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (conjunctiveTest
+                (simpleTest
+                  (relationalTest
+                    (relation)
                     (singleTest
-                      (variable))))))))))))
+                      (variable))))
+                (simpleTest
+                  (singleTest
+                    (variable)))))))))))
 
 ================================================================================
 condition starts with test (constant id field); Soar parses it but won't add it to the productions: 'Constant stuff in id field test. This will never match.'
@@ -412,21 +384,18 @@ sp {state-conjunction-no-match
   (production
     (beginning
       (prod_name))
-    (LHS
-      (cond
-        (positiveCond
-          (condsForOneId
-            (condType)
-            (idTest
-              (test
-                (conjunctiveTest
-                  (simpleTest
-                    (relationalTest
-                      (relation)
-                      (singleTest
-                        (variable))))
-                  (simpleTest
+    (cond
+      (positiveCond
+        (condsForOneId
+          (condType)
+          (idTest
+            (test
+              (conjunctiveTest
+                (simpleTest
+                  (relationalTest
+                    (relation)
                     (singleTest
-                      (constant
-                        (symConstant
-                          (string))))))))))))))
+                      (variable))))
+                (simpleTest
+                  (singleTest
+                    (string)))))))))))
