@@ -91,7 +91,6 @@ sp {apply*initialize-count-epmem
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')

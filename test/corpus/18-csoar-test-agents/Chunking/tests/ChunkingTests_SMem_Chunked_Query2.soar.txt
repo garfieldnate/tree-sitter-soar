@@ -74,13 +74,16 @@ sp {retrieve*elaborate*smem-result
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'a')
-    (variable)
-    (UNEXPECTED 'h')
     (UNEXPECTED 'f'))
+  (smemAdd
+    (variable)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

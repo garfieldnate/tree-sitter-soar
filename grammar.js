@@ -20,9 +20,28 @@ module.exports = grammar({
     _comment: $ => /(?:;\s*)?#[^\r\n]*/,
 
     _command: $ => choice(
-      $.production
+      $.production,
+      $._smem,
       // TODO: other kinds of commands
     ),
+
+    /////////////////
+    // smem command//
+    /////////////////
+
+    _smem: $ => seq('smem', '--add', '{', repeat1($.smemAdd), '}'),
+
+    smemAdd: $ => seq("(",
+      field("id", choice($.lti, $.variable)),
+      field("attrValues", repeat1($.smemAttrValues)),
+      ")"),
+
+    lti: $ => seq('@', $.intConstant),
+    smemAttrValues: $ => seq(
+      '^',
+      field("attr_name", $._constant),
+      field("attr_vals", repeat1(choice($._singleTest, $.lti)))
+      ),
 
     ////////////////
     // sp command //

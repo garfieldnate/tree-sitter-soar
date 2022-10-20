@@ -162,26 +162,48 @@ sp {success
     (UNEXPECTED 'l')
     (UNEXPECTED 'l')
     (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'n'))
+    (intConstant))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

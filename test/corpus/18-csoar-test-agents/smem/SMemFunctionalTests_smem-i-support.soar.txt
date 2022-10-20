@@ -77,15 +77,20 @@ sp {success
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'n')
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (variable)))
+  (smemAdd
     (variable)
-    (variable)
-    (UNEXPECTED 'v'))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

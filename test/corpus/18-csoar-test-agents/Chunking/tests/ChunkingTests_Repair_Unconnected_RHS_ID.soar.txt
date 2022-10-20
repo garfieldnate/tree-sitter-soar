@@ -57,16 +57,18 @@ sp {apply*query*success2
   (ERROR
     (UNEXPECTED 'r')
     (intConstant)
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'a'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'D')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'D'))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

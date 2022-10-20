@@ -29,40 +29,56 @@ sp {apply*query
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 't')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'h'))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

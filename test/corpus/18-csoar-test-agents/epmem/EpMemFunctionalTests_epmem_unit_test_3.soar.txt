@@ -207,7 +207,6 @@ sp {apply*init2
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')

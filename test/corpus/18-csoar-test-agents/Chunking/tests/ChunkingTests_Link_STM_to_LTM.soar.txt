@@ -127,26 +127,43 @@ sp {anywhere*query*succeed
 (source_file
   (ERROR
     (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'n')
-    (quoted)
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'q')
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (quoted)
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'q')
-    (UNEXPECTED 'r'))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (floatConstant)
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (floatConstant)
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

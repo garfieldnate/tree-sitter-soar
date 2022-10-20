@@ -607,7 +607,6 @@ sp {elaborate*state*name
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')

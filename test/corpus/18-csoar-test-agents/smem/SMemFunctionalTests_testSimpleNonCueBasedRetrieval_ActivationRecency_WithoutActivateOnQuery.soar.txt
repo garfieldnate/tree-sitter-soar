@@ -62,37 +62,56 @@ sp {success
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'n')
-    (UNEXPECTED 'q')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'x')
-    (intConstant)
-    (UNEXPECTED 'y')
-    (intConstant)
-    (UNEXPECTED 'z')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'x')
-    (intConstant)
-    (UNEXPECTED 'y')
-    (intConstant)
-    (UNEXPECTED 'z')
-    (intConstant))
+    (UNEXPECTED 'q'))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

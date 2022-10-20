@@ -40,16 +40,20 @@ sp {success
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (quoted)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'o'))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

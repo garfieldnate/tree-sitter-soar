@@ -57,7 +57,6 @@ sp {success
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e'))
   (production
     (prod_name)

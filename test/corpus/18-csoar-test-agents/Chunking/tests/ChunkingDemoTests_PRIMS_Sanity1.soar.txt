@@ -3823,7 +3823,6 @@ smem --add {
   (ERROR
     (UNEXPECTED 'n')
     (intConstant)
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'm')
     (UNEXPECTED 'l')
@@ -23869,433 +23868,607 @@ smem --add {
         (valueMake
           (variable)
           (unaryPreference)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'h')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (quoted)
-    (quoted)
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'b')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (quoted)
-    (UNEXPECTED '_')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'u')
-    (intConstant)
-    (quoted)
-    (intConstant)
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (quoted)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (quoted)
-    (quoted)
-    (UNEXPECTED 'l')
-    (quoted)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'y')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'l')
-    (intConstant)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant))))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (quoted)
+      (quoted))
+    (smemAttrValues
+      (string)
+      (quoted)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
+    (lti
+      (intConstant))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (lti
+        (intConstant)))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))))

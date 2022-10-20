@@ -95,14 +95,20 @@ sp {success
     (UNEXPECTED 'r')
     (intConstant)
     (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'v')
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'n')
-    (variable))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (variable)))
   (production
     (prod_name)
     (condsForOneId

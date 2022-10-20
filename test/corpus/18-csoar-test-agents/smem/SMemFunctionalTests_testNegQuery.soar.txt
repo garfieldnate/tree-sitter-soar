@@ -390,7 +390,6 @@ smem --add {
   (ERROR
     (UNEXPECTED 'w')
     (intConstant)
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e'))
   (production
     (prod_name)
@@ -1285,366 +1284,483 @@ smem --add {
         (valueMake
           (variable)
           (unaryPreference)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'a')
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string)))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))
+    (smemAttrValues
+      (string)
+      (string))))

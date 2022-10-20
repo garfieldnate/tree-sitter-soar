@@ -37,12 +37,12 @@ sp {elaborate-success
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
+    (UNEXPECTED 'e'))
+  (smemAdd
     (variable)
-    (UNEXPECTED 'a')
-    (intConstant))
+    (smemAttrValues
+      (string)
+      (string)))
   (production
     (prod_name)
     (condsForOneId

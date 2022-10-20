@@ -188,7 +188,6 @@ sp {apply*test*fail*trace
 
 (source_file
   (ERROR
-    (UNEXPECTED 'm')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'e')
