@@ -44,7 +44,7 @@ sp {state-variable
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))))
 
 ================================================================================
@@ -63,11 +63,9 @@ sp {state-assignment
     (condsForOneId
       (condType)
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 state with variable and assignment
@@ -84,14 +82,12 @@ sp {state-var-assignment
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 state with variable, assignment and +
@@ -108,14 +104,12 @@ sp {state-var-assignment
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 assignment without state or variable; prints a warning in Soar
@@ -132,11 +126,9 @@ sp {unbound-assignment
     (prod_name)
     (condsForOneId
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 variable missing state or assignment; crashes Soar
@@ -152,7 +144,7 @@ sp {variable-alone
   (production
     (prod_name)
     (condsForOneId
-      (singleTest
+      (idTest
         (variable)))))
 
 ================================================================================
@@ -186,14 +178,12 @@ sp {impasse
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))))
+          (variable))))))
 
 ================================================================================
 negative
@@ -211,18 +201,16 @@ sp {negative
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (negativeCond
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (string))))))))
+            (string)))))))
 
 ================================================================================
 condition starts with test
@@ -239,12 +227,11 @@ sp {state-conjunction
     (prod_name)
     (condsForOneId
       (condType)
-      (conjunctiveTest
-        (relationalTest
-          (relation)
-          (singleTest
-            (string)))
-        (singleTest
+      (idTest
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (string))
           (variable))))))
 
 ================================================================================
@@ -262,12 +249,11 @@ sp {state-conjunction-unbound
     (prod_name)
     (condsForOneId
       (condType)
-      (conjunctiveTest
-        (relationalTest
-          (relation)
-          (singleTest
-            (variable)))
-        (singleTest
+      (idTest
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (variable))
           (variable))))))
 
 ================================================================================
@@ -285,10 +271,9 @@ sp {state-conjunction-no-match
     (prod_name)
     (condsForOneId
       (condType)
-      (conjunctiveTest
-        (relationalTest
-          (relation)
-          (singleTest
-            (variable)))
-        (singleTest
+      (idTest
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (variable))
           (string))))))

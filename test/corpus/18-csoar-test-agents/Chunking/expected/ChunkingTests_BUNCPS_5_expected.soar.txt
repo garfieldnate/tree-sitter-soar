@@ -21,68 +21,54 @@ sp {answer*chunk*condition-match*elaborate*matching-argument-object*snc*t4-1
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

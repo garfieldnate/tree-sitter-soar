@@ -39,50 +39,70 @@ sp {towers-of-hanoi*object*peg*elaborate*state*clear
     (documentation)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))
+          (variable))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
+              (variable))
             (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
+            (variable)))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (variable)))))
+  (production
+    (prod_name)
+    (documentation)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (negativeCond
+      (conjunctiveCond
+        (condsForOneId
+          (idTest
+            (variable))
+          (attrValueTests
+            (string)
+            (string)
+            (valueTest
               (variable))))))
     (variableMutation
       (variable)
@@ -95,71 +115,26 @@ sp {towers-of-hanoi*object*peg*elaborate*state*clear
     (documentation)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (negativeCond
-      (conjunctiveCond
-        (condsForOneId
-          (singleTest
-            (variable))
-          (attrValueTests
-            (singleTest
-              (string))
-            (singleTest
-              (string))
-            (valueTest
-              (singleTest
-                (variable)))))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (variable)))))
-  (production
-    (prod_name)
-    (documentation)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
-            (singleTest
-              (string))
+            (string)
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake

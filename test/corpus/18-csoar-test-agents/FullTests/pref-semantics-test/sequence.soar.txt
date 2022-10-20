@@ -52,14 +52,12 @@ sp {sequence*test*fail
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -78,22 +76,17 @@ sp {sequence*test*fail
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))))
@@ -101,28 +94,21 @@ sp {sequence*test*fail
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))
@@ -131,28 +117,21 @@ sp {sequence*test*fail
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))
@@ -166,43 +145,34 @@ sp {sequence*test*fail
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (variable))
+            (variable)
             (relationalTest
               (relation)
-              (singleTest
-                (string))))))
+              (string)))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

@@ -22,59 +22,47 @@ sp {answer*chunk*create-goal*apply*copy-result*t6-1
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

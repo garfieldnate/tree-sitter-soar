@@ -283,23 +283,18 @@ sp {arithmetic*apply*generate-facts*add10
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))
+          (floatConstant))
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -319,22 +314,17 @@ sp {arithmetic*apply*generate-facts*add10
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -349,22 +339,17 @@ sp {arithmetic*apply*generate-facts*add10
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2377,22 +2362,17 @@ sp {arithmetic*apply*generate-facts*add10
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -4005,22 +3985,17 @@ sp {arithmetic*apply*generate-facts*add10
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake

@@ -74,98 +74,74 @@ sp {selection*elaborate*evaluate-operator*remaining-operators*current-evaluation
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
           (condType)
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))
+              (variable))))
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable))))
+              (variable)))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable))))
+              (variable)))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))))
+              (string))))))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
           (condType)
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))
+              (variable))))
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable))))
+              (variable)))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable))))
+              (variable)))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))))
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -195,60 +171,46 @@ sp {selection*elaborate*evaluate-operator*remaining-operators*current-evaluation
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (negativeCond
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (variable))))))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -261,53 +223,39 @@ sp {selection*elaborate*evaluate-operator*remaining-operators*current-evaluation
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

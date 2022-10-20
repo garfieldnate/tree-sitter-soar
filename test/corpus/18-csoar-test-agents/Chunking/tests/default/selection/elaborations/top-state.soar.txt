@@ -42,33 +42,26 @@ sp {top-goal*halt*failure
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
         (disjunctionTest
           (string)
           (string))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (funcCall
       (funcName
         (string))))
@@ -77,34 +70,27 @@ sp {top-goal*halt*failure
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
         (disjunctionTest
           (string)
           (string)
           (string))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (funcCall
       (funcName
         (string)))))

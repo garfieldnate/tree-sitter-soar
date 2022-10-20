@@ -22,14 +22,12 @@ sp {answer*retrieve*elaborate*smem-result*t5-1b
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -53,14 +51,12 @@ sp {answer*retrieve*elaborate*smem-result*t5-1b
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake

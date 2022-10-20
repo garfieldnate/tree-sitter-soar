@@ -13,14 +13,12 @@ sp {one
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -43,14 +41,12 @@ sp {neg-x-x
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -73,14 +69,12 @@ sp {x-xex
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -103,14 +97,12 @@ sp {neg-x-xE-x
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -133,14 +125,12 @@ sp {neg-x-xE-x
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -163,14 +153,12 @@ sp {neg-x-xd
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -193,14 +181,12 @@ sp {neg-x-xf
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -223,14 +209,12 @@ sp {neg-x-xD
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -253,14 +237,12 @@ sp {neg-x-xF
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))))
+          (floatConstant))))
     (variableMutation
       (variable)
       (attrValueMake

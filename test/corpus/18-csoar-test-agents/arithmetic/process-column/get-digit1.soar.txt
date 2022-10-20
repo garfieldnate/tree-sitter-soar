@@ -41,17 +41,14 @@ sp {process-column*apply*get-digit1-new
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))))
+        (string)))
     (variableMutation
       (variable)
       (attrValueMake
@@ -70,40 +67,30 @@ sp {process-column*apply*get-digit1-new
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -114,40 +101,30 @@ sp {process-column*apply*get-digit1-new
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string))
+      (attrValueTests
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake

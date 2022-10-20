@@ -77,14 +77,12 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -107,16 +105,13 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -128,41 +123,31 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -179,29 +164,23 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -218,51 +197,39 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
+              (string))
             (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -283,35 +250,27 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -335,14 +294,12 @@ sp {done
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string)))
+        (string))
       (attrValueTests
-        (singleTest
-          (string))))
+        (string)))
     (funcCall
       (funcName
         (string)))))

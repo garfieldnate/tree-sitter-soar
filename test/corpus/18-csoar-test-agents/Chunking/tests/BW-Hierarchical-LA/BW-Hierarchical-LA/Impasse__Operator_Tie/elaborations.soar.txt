@@ -18,14 +18,12 @@ sp {Impasse__Operator_Tie*elaborate*learn*on
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))

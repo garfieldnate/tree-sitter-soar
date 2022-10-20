@@ -98,14 +98,12 @@ sp {start-chunking-partial-lit
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -120,18 +118,14 @@ sp {start-chunking-partial-lit
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))
@@ -144,29 +138,23 @@ sp {start-chunking-partial-lit
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -189,180 +177,141 @@ sp {start-chunking-partial-lit
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (string)
-          (unaryPreference)))))
-  (production
-    (prod_name)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (string)
-          (unaryPreference)))))
-  (production
-    (prod_name)
+        (valueTest
+          (variable))))
     (condsForOneId
-      (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (string)
-          (unaryPreference)))))
-  (production
-    (prod_name)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
         (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
           (string))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (string)
+          (unaryPreference)))))
+  (production
+    (prod_name)
     (condsForOneId
-      (singleTest
+      (condType)
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
             (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (string)
+          (unaryPreference)))))
+  (production
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
+            (variable))))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (string)
+          (unaryPreference)))))
+  (production
+    (prod_name)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -384,41 +333,31 @@ sp {start-chunking-partial-lit
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

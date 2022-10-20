@@ -21,112 +21,94 @@ sp {answer*make-chunk*StateNoChange*t2-1
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string))
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
+              (string))
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
-            (singleTest
-              (variable))))))
+              (string))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake

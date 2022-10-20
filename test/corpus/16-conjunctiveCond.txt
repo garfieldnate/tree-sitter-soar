@@ -18,28 +18,24 @@ sp {negative
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))
+              (variable))))
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))))))
+              (string))))))))
 
 ================================================================================
 negative structure
@@ -61,23 +57,19 @@ sp {negative
     (negativeCond
       (conjunctiveCond
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))
+              (variable))))
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))))))
+              (string))))))))
 
 ================================================================================
 positive
@@ -99,27 +91,23 @@ sp {positive
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (conjunctiveCond
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (variable)))))
+            (variable))))
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (string))))))))
+            (string)))))))
 
 ================================================================================
 positive structure
@@ -141,17 +129,15 @@ sp {positive
     (conjunctiveCond
       (condsForOneId
         (condType)
-        (singleTest
+        (idTest
           (variable)))
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (string))))))))
+            (string)))))))
 
 ================================================================================
 nested
@@ -177,45 +163,37 @@ sp {negative-nested
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (variable)))))
+              (variable))))
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))
+              (string))))
         (negativeCond
           (conjunctiveCond
             (condsForOneId
-              (singleTest
+              (idTest
                 (variable))
               (attrValueTests
-                (singleTest
-                  (string))
+                (string)
                 (valueTest
-                  (singleTest
-                    (variable)))))
+                  (variable))))
             (condsForOneId
-              (singleTest
+              (idTest
                 (variable))
               (attrValueTests
-                (singleTest
-                  (string))
+                (string)
                 (valueTest
-                  (singleTest
-                    (variable)))))))))))
+                  (variable))))))))))

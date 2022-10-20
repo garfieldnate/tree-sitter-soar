@@ -19,37 +19,29 @@ sp {answer*chunk*apply21c*onc*t3-1
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (negativeCond
       (conjunctiveCond
         (condsForOneId
-          (singleTest
+          (idTest
             (variable))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string))))
+              (string)))
           (attrValueTests
-            (singleTest
-              (string))
+            (string)
             (valueTest
-              (singleTest
-                (string)))))))
+              (string))))))
     (variableMutation
       (variable)
       (attrValueMake

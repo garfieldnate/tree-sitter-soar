@@ -558,63 +558,45 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -626,57 +608,41 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -688,98 +654,36 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
-            (singleTest
-              (variable))))))
-    (variableMutation
-      (variable)
-      (attrValueMake
-        (string)
-        (valueMake
-          (variable)))))
-  (production
-    (prod_name)
-    (flag)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
+              (string))
             (variable)))))
     (variableMutation
       (variable)
@@ -792,53 +696,77 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (variable)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (string)
+        (valueTest
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -862,53 +790,38 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -926,14 +839,12 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
         (conjunctiveTest
           (disjunctionTest
@@ -945,53 +856,39 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
             (string)
             (string)
             (string))
-          (singleTest
-            (variable)))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1003,14 +900,12 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
         (conjunctiveTest
           (disjunctionTest
@@ -1022,62 +917,46 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
             (string)
             (string)
             (string))
-          (singleTest
-            (variable)))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1089,68 +968,50 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1162,68 +1023,50 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1235,34 +1078,26 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (negativeCond
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
-            (string))
+          (string)
           (valueTest
-            (singleTest
-              (string))))))
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1274,30 +1109,22 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1309,56 +1136,101 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
+        (string))
+      (attrValueTests
+        (string))
+      (attrValueTests
+        (string))
+      (attrValueTests
+        (string)))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (string)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
           (string)))
       (attrValueTests
-        (singleTest
+        (string))
+      (attrValueTests
+        (string)
+        (valueTest
           (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (string)
+        (valueMake
+          (string)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
           (string))))
     (variableMutation
       (variable)
@@ -1371,114 +1243,26 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (string)))))
-  (production
-    (prod_name)
-    (flag)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
         (string)
-        (valueMake
-          (string)))))
-  (production
-    (prod_name)
-    (flag)
-    (condsForOneId
-      (condType)
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1490,30 +1274,22 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1525,102 +1301,77 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
+        (variable))
+      (attrValueTests
+        (string))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1632,38 +1383,27 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1680,53 +1420,38 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1743,36 +1468,26 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1788,102 +1503,76 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (string))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
+        (variable))
+      (attrValueTests
+        (string))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (string)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
+            (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1901,71 +1590,53 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (variable))))
+        (variable)))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -1977,56 +1648,43 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))))
+              (variable))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2041,54 +1699,42 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2102,51 +1748,37 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (variable))
+        (variable)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2158,78 +1790,57 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
+            (string))
           (variable))
         (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (variable))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (variable)
         (valueTest
-          (singleTest
-            (string))))
+          (variable)))
       (attrValueTests
-        (singleTest
+        (variable)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
           (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
+        (string))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2241,50 +1852,38 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2302,95 +1901,72 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (negativeCond
-      (condsForOneId
-        (singleTest
-          (variable))
-        (attrValueTests
-          (singleTest
             (string))
-          (valueTest
-            (singleTest
-              (variable))))))
+          (variable))
+        (valueTest
+          (variable))))
     (negativeCond
       (condsForOneId
-        (singleTest
+        (idTest
           (variable))
         (attrValueTests
-          (singleTest
+          (string)
+          (valueTest
             (variable)))))
+    (negativeCond
+      (condsForOneId
+        (idTest
+          (variable))
+        (attrValueTests
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2402,60 +1978,46 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (variable))
+        (string)
+        (variable)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2467,33 +2029,25 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2505,30 +2059,22 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
+          (floatConstant))
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (floatConstant)))
-        (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2540,32 +2086,24 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -2577,69 +2115,114 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
+            (string))
+          (variable))
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (variable)))
+    (variableMutation
+      (variable)
+      (attrValueMake
+        (variable)
+        (valueMake
+          (variable)))))
+  (production
+    (prod_name)
+    (flag)
+    (condsForOneId
+      (condType)
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (string))
+          (variable))
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
+      (attrValueTests
+        (variable)
+        (valueTest
           (variable))))
     (variableMutation
       (variable)
@@ -2652,130 +2235,41 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
           (relationalTest
             (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
+            (string))
           (variable))
         (valueTest
-          (singleTest
-            (variable)))))
-    (variableMutation
-      (variable)
-      (attrValueMake
-        (variable)
-        (valueMake
-          (variable)))))
-  (production
-    (prod_name)
-    (flag)
+          (variable))))
     (condsForOneId
-      (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (conjunctiveTest
-          (relationalTest
-            (relation)
-            (singleTest
-              (string)))
-          (singleTest
-            (variable)))
-        (valueTest
-          (singleTest
-            (variable)))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

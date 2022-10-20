@@ -14,11 +14,10 @@ sp {simple
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))))))
+        (string)))))
 
 ================================================================================
 simple negative match
@@ -36,11 +35,10 @@ sp {simple-negative
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))))))
+        (string)))))
 
 ================================================================================
 variable match
@@ -58,11 +56,10 @@ sp {variable
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (variable))))))
+        (variable)))))
 
 ================================================================================
 simple concatenated match
@@ -80,13 +77,11 @@ sp {simple-cat
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))))))
+        (string)
+        (string)))))
 
 ================================================================================
 concatenated match with bad parent should fail; only string/quoted/variable can have a child; TODO: SHOULD FAIL
@@ -104,20 +99,16 @@ sp {cat
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (floatConstant)))
+          (floatConstant))
         (valueTest
-          (singleTest
-            (floatConstant)))
+          (floatConstant))
         (valueTest
-          (singleTest
-            (string)))))))
+          (string))))))
 
 ================================================================================
 simple conjunction match
@@ -135,14 +126,12 @@ sp {conjunction
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
-          (singleTest
-            (string))
-          (singleTest
-            (string)))))))
+          (string)
+          (string))))))
 
 ================================================================================
 complicated conjunction match
@@ -160,19 +149,17 @@ sp {conjunction-mess
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
-          (singleTest
-            (string))
+          (string)
           (disjunctionTest
             (string)
             (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string))))))))
+            (string)))))))
 
 ================================================================================
 complicated conjunction concatenation match
@@ -190,26 +177,21 @@ sp {conjunction-mess-cat
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
         (conjunctiveTest
-          (singleTest
-            (string))
+          (string)
           (disjunctionTest
             (string)
             (string))
           (relationalTest
             (relation)
-            (singleTest
-              (string))))
-        (conjunctiveTest
-          (singleTest
-            (string))
-          (singleTest
             (string)))
-        (singleTest
-          (quoted))))))
+        (conjunctiveTest
+          (string)
+          (string))
+        (quoted)))))
 
 ================================================================================
 simple make
@@ -227,7 +209,7 @@ sp {simple
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -252,7 +234,7 @@ sp {cat
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -281,7 +263,7 @@ sp {cat
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -310,7 +292,7 @@ sp {variable
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -339,7 +321,7 @@ sp {varied
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)

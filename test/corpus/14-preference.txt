@@ -14,7 +14,7 @@ sp {unary
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -40,7 +40,7 @@ sp {unary
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -66,7 +66,7 @@ sp {double
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -93,7 +93,7 @@ sp {binary
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -120,7 +120,7 @@ sp {multiple
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)

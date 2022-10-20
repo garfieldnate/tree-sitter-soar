@@ -14,11 +14,10 @@ sp {strings
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (disjunctionTest
             (string)
@@ -46,11 +45,10 @@ sp {quoted
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (disjunctionTest
             (quoted)
@@ -79,20 +77,16 @@ sp {no-space
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (string)))
+          (string))
         (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -116,11 +110,10 @@ sp {no-space
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (disjunctionTest
             (string)

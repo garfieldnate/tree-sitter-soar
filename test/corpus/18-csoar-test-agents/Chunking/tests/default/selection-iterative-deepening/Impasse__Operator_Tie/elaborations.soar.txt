@@ -97,24 +97,18 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -125,41 +119,32 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))
+          (variable))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -170,57 +155,44 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable))
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
             (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
-        (valueTest
-          (conjunctiveTest
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -231,77 +203,59 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable))
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
             (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
-        (valueTest
-          (conjunctiveTest
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -312,101 +266,77 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable))
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
             (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
-        (valueTest
-          (conjunctiveTest
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -417,129 +347,98 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable))
+        (valueTest
+          (conjunctiveTest
+            (relationalTest
+              (relation)
+              (variable))
             (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
+              (variable))
+            (relationalTest
+              (relation)
+              (variable))
+            (variable)))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))
-        (valueTest
-          (conjunctiveTest
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (relationalTest
-              (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable)))))
+              (variable))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -551,100 +450,74 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))
+          (variable))
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
-            (singleTest
-              (variable))))))
-    (condsForOneId
-      (singleTest
-        (variable))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (singleTest
+              (variable))
             (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable))))
+    (condsForOneId
+      (idTest
+        (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
+              (string))
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
-            (singleTest
-              (variable)))))
+              (string))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -657,32 +530,24 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (funcCall
       (funcName
         (string))
@@ -696,57 +561,44 @@ sp {selection*select*failure-evaluation-becomes-reject-preference
     (flag)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (disjunctionTest
             (string)
             (string))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (variableMutation
       (variable)
       (attrValueMake

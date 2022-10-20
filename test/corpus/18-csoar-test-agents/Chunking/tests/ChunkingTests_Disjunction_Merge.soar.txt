@@ -88,14 +88,12 @@ sp {make-chunk
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -122,18 +120,14 @@ sp {make-chunk
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
-        (singleTest
-          (string))
-        (singleTest
-          (string))
+        (string)
+        (string)
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (funcCall
       (funcName
         (string))
@@ -146,34 +140,27 @@ sp {make-chunk
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
-            (singleTest
-              (variable))))))
+              (string))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -192,78 +179,63 @@ sp {make-chunk
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable))))
+          (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (variable)))))
+          (variable))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (disjunctionTest
             (string)
             (string)))
         (valueTest
-          (singleTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (conjunctiveTest
+            (disjunctionTest
+              (string))
             (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string))
-            (singleTest
-              (variable)))))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (disjunctionTest
-              (string))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string))
-            (singleTest
-              (variable)))))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
@@ -274,8 +246,7 @@ sp {make-chunk
               (string))
             (disjunctionTest
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -307,106 +278,87 @@ sp {make-chunk
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (variable)))
+      (attrValueTests
+        (string)
+        (valueTest
+          (conjunctiveTest
+            (disjunctionTest
+              (string))
             (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
+          (conjunctiveTest
+            (disjunctionTest
+              (string)
+              (string))
             (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
+              (string)
+              (string)
               (string))
-            (singleTest
-              (variable)))))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
+              (string)
+              (string)
+              (string)
               (string))
-            (singleTest
-              (variable)))))
+            (variable))))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string)
               (string))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (disjunctionTest
-              (string)
-              (string)
-              (string)
-              (string)
-              (string))
-            (singleTest
-              (variable)))))
-      (attrValueTests
-        (singleTest
-          (string))
-        (valueTest
-          (conjunctiveTest
-            (disjunctionTest
-              (string)
-              (string)
-              (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (condsForOneId
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (string)))
+              (string))
             (disjunctionTest
               (string)
               (string)
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake

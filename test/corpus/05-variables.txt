@@ -14,7 +14,7 @@ sp {one-letter
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -39,7 +39,7 @@ sp {lots-o-garbage
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -64,7 +64,7 @@ sp {lots-o-garbage
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -114,7 +114,7 @@ sp {empty
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (string))
       (ERROR
         (UNEXPECTED 'b')))
@@ -167,7 +167,7 @@ sp {lots-o-garbage
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (string))
       (ERROR
         (UNEXPECTED 'a')))
@@ -196,7 +196,7 @@ sp {lots-o-garbage
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (string))
       (ERROR
         (UNEXPECTED '\')))

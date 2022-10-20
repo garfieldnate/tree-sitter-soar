@@ -24,6 +24,10 @@ module.exports = grammar({
       // TODO: other kinds of commands
     ),
 
+    ////////////////
+    // sp command //
+    ////////////////
+
     production: $ => seq(
       'sp',
       "{",
@@ -58,10 +62,14 @@ module.exports = grammar({
     condsForOneId: $ => seq(
       '(',
       field("type", optional($.condType)),
-      field("id_test", optional($._test)),
+      field("id_test", optional($.idTest)),
       field("att_value_tests", repeat($.attrValueTests)),
       ')'),
     condType: $ => choice('state', 'impasse'),
+
+    // manual grammar notes that only a <variable> may be used in the <singleTest> child here;
+    // we'll ignore the distinction for simplicity here
+    idTest: $ => $._test,
 
     _test: $ => choice($.conjunctiveTest, $._simpleTest),
 
@@ -75,15 +83,15 @@ module.exports = grammar({
 
     conjunctiveTest: $ => seq('{', field("tests", repeat1($._simpleTest)), '}'),
 
-    _simpleTest: $ => choice($.disjunctionTest, $.relationalTest, $.singleTest),
+    _simpleTest: $ => choice($.disjunctionTest, $.relationalTest, $._singleTest),
 
     // TODO: first token should be followed by whitespace (/<<(?=\s)/, but lookahead not allowed in tree-sitter);
     // don't have to worry about looking for whitespace after >>; if no space is there, the parser will think it's a string and fail.
     disjunctionTest: $ => seq('<<', field("vals", repeat1($._constant)), '>>'),
 
-    relationalTest: $ => seq(field("relation", $.relation), field("test", $.singleTest)),
+    relationalTest: $ => seq(field("relation", $.relation), field("test", $._singleTest)),
 
-    singleTest: $ => choice($.variable, $._constant),
+    _singleTest: $ => choice($.variable, $._constant),
 
     // TODO: use /<(?=\s)/ to ensure we don't match the beginning of a variable (lookaround illegal in tree-sitter)
     relation: $ => choice("<=>", "<>", "<=", ">=", ">", "<", "="),
@@ -123,9 +131,9 @@ module.exports = grammar({
       field("pref", choice("+", "-", "!", "~", "@", ">", "<", "=", "&")),
       optional(',')),
 
-    ///////////////////////////////////////
-    // Values used in both LHS and RHS
-    ///////////////////////////////////////
+    /////////////
+    // lexemes //
+    /////////////
 
     // TODO: original ends with (?<!>)> but lookaround is illegal in tree-sitter
     variable: $ => /<[A-Za-z0-9$%&*+/:=?_<>-]+>/,

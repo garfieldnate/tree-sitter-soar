@@ -14,7 +14,7 @@ sp {arithmatic
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -57,7 +57,7 @@ sp {crlf
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -82,7 +82,7 @@ sp {various-args
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -112,7 +112,7 @@ sp {var-is-name
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)
@@ -140,7 +140,7 @@ sp {crlf
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable)))
     (variableMutation
       (variable)

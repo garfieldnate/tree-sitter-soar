@@ -14,16 +14,14 @@ sp {greater-than
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
-              (string))))))
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -47,16 +45,14 @@ sp {same-type
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
-              (variable))))))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -80,16 +76,14 @@ sp {inequality
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
-              (quoted))))))
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -113,20 +107,16 @@ sp {multiple-vals
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (string)))
+          (string))
         (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (quoted)))))
+          (quoted))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -150,29 +140,24 @@ sp {multiple-tests
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
           (string))
         (valueTest
-          (singleTest
+          (relationalTest
+            (relation)
             (string)))
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
-              (string))))
+            (string)))
         (valueTest
           (relationalTest
             (relation)
-            (singleTest
-              (string))))
-        (valueTest
-          (relationalTest
-            (relation)
-            (singleTest
-              (string))))))
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -196,21 +181,18 @@ sp {conjunct-rel
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -234,19 +216,16 @@ sp {conjunct-binary-rel
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (variable))
+            (variable)
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))))))
+              (variable))))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -270,28 +249,24 @@ sp {conjunct-mixed-rel
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (relationalTest
               (relation)
-              (singleTest
-                (variable)))
+              (variable))
             (disjunctionTest
               (string)
               (string)
               (string)
               (string))
-            (singleTest
-              (variable))))))
+            (variable)))))
     (variableMutation
       (variable)
       (attrValueMake

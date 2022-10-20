@@ -14,17 +14,14 @@ sp {strings
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (string))
-            (singleTest
-              (string))))))
+            (string)
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -48,17 +45,14 @@ sp {strings-spaceless
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (string))
-            (singleTest
-              (string))))))
+            (string)
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -82,19 +76,15 @@ sp {quoted
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (quoted))
-            (singleTest
-              (quoted))
-            (singleTest
-              (quoted))))))
+            (quoted)
+            (quoted)
+            (quoted)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -118,11 +108,10 @@ sp {disjunct
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
             (disjunctionTest
@@ -155,17 +144,14 @@ sp {variable
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (variable))
-            (singleTest
-              (string))))))
+            (variable)
+            (string)))))
     (variableMutation
       (variable)
       (attrValueMake
@@ -189,17 +175,14 @@ sp {no-ending
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
           (conjunctiveTest
-            (singleTest
-              (string))
-            (singleTest
-              (string))
+            (string)
+            (string)
             (MISSING "}")))))
     (variableMutation
       (variable)
@@ -224,17 +207,14 @@ sp {no-ending
     (prod_name)
     (condsForOneId
       (condType)
-      (singleTest
+      (idTest
         (variable))
       (attrValueTests
-        (singleTest
+        (string)
+        (valueTest
           (string))
         (valueTest
-          (singleTest
-            (string)))
-        (valueTest
-          (singleTest
-            (string))))
+          (string)))
       (ERROR))
     (variableMutation
       (variable)

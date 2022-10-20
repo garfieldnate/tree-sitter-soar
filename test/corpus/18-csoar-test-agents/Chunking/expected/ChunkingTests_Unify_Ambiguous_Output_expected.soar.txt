@@ -15,19 +15,16 @@ sp {answer*make-chunk*StateNoChange*t2-1
     (prod_name)
     (condsForOneId
       (condType)
-      (conjunctiveTest
-        (relationalTest
-          (relation)
-          (singleTest
-            (string)))
-        (singleTest
+      (idTest
+        (conjunctiveTest
+          (relationalTest
+            (relation)
+            (string))
           (variable)))
       (attrValueTests
-        (singleTest
-          (string))
+        (string)
         (valueTest
-          (singleTest
-            (string)))))
+          (string))))
     (variableMutation
       (variable)
       (attrValueMake
