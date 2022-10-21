@@ -8,7 +8,7 @@ source top-state.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg)))

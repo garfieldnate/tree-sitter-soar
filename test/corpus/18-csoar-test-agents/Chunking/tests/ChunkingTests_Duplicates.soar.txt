@@ -60,16 +60,16 @@ sp {too-deep
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'm')
-    (UNEXPECTED ')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'u')
-    (intConstant)
-    (UNEXPECTED 'r')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

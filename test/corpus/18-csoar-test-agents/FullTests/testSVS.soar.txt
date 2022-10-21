@@ -874,9 +874,8 @@ sp {svs-tester*extract-filters*elaborate*passed*bbox
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'e'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

@@ -49,10 +49,10 @@ sp {apply13b
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'a'))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

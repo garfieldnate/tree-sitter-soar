@@ -21,16 +21,30 @@ source pour.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg)))

@@ -8,8 +8,7 @@ source move-tile.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg)))

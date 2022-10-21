@@ -75,16 +75,25 @@ sp {apply-create-chunk
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 's')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'd')
-    (UNEXPECTED 'i')
-    (UNEXPECTED '))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

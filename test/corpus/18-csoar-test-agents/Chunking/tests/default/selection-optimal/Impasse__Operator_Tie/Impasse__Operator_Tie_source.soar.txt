@@ -11,11 +11,12 @@ popd
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command))

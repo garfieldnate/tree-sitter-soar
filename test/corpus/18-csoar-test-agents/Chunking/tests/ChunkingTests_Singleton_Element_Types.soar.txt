@@ -159,9 +159,10 @@ sp {apply-create-chunk
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

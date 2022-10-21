@@ -93,15 +93,27 @@ sp "success
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'w')
     (UNEXPECTED 'p')
     (UNEXPECTED 'f')
     (UNEXPECTED 'a')

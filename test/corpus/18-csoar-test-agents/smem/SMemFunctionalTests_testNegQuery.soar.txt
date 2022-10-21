@@ -387,9 +387,9 @@ smem --add {
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'w')
-    (intConstant)
     (UNEXPECTED 'e'))
   (production
     (prod_name)

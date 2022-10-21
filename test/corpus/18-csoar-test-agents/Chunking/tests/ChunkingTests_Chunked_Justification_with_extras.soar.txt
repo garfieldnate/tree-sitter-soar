@@ -151,8 +151,9 @@ sp {top-state*apply*finish
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'n')
     (UNEXPECTED 'e'))
   (production
     (prod_name)

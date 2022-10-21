@@ -218,13 +218,15 @@ sp {move-block*elaborate*copy*superstate
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

@@ -22,32 +22,32 @@ source write-result.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED '_')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg)))

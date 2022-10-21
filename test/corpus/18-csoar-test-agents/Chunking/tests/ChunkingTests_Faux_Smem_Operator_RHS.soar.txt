@@ -121,10 +121,11 @@ sp {apply*chunk*check-smem*success
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'a')
     (UNEXPECTED 'e')
     (UNEXPECTED 'a')
     (variable)

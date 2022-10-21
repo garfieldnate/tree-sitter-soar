@@ -114,14 +114,20 @@ sp {apply*check-epmem*failure
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'e'))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

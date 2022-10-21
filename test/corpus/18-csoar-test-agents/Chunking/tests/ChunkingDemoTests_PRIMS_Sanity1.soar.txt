@@ -3820,9 +3820,11 @@ smem --add {
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'n')
-    (intConstant)
     (UNEXPECTED 'e')
     (UNEXPECTED 'm')
     (UNEXPECTED 'l')

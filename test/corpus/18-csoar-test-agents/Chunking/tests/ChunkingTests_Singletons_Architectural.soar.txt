@@ -24,8 +24,8 @@ sp {apply-create-chunk-architectural-singletons
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

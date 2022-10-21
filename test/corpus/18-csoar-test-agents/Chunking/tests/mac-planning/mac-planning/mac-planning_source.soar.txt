@@ -20,15 +20,28 @@ source move-boat.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg)))

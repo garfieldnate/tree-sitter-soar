@@ -29,31 +29,44 @@ source stop-arithmetic.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg)))

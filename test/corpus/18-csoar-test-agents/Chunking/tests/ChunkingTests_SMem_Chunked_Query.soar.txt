@@ -156,11 +156,12 @@ sp {success
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'l')
     (UNEXPECTED 'e')
     (intConstant))
   (smemAdd

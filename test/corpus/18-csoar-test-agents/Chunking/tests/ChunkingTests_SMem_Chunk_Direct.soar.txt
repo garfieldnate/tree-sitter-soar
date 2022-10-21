@@ -91,10 +91,11 @@ sp {success
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'a')
     (UNEXPECTED 'e'))
   (smemAdd
     (variable)

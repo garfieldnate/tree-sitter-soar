@@ -20,16 +20,20 @@ chunk off
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'f')))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)))

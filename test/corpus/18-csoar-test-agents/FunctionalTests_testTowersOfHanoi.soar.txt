@@ -295,18 +295,21 @@ sp {apply*move-disk*remove*last-disk1-peg
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (documentation)

@@ -411,79 +411,89 @@ sp {pref*random-numeric
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'm')
-    (UNEXPECTED ')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'd')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'n')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

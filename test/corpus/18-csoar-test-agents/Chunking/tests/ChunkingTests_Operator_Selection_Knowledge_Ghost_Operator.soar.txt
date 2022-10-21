@@ -90,10 +90,11 @@ sp {make-chunk
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

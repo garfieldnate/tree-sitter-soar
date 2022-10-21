@@ -12,19 +12,15 @@ source open-gripper.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)))

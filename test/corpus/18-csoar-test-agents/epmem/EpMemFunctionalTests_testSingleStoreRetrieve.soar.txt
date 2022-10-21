@@ -66,11 +66,16 @@ sp {done*failed
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e'))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

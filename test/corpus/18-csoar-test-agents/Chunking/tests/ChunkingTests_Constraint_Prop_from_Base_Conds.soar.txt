@@ -66,10 +66,11 @@ sp {propose*stop
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

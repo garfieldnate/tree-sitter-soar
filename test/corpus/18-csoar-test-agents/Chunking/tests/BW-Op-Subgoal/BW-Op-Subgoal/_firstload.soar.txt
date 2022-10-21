@@ -28,13 +28,17 @@ chunk add-osk on
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)))

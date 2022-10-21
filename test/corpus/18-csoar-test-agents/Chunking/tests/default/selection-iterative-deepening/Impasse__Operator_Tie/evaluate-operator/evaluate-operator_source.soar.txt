@@ -13,12 +13,16 @@ source task-operator.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg)))

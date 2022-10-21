@@ -20,9 +20,9 @@ module.exports = grammar({
     _comment: $ => /(?:;\s*)?#[^\r\n]*/,
 
     _command: $ => choice(
-      $.production,
-      $._smem,
-      // TODO: other kinds of commands
+      field("prod", $.production),
+      field("smem", $._smem),
+      field("command", $.command),
     ),
 
     /////////////////
@@ -41,7 +41,30 @@ module.exports = grammar({
       '^',
       field("attr_name", $._constant),
       field("attr_vals", repeat1(choice($._singleTest, $.lti)))
-      ),
+    ),
+
+    ////////////////////
+    // other commands //
+    ////////////////////
+
+    // these rules are extremely simplified; individual Soar commands can
+    // each define their own parsers, and for example sp or smem --add can
+    // pass complex structures into "" or {} (and we only parse the {} variant!)
+    // these rules are here as sort of a catch-all to give highlighting on
+    // the rest of the commands; ideally each would have its own parser defined
+
+    command: $ => seq(
+      field("name", choice(/[^\s]+/)),
+      field("args", repeat($.arg)), "\n"),
+
+    arg: $ => choice(
+      // single word
+      field("val", /[^"{\s]+/),
+      // quoted string (maybe containing escaped quotes)
+      seq('"', field("val", /(?:\\"|[^"])*/), '"'),
+      // matched curly brackets
+      seq('{', field("val", /[^}]+/), '}'),
+    ),
 
     ////////////////
     // sp command //

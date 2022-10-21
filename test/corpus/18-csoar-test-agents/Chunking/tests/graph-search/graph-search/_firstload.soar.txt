@@ -49,22 +49,33 @@ chunk add-osk on
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'o')
-    (UNEXPECTED ')
-    (UNEXPECTED '))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -79,24 +90,82 @@ chunk add-osk on
       (funcName
         (string))
       (variable)))
-  (ERROR
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (MISSING "
+")))

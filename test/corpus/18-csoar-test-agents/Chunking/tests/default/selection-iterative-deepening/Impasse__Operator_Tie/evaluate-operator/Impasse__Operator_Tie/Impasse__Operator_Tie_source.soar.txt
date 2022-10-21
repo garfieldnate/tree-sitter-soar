@@ -9,11 +9,9 @@ source no-more-evaluations.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)))

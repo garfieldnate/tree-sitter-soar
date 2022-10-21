@@ -12,11 +12,10 @@ chunk always
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg)))

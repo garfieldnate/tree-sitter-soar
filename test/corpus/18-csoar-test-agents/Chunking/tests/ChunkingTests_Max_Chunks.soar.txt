@@ -52,11 +52,11 @@ sp {chunk*resolve-conditions*elaborate*addition
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'm')
-    (UNEXPECTED ')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

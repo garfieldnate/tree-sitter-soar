@@ -107,16 +107,20 @@ sp {graph-match-unit*apply*retrieve*failure
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e'))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

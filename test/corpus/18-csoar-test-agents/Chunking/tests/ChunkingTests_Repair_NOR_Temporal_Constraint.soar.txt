@@ -92,9 +92,9 @@ sp {apply*query*success*2
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
     (UNEXPECTED 'e')
     (UNEXPECTED 'a'))
   (smemAdd

@@ -93,8 +93,8 @@ sp {make-chunk
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

@@ -451,57 +451,86 @@ sp {P1*elaborate*block*clear
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'm')
-    (UNEXPECTED ')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'u')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'b'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

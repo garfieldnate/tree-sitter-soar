@@ -30,30 +30,47 @@ chunk add-osk on
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'f')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'f')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)))

@@ -116,37 +116,41 @@ sp {elaborate*state*name
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 's')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'm')
-    (UNEXPECTED ')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'u')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'p')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

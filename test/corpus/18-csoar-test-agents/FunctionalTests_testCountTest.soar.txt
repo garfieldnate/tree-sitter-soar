@@ -448,10 +448,10 @@ sp {count-test*apply*test-complete
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -565,10 +565,8 @@ sp {count-test*apply*test-complete
             (funcName)
             (variable)
             (string))))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -647,10 +645,8 @@ sp {count-test*apply*test-complete
             (funcName)
             (variable)
             (string))))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'e')
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

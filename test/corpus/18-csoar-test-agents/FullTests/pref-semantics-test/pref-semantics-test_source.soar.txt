@@ -51,79 +51,82 @@ popd
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 's')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'b')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'v')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command)
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command))

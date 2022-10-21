@@ -122,9 +122,11 @@ sp {default*select*reject*conflict
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'a'))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (documentation)

@@ -66,9 +66,10 @@ sp {chunk-parameters*preference*prefer*single-operators*2args
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'f')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

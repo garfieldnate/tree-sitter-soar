@@ -216,9 +216,11 @@ sp {water-jug*apply*pour*empty-source
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'n')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

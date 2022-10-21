@@ -4416,11 +4416,12 @@ sp {eight*apply*operator*add-tile-cell
         (valueMake
           (variable)
           (unaryPreference)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

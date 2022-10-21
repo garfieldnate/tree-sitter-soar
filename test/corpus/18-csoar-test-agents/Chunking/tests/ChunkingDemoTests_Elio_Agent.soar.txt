@@ -4260,8 +4260,8 @@ chunk singleton identifier lti-name constant
     (intConstant)
     (UNEXPECTED 'o')
     (UNEXPECTED 'n')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'r'))
+    (UNEXPECTED 'p'))
+  (command)
   (production
     (prod_name)
     (flag)
@@ -40349,20 +40349,38 @@ chunk singleton identifier lti-name constant
     (smemAttrValues
       (string)
       (string)))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 's')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg)))

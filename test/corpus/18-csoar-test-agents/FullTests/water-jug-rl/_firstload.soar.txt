@@ -14,9 +14,12 @@ rl --set learning on
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)))

@@ -80,31 +80,65 @@ srand 1
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (intConstant)))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)))

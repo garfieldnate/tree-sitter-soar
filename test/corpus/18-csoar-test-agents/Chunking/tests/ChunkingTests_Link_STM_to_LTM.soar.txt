@@ -125,8 +125,9 @@ sp {anywhere*query*succeed
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg))
   (ERROR
-    (UNEXPECTED 'a')
     (UNEXPECTED 'e'))
   (smemAdd
     (variable)

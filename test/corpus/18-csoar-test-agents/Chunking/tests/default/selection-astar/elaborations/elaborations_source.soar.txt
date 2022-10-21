@@ -7,6 +7,5 @@ source _all.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')))
+  (command
+    (arg)))

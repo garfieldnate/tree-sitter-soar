@@ -9,10 +9,9 @@ source write-digit1.soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'i')
-    (UNEXPECTED 'o')))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)))

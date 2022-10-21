@@ -18129,16 +18129,22 @@ w 0 # blah blah blah
             (funcName)
             (variable)
             (string))))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -35819,30 +35825,40 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -37390,18 +37406,23 @@ w 0 # blah blah blah
       (variable)
       (quoted)
       (variable)))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (documentation)
@@ -38447,25 +38468,25 @@ w 0 # blah blah blah
       (variable)
       (quoted)
       (variable)))
-  (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -40191,15 +40212,8 @@ w 0 # blah blah blah
       (variable)
       (quoted)
       (variable)))
-  (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'h')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -42732,30 +42746,39 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'i')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (documentation)
@@ -44676,14 +44699,17 @@ w 0 # blah blah blah
         (string))
       (crlf)
       (quoted)))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -45828,17 +45854,21 @@ w 0 # blah blah blah
         (string))
       (crlf)
       (quoted)))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -47944,17 +47974,27 @@ w 0 # blah blah blah
         (string))
       (crlf)
       (quoted)))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -49350,12 +49390,13 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'm')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'a'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -50069,9 +50110,11 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (string)))))
-  (ERROR
-    (UNEXPECTED 'n')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -50392,52 +50435,8 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'p')
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'p')
-    (variable)
-    (UNEXPECTED 'j')
-    (variable)
-    (variable)
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'p')
-    (variable)
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -50638,52 +50637,8 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'e')
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'p')
-    (variable)
-    (UNEXPECTED 'j')
-    (variable)
-    (variable)
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'p')
-    (variable)
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -50775,52 +50730,8 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'f')
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'p')
-    (variable)
-    (UNEXPECTED 'j')
-    (variable)
-    (variable)
-    (variable)
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'j')
-    (UNEXPECTED 'v')
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'v')
-    (intConstant)
-    (UNEXPECTED 'o')
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (intConstant)
-    (UNEXPECTED ']')
-    (variable)
-    (UNEXPECTED 'p')
-    (variable)
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -50938,11 +50849,15 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (string)))))
-  (ERROR
-    (UNEXPECTED 'n')
-    (intConstant)
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -51864,9 +51779,11 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (string)))))
-  (ERROR
-    (UNEXPECTED 'n')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -53115,9 +53032,11 @@ w 0 # blah blah blah
         (valueMake
           (variable)
           (unaryPreference)))))
-  (ERROR
-    (UNEXPECTED 'n')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -54955,9 +54874,8 @@ w 0 # blah blah blah
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'f'))
+  (command
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -55012,10 +54930,10 @@ w 0 # blah blah blah
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'f'))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -55060,10 +54978,10 @@ w 0 # blah blah blah
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'f'))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -55107,9 +55025,8 @@ w 0 # blah blah blah
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -62198,9 +62115,8 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (string)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'f'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -62316,9 +62232,8 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -62679,10 +62594,13 @@ w 0 # blah blah blah
             (funcName)
             (variable)
             (variable))))))
-  (ERROR
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -63771,8 +63689,8 @@ w 0 # blah blah blah
       (quoted)
       (variable)
       (quoted)))
-  (ERROR
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -65791,9 +65709,10 @@ w 0 # blah blah blah
         (valueMake
           (variable)
           (unaryPreference)))))
-  (ERROR
-    (UNEXPECTED 'n')
-    (UNEXPECTED 'a'))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -66668,8 +66587,8 @@ w 0 # blah blah blah
       (variable)
       (quoted)
       (variable)))
-  (ERROR
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -70672,11 +70591,14 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -72685,11 +72607,14 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'a')
-    (intConstant)
-    (UNEXPECTED 'm')
-    (intConstant))
+  (command
+    (arg))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -73741,16 +73666,20 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (string)))))
-  (ERROR
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'r'))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -74111,9 +74040,10 @@ w 0 # blah blah blah
       (crlf)
       (quoted)
       (variable)))
-  (ERROR
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e'))
+  (command
+    (arg)
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -74130,6 +74060,5 @@ w 0 # blah blah blah
         (string)
         (valueMake
           (quoted)))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (intConstant)))
+  (command
+    (arg)))

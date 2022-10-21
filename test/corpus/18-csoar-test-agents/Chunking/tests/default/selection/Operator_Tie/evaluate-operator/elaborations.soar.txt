@@ -1583,8 +1583,9 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'u'))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -1691,9 +1692,12 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'u'))
+  (command
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (flag)
@@ -1741,8 +1745,9 @@ sp {evaluate-operator*elaborate*operator*add-attribute-to-duplicate-operator*nln
         (variable)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'u'))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (flag)

@@ -87,10 +87,10 @@ sp {apply*test-done
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'r')
-    (intConstant)
-    (UNEXPECTED 'n'))
+  (command
+    (arg))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

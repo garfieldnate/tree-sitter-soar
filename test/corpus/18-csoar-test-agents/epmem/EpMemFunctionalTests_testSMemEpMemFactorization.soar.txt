@@ -1428,9 +1428,11 @@ sp {apply*initialize*top-state
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg)
+    (arg)
+    (arg))
   (ERROR
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
     (UNEXPECTED 'e'))
   (production
     (prod_name)
@@ -1516,9 +1518,8 @@ sp {apply*initialize*top-state
     (funcCall
       (funcName
         (string))))
-  (ERROR
-    (UNEXPECTED 'w')
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId

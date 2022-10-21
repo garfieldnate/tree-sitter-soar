@@ -1239,12 +1239,19 @@ sp {elaborate*next-letter-z
 --------------------------------------------------------------------------------
 
 (source_file
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
+  (command
+    (arg)
+    (arg)
+    (arg))
   (ERROR
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
     (UNEXPECTED 'e')
     (UNEXPECTED 'u')
     (UNEXPECTED 'a')
@@ -1256,38 +1263,39 @@ sp {elaborate*next-letter-z
     (UNEXPECTED 'e')
     (UNEXPECTED 'u')
     (UNEXPECTED 'p')
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
     (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'p')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'l')
-    (UNEXPECTED 'a')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'l')
-    (intConstant)
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'u')
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
     (UNEXPECTED 'e')
     (UNEXPECTED 'h')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'w')
-    (UNEXPECTED 'o')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'u')
-    (UNEXPECTED 'f')
-    (UNEXPECTED 'e')
-    (UNEXPECTED 'r')
-    (UNEXPECTED 'n')
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (ERROR
+    (UNEXPECTED 'e'))
+  (command
+    (arg))
+  (command
+    (arg))
+  (ERROR
     (UNEXPECTED 'a')
     (intConstant)
     (UNEXPECTED 'f')

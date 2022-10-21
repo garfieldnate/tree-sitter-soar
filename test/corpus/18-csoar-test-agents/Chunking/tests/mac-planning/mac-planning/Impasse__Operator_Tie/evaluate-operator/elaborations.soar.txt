@@ -58,8 +58,9 @@ sp {mac*evaluate*state*failure*state-no-change
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'u'))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId
@@ -260,8 +261,9 @@ sp {mac*evaluate*state*failure*state-no-change
         (string)
         (valueMake
           (variable)))))
-  (ERROR
-    (UNEXPECTED 'u'))
+  (command
+    (arg)
+    (arg))
   (production
     (prod_name)
     (condsForOneId

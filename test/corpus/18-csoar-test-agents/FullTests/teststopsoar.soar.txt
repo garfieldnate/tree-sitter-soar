@@ -12,11 +12,8 @@ sp {stop-soar
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (UNEXPECTED 'm')
-    (UNEXPECTED 'g')
-    (UNEXPECTED 'p')
-    (intConstant))
+  (command
+    (arg))
   (production
     (prod_name)
     (condsForOneId
