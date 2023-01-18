@@ -1,9 +1,7 @@
-
-// TODO: change grammar to match manual and CSoar (don't parse productions that crash or issue warnings)
-// TODO: what to do about the note about id_test?
 // TODO: try to make the output structure more intuitive (as per tree-sitter docs)
 // TODO: make << and >> keywords to resolve some TODOs (and reject some productions that issue warnings in CSoar)
 // TODO: do the same for +, etc.; make sure + can't be a string.
+// TODO: can't match sp "" or smem --set (no conflict generated, assumes sp {} and errors)
 module.exports = grammar({
   name: 'Soar',
 
