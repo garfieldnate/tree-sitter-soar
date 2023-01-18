@@ -4,6 +4,12 @@
 
 [Soar](https://github.com/SoarGroup/Soar) (or [JSoar](https://github.com/soartech/jsoar)) is a production rule system for artificial intelligence. This repository contains a tree-sitter grammar for Soar.
 
+## Status
+
+This grammar supports the `sp` and `smem` commands, which contain a lot of structure that needs to be highlighted. Only the curly-bracket forms of arguments are supported (e.g. productions using `""` instead of `{}` cannot be sourced).
+
+I've decided not to develop this further because Soar does not fit tree-sitter as easily as I thought it would. The Soar language consists of a command language (roughly TCL) and separate dedicated languages for the arguments to many of the commands (`sp`, for example, parses out complex productions). tree-sitter has support for specifying embedded languages, but does not support string escaping, so I would need to write separate parsers for `sp "..."` and `sp {...}`. Additionally, if I relied on the query functionality I would need to create separate projects for each command that needs a parser. See my request for escaping functionality here: https://github.com/tree-sitter/tree-sitter/issues/1927; if that gets solved, tree-sitter would become much more powerful, and it would be possible to completely parse Soar in it (although I still don't have any idea about how to support `gp` well).
+
 ## Building and Testing
 
 The app is built in the usual manner for tree-sitter grammars (see their [docs](https://tree-sitter.github.io/tree-sitter/creating-parsers
